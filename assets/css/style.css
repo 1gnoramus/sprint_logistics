@@ -359,3 +359,30 @@ body{
         font-weight: 500;
         color: white;
 }
+
+.section_header_subtitle{  
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+
+    font-size: 25px;
+    color: #091747;
+}
+
+.slider_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper{
+    width: 30%;
+}
+
+
+.swiper-slide img{
+    width: 100%;
+    align-items: center;
+}
