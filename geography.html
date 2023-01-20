@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/geogr_style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Sprint Logistics</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <div class="head_info">
+                <div class="head_logo"></div>
+
+                <div class="contacts">
+                    <div class="contacts_block">
+                        <div class="contacts_icon">&#9742;</div>
+                        <div class="contacts_text">+7 778 057 6672</div>
+                    </div>
+                    <div class="contacts_block">
+                        <div class="contacts_icon">&#9742;</div>
+                        <div class="contacts_text">+7 778 057 6672</div>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="contacts_block">
+                        <div class="contacts_icon">&#9993;</div>
+                        <div class="contacts_text">marketing@splog.com.kz</div>
+                    </div>
+                    <div class="contacts_block">
+                        <div class="contacts_icon">&#9872;</div>
+                        <div class="contacts_text">г.Алматы, Мынбаева 46</div>
+                    </div>
+                </div>
+                
+
+                <button onclick="onclicked()" class ='call_button'>Заказать звонок</button>
+                
+                <button class="request_button">Онлайн заявка</button>
+            </div>
+
+            <div class="head_menu">
+                <nav class="nav">
+                    <a  class='nav_link' href="./index.html">
+                        Главная
+                    </a>
+                    <a class='nav_link' href="./index.html">
+                        О компании
+                    </a>
+                    <a class='nav_link' href="#">
+                        Услуги
+                    </a>
+                    <a class='nav_link' href="./geography.html">
+                        География перевозок
+                    </a>
+                    <a class='nav_link' href="./index.html">
+                        Контакты
+                    </a>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="intro">
+        <div class="container">
+            <div class="intro_inner">
+                <h1 class="intro_title">ГЕОГРАФИЯ ПЕРЕВОЗОК
+                </h1>
+                
+                <h2 class="intro_subtitle">
+                    <br>"SPRINT LOGISTICS" осуществляет перевозки грузов по всем основным популярным направлениям, среди казахстанских компаний импортёров.</h2>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="about">
+                <div class="about_item">
+                    <div class="about_img">
+                        <img src="assets/images/01.jpg" width="450" height="300" alt="" srcset="">
+                    </div>
+                    <div class="about_text">
+                        
+                        <div class="about_title">
+                        </div>
+                        <div class="about_subtitle">
+                            <p>
+                                Благодаря знаниям специфики каждого конкретного региона и различных способов доставки, мы позволяем нашим клиентам сделать их перевозку быстрой, безопасной, а главное экономически выгодной                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_text">
+                        
+                        <div class="about_title">
+                        </div>
+                        <div class="about_subtitle">
+                            <p>
+                                Используя свой многолетний опыт, и современный уровень IT технологий мы помогаем нашим клиентам обойти многочисленные "подводные камни" при заборе, оформлении, доставке и пересечения границы их груза, при этом предоставляя полный сервис "под ключ", без дополнительных сборов и бюрократии.                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="about_img">
+                        <img src="assets/images/02.jpg" width="450" height="300" alt="" srcset="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section">
+        <div class="container">
+            <div class="form_container">
+                <form class="form">
+                    <div class="form_title">
+                        Впишите ваши данные и получите расчёт стоимости и срока доставки груза
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment"></label>
+                        <textarea class="form-control_1" rows="5" id="comment" name="text" placeholder="Откуда/куда, габариты (ДхШхВ) и вес "></textarea>
+                    </div>
+            
+                    <div class="mb-3">
+                    <label for="InputEmail" class="form-label"></label>
+                    <input type="text" id="email" class="form-control" placeholder="E-mail">
+                    </div>
+            
+                    <div class="mb-3">
+                    <label for="InputPhone" class="form-label"></label>
+                    <input type="text" id="phone" class="form-control" placeholder="Телефон">
+                    </div>
+                </form>                
+                <button type="submit_button" class="btn">ПОЛУЧИТЬ РАСЧЁТ</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section_header">
+                Основные маршруты грузоперевозок
+            </div>
+            <div class="geogr_image">
+                <img src="assets/images/geogr_map.png" width ='70%'alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_col--first">
+                    <div class="footer_sub_logo">
+                        транспортно-экспедиторская компания
+                    </div>
+                    <div class="footer_logo">
+                        SPRINT LOGISTICS
+                    </div>
+                    <div class="footer_text">
+                        Казахстан, г. Алматы, ул. Мынбаева, 46
+
+                        <br>График работы: Пн. – Пт.: с 9:00 до 18:00
+
+                        <br>Телефон: +7 701 581 0999
+                        <br>Почта: marketing@splog.com.kz
+                        <br>
+                        <br>Свяжитесь с нами:
+                    </div>
+                    <div class="footer_social">
+                        <div class="footer_social_content">
+                            
+                            <a href="#"><i class="fa-brands fa-whatsapp fa-3x" ></i>
+                            </a>
+                            <a href="#"><i class="fa-brands fa-instagram fa-3x"></i>
+                            </a>
+                            <a href="#"><i class="fa-brands fa-telegram fa-3x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_col--second">
+                    <div class="footer_col_item">
+                        <div class="footer_title">
+                            О компании
+                        </div>
+                        <div class="footer_subtitle">
+                            О нас
+                            <br>Наши услуги
+                            <br>Преимущества работы с нами
+                            <br>Наша команда
+                            <br>Отзывы партнеров
+                        </div>
+                    </div>
+                    <div class="footer_col_item">
+                        <div class="footer_title">
+                            Условия перевозок
+                        </div>
+                        <div class="footer_subtitle">
+                            Сроки перевозок
+                            <br>Порядок оформления груза
+                            <br>Требования к грузу
+                            <br>Требования к упаковке
+                            <br>Условия оплаты
+                            <br>Документы
+                        </div>
+                    </div>
+                    <div class="footer_col_item">
+                        <div class="footer_title">
+                            Услуги
+                        </div>
+                        <div class="footer_subtitle">
+                            Автоперевозки
+                            <br>ЖД перевозки
+                            <br>Авиаперевозки
+                            <br>Консолидация грузов
+                            <br>Консультация по транспортировке
+                            <br>Отслеживание грузов
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_col--third">
+                    <div class="footer_col_buttons">
+                        <div class="footer_col_but">
+
+                            <button class ='call_button'>Заказать звонок</button>
+                        </div>
+                        <div class="footer_col_but">
+
+                            <button class="request_button">Онлайн заявка </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', { 
+    loop: true,
+    
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    }, 
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    }
+    );
+</script>
+<script>
+    function onclicked(){
+        swal("Hello world!");
+    }
+
+</script>
+</body>
+</html>
