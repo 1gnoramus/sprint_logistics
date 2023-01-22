@@ -118,31 +118,37 @@
         </div>
     </section>
     <div class="section">
-        <div class="container">
+        <div class="container" style="flex-direction: row; justify-content: center;">
             <div class="form_container">
                 <form class="form">
                     <div class="form_title" >
                         Впишите ваши данные и получите расчёт стоимости и срока доставки груза
                     </div>
                     <div class="mb-3">
-                        <label for="InputOrder" class="form-label"></label>
-                        <input type="text" id="email" class="form-control" placeholder="Откуда/куда, габариты (ДхШхВ) и вес ";  style="    min-height: 100px; max-height: 100px; height: 100px;">
+                        <input type="text" id="email" class="form-control" placeholder="Откуда/куда, габариты (ДхШхВ) и вес ";  style="height: 150px;">
                     </div>
             
                     <div class="mb-3">
-                        <label for="InputEmail" class="form-label"></label>
-                        <input type="text" id="email" class="form-control" placeholder="E-mail" style="z-index: 4; align-self: flex-start; min-width: 250px; max-width: 250px;  min-height: 30px; max-height: 30px; height: 30px; width: 250px; margin: 0px; border: 1px solid rgb(189, 189, 189); background-color: var(--color_surface_default); box-sizing: border-box; border-radius: 5px; font-family: var(--font_default); font-size: 12px; font-weight: 400; color: var(--color_text_default); padding: 0px 6px;">
+                        <input type="text" id="email" class="form-control" placeholder="E-mail" style="height: 40px;">
                     </div>
             
                     <div class="mb-3">
-                        <label for="InputPhone" class="form-label"></label>
-                        <input type="text" id="phone" class="form-control" placeholder="Телефон" inputmode="numeric" style="z-index: 4; align-self: flex-start; min-width: 250px; max-width: 250px;  min-height: 30px; max-height: 30px; height: 30px;  width: 250px; margin: 0px; border: 1px solid rgb(189, 189, 189); background-color: var(--color_surface_default); box-sizing: border-box; border-radius: 5px; font-family: var(--font_default); font-size: 12px; font-weight: 400; color: var(--color_text_default); padding: 0px 6px;">
+                        <input type="text" id="phone" class="form-control" placeholder="Телефон" inputmode="numeric" style="height: 40px;">
                     </div>
-                    <button type="submit_button" class="btn" >ПОЛУЧИТЬ РАСЧЁТ</button>
-
                     
                 </form>  
+                <div class="button_container">
+                    <button onclick="onclicked()" class="btn" >ПОЛУЧИТЬ РАСЧЁТ</button>
+                </div>
             
+            </div>
+            <div class="form_info">
+                <div class="form_info_title">
+                    Для быстрого просчета доставки Вашего груза оставьте свой запрос здесь
+                </div>
+                <div class="form_info_subtitle">
+                    Оставьте Ваши контакты ниже и мы с Вами свяжемся!
+                </div>
             </div>
 
         </div>
@@ -268,7 +274,7 @@
 </script>
 <script>
     function onclicked(){
-        swal("Hello world!");
+        swal("Ваш запрос отправлен в обработку! В ближайшее время мы с Вами свяжемся!");
     }
 
 </script>

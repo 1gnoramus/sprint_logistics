@@ -279,19 +279,14 @@ body{
         margin-top: 40px;
         font-size: 16px;
     }
+
+
 .form_container{
     display: flex;
     flex-direction: column;
     align-self: center; 
-    min-width: 350px;
-    max-width: 350px;
-    min-height: 300px; 
-    width: 350px; 
-    flex-grow: 1; 
+    width: 400px; 
     height: max-content; 
-    margin: 0px; 
-    justify-content: 
-    flex-start; 
     row-gap: 24px; 
     overflow: visible; 
     background-color: var(--color_background_default); 
@@ -300,50 +295,53 @@ body{
     border-color: rgb(2, 5, 211); 
     border-radius: 10px; 
     box-shadow: rgba(95, 98, 173, 0.3) 0px 20px 30px -10px; 
-    padding: 24px;
+    padding: 35px  15px 35px 15px ;
 
 }
 .form{
-    z-index: 7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-self: center; 
-    min-width: 250px; 
-    max-width: 250px;  
-    min-height: 0px; 
+    min-width: 350px; 
     height: max-content; 
-    flex-grow: 0; 
-    flex-shrink: 0; 
-    width: 250px; 
+    width: 200px; 
     margin: 0px; 
     justify-content: flex-start; 
-    row-gap: 12px; 
-    overflow: visible; 
-    border-radius: 0px;
+    row-gap: 15px; 
 }
 
 .mb-3{
+    display: flex;
+    justify-content: center;
 }
 
 
 .form-control{
     z-index: 4; 
-    align-self: flex-start; 
-    min-width: 250px; 
-    max-width: 250px;  
-    width: 250px; 
-    margin: 0px; 
+    width: 100%;
     border: 1px solid rgb(189, 189, 189); 
     background-color: var(--color_surface_default); 
     box-sizing: border-box; 
     border-radius: 5px; 
     font-family: var(--font_default); 
-    font-size: 12px; 
+    font-size: 15px; 
     font-weight: 400; 
     color: var(--color_text_default); 
-    padding: 0px 6px;   
+    padding: 20px 8px;   
+}
+
+.button_container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center; 
+    min-width: 350px; 
 }
 
 .btn{
-    width: 280px;
+    width: 100%;
     background-color: #0205CF;
     color: #fff;
     font-weight: bold;
@@ -351,8 +349,7 @@ body{
 
     border: none;
     border-radius: 5px;
-
- 
+    
     padding-top:10px ;
     padding-bottom: 10px;
     padding-left: 30px;
@@ -361,23 +358,55 @@ body{
     transition: background-color .5s,color .5s;
 }
 
-.form-label{
-    width: 280px;
-    
-    padding-top:10px ;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 20px;
-
-}
-
-    .btn:hover{
+.btn:hover{
     
     background-color: #c0c1fffd;
     color: #3d3fc2e2;
 
 }
+
+.form_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center; 
+    max-width: 400px; 
+    min-height: 300px; 
+    height: max-content; 
+    margin: 0px 80px;  
+    overflow: visible; 
+    border-radius: 0px;
+}
+
+.form_info_title{
+    min-height: 30px; 
+    height: max-content; 
+    margin: 0px;  
+    overflow: visible; 
+    font-family: var(--font_default); 
+    font-size: 28px; 
+    font-weight: bold; 
+    color: rgb(52, 51, 51); 
+    line-height: 1.4; 
+}
+
+.form_info_subtitle{
+    align-self: flex-start; 
+    min-width: 0px; 
+    min-height: 60px; 
+    height: max-content; 
+    width: 100% ; 
+    margin-top: 40px; 
+    overflow: visible; 
+    word-break: break-word; 
+    font-family: var(--font_default); 
+    font-size: 18px; 
+    font-weight: 400; 
+    color: rgb(52, 51, 51); 
+    line-height: 1.4; padding: 0px 0px 20px; 
+    border-radius: 0px;
+}
+
 .geogr_image{
     display: flex;
     flex-direction: column;
