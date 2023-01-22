@@ -13,7 +13,6 @@ body{
     h1,h2,h3,h4,h5,h6{margin: 0;}
     /*Container*/
     .container{
-        
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,42 +185,75 @@ body{
         align-items: center;
 
     }
+    
+    /* NAVIGATIN MENU */
+
     .nav{font-size: 15px; font-size: medium;}
+
+    .nav_button{
+        background-color: rgba(28,28,28,0);
+        color:#fff;
+        padding: 15px;
+        font-size: 16px;
+        border: none;
+      }
+
+    .nav_button:hover{color:#fff; background-color: #4a3dae87;}
+    
+    .nav_button:hover:after{opacity: 1;}
 
     .nav_link{
         display: inline-block;
         vertical-align: top;
-        margin: 0 24px;
         position: relative;
+        width: 100%;
 
         color: #fff;
         text-decoration: none;   
 
         transition: color .5s;
+        text-align: center;
     }
-    .nav_link:after{
-        content: "";
-        display: block;
-        width: 100%;
-        height: 2px;
-        opacity: 0;
-
-        background-color: rgb(150, 150, 150);
-
+ 
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
         position: absolute;
-        top: 100%;
-        left: 0;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
-
-        transition: opacity .5s;
+        border-radius: 8px;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding-top: 8px;
+        font-size: 13px;
+        padding-bottom: 8px;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {
+        
+        background-color: #ddd;
     }
-    .nav_link:hover{color:rgb(150, 150, 150)}
-
-    .nav_link:hover:after{opacity: 1;}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+    }
+      
+      .dropdown:hover .nav_button {
+        background-color: #4a3dae87;
+    }
 
     .section{
         padding-top: 40px;
-    }
+    } 
 
     .section_header{
         width: 100%;
@@ -375,15 +407,11 @@ body{
     height: max-content; 
     margin: 0px 80px;  
     overflow: visible; 
-    border-radius: 0px;
 }
 
 .form_info_title{
-    min-height: 30px; 
     height: max-content; 
-    margin: 0px;  
     overflow: visible; 
-    font-family: var(--font_default); 
     font-size: 28px; 
     font-weight: bold; 
     color: rgb(52, 51, 51); 
@@ -392,19 +420,15 @@ body{
 
 .form_info_subtitle{
     align-self: flex-start; 
-    min-width: 0px; 
-    min-height: 60px; 
     height: max-content; 
     width: 100% ; 
     margin-top: 40px; 
     overflow: visible; 
-    word-break: break-word; 
-    font-family: var(--font_default); 
     font-size: 18px; 
     font-weight: 400; 
     color: rgb(52, 51, 51); 
-    line-height: 1.4; padding: 0px 0px 20px; 
-    border-radius: 0px;
+    line-height: 1.4; 
+    padding: 0px 0px 20px; 
 }
 
 .geogr_image{
@@ -425,12 +449,12 @@ body{
 
 .footer_inner{
     display: flex;
-    justify-content: space-between;
-    
     width: 100%;
-    width: 1200px;
-    padding-left: 350px;
+    max-width: 1200px;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    
     
 }
 
