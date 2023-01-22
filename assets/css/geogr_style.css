@@ -280,49 +280,66 @@ body{
         font-size: 16px;
     }
 .form_container{
-    width: 400px;
-    padding: 20px 20px 20px 20px;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-self: center; 
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 300px; 
+    width: 350px; 
+    flex-grow: 1; 
+    height: max-content; 
+    margin: 0px; 
+    justify-content: 
+    flex-start; 
+    row-gap: 24px; 
+    overflow: visible; 
+    background-color: var(--color_background_default); 
+    border-style: solid; 
+    border-width: 2px; 
+    border-color: rgb(2, 5, 211); 
+    border-radius: 10px; 
+    box-shadow: rgba(95, 98, 173, 0.3) 0px 20px 30px -10px; 
+    padding: 24px;
 
-    background: #00F2B9;
-    border: #0205CF;
-    border-radius: 20px;
 }
 .form{
-    width: 100%;
-    margin-bottom: 20px;
-    
+    z-index: 7; 
+    align-self: center; 
+    min-width: 250px; 
+    max-width: 250px;  
+    min-height: 0px; 
+    height: max-content; 
+    flex-grow: 0; 
+    flex-shrink: 0; 
+    width: 250px; 
+    margin: 0px; 
+    justify-content: flex-start; 
+    row-gap: 12px; 
+    overflow: visible; 
+    border-radius: 0px;
 }
 
 .mb-3{
-    width: 280px;
-    margin-top: 10px;
 }
 
-.form-control_1{
-    
-    width: 280px;
-    padding-top:10px ;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    
-    border-radius: 5px;
-}
 
-.form-control{   
-    width: 280px;
-    padding-top:10px ;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-
-    
-    border-radius: 5px;
+.form-control{
+    z-index: 4; 
+    align-self: flex-start; 
+    min-width: 250px; 
+    max-width: 250px;  
+    width: 250px; 
+    margin: 0px; 
+    border: 1px solid rgb(189, 189, 189); 
+    background-color: var(--color_surface_default); 
+    box-sizing: border-box; 
+    border-radius: 5px; 
+    font-family: var(--font_default); 
+    font-size: 12px; 
+    font-weight: 400; 
+    color: var(--color_text_default); 
+    padding: 0px 6px;   
 }
 
 .btn{
