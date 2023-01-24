@@ -2,18 +2,42 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
+   
     <title>Sprint Logistics</title>
 </head>
 <body>
+    <div class="bg-modal">
+        <div class="modal-content">
+            <form class="modal-form">
+                <div class="form_title" >
+                    Оставьте свои контактные данные, наши менеджеры свяжутся с вами в ближайшее время                </div>
 
+                <div class="mb-3">
+                    <input type="text" id="name" class="form-control" placeholder="Ваше имя" style="height: 40px;">
+                </div>
+        
+                <div class="mb-3">
+                    <input type="text" id="phone" class="form-control" placeholder="Номер телефона" inputmode="numeric" style="height: 40px;">
+                </div>
+                 
+            </form> 
+            <div class="button_container">
+                <button id='send_request_button' class="btn" style="height: 40px;">Отправить</button>
+            </div> 
+        
+        </div>
+    </div>
     <header class="header">
+        
         <div class="container">
 
             <div class="head_info">
@@ -41,11 +65,11 @@
                 </div>
                 
 
-                <button onclick="onclicked()" class ='call_button'>Заказать звонок</button>
+                <button id = 'button' class ='call_button'>Заказать звонок</button>
                 
                 <button class="request_button">Онлайн заявка</button>
             </div>
-
+            
             <div class="head_menu">
                 <nav class="nav">
                     <button class="nav_button">
@@ -438,7 +462,19 @@
     function onclicked(){
         swal("Ваш запрос отправлен в обработку! В ближайшее время мы с Вами свяжемся!");
     }
-
 </script>
+<script>
+    document.getElementById('button').addEventListener('click', 
+    function(){
+        document.querySelector('.bg-modal').style.display='flex';
+        document.querySelector
+    });
+    
+
+    
+</script>
+<script>
+document.getElementById('send_request_button').addEventListener('click', function(){
+    document.querySelector('.bg-modal').style.display='none'});</script>
 </body>
 </html>
