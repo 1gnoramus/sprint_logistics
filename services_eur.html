@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script defer src="js/main.js"></script>
    
     <title>Sprint Logistics</title>
 </head>
@@ -429,7 +430,7 @@
                     <div class="footer_col_buttons">
                         <div class="footer_col_but">
 
-                            <button class ='call_button'>Заказать звонок</button>
+                            <button id = 'button2' class ='call_button'>Заказать звонок</button>
                         </div>
                         <div class="footer_col_but">
 
@@ -443,38 +444,5 @@
     </footer>
     <script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', { 
-    loop: true,
-    
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-    }, 
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    }
-    );
-</script>
-<script>
-    function onclicked(){
-        swal("Ваш запрос отправлен в обработку! В ближайшее время мы с Вами свяжемся!");
-    }
-</script>
-<script>
-    document.getElementById('button').addEventListener('click', 
-    function(){
-        document.querySelector('.bg-modal').style.display='flex';
-        document.querySelector
-    });
-    
-
-    
-</script>
-<script>
-document.getElementById('send_request_button').addEventListener('click', function(){
-    document.querySelector('.bg-modal').style.display='none'});</script>
 </body>
 </html>

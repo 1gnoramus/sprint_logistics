@@ -442,7 +442,6 @@ body{
     width: 400px; 
     height: max-content; 
     row-gap: 24px; 
-    overflow: visible; 
     background-color: var(--color_background_default); 
     border-style: solid; 
     border-width: 2px; 
@@ -704,12 +703,14 @@ body{
     height: 100%;
     background-color: rgba(0,0,0,0.7);
     position: absolute;
-    top: 0;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     display: none;
+    position: fixed;
+    z-index: 999;   
+
 }
 
 .modal-content{
@@ -723,7 +724,6 @@ body{
     background-color: white;
     padding: 25px  20px 25px 20px ;
     border-radius: 10px; 
-    
     width: 400px; 
     
 
