@@ -15,22 +15,25 @@
 
     <div class="bg-modal">
         <div class="modal-content">
-            <form class="modal-form">
+            <form id='form' class="modal-form">
+                <div id="close" class="close">
+                    +
+                </div>
                 <div class="form_title" >
                     Оставьте свои контактные данные, наши менеджеры свяжутся с вами в ближайшее время                </div>
 
                 <div class="mb-3">
-                    <input type="text" id="name" class="form-control" placeholder="Ваше имя" style="height: 40px;">
+                    <input type="text" id="username" class="form-control" required placeholder="Ваше имя" style="height: 40px;">
                 </div>
         
                 <div class="mb-3">
-                    <input type="text" id="phone" class="form-control" placeholder="Номер телефона" inputmode="numeric" style="height: 40px;">
+                    <input type="text" id="phone" class="form-control" required placeholder="Номер телефона" inputmode="numeric" style="height: 40px;">
                 </div>
                  
             </form> 
             <div class="button_container">
-                <button id='send_request_button' class="btn" style="height: 40px;">Отправить</button>
-            </div> 
+                <button id='send_request_button' onclick="take_value();" class="btn"  style="height: 40px;">Отправить</button>
+            </div>  
         
         </div>
     </div>
