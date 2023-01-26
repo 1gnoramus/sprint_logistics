@@ -1,20 +1,4 @@
 
-    // const init = function(){
-    //     document.getElementById('close').addEventListener('click',reset)
-    //     document.getElementById('send_request_button').addEventListener('click',send)
-
-    // }
-
-    // const reset = function(ev){
-    //     // функция возвращает форму в начальное положение/удаляет данные с полей ввода
-    //     ev.preventDefault();
-    //     document.getElementById('form').reset();
-    // }
-
-    // const send = function(ev){
-    //     ev.preventDefault();
-        
-    // }
 
     function take_value(){
         // ФУНКЦИЯ ДЛЯ ПОЛУЧЕНИЯ ИНПУТА С ЗАПРОСА ЗВОНКА
@@ -79,12 +63,24 @@
 
 
     // ДРУГОЙ СПОСОБ ВЫТАЩИТЬ ДАННЫЕ И ОТОБРАЗИТЬ
-    function othername() {
-        var input = document.getElementById("username").value;
+    function modal_send() {
+        var input = document.getElementById("modal_username").value;
         
-        var phone = document.getElementById('phone').value;
+        var phone = document.getElementById('modal_phone').value;
 
         var data= input+phone
+        
+        alert(data);
+    }
+
+    function form_send() {
+        var orderDetail = document.getElementById("form_orderDetail").value;
+        
+        var email = document.getElementById('form_email').value;
+        
+        var phone = document.getElementById('form_phone').value;
+
+        var data = orderDetail+email+phone;
         
         alert(data);
     }
