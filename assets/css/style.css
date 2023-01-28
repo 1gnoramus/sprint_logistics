@@ -757,3 +757,19 @@ body{
 }
 
 
+.grid_container{
+    
+  display: grid;
+  gap: 10px;
+  /* grid-template-rows: 500px auto 200px; */
+  grid-template-columns: 500px auto 200px;
+  grid-template-areas: '';
+
+}
+
+[class^="box-"]{
+    background-color: skyblue;
+    /* Размещаем контейнеры по центру */
+    display: grid;
+    place-items: center;
+}
