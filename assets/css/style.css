@@ -325,22 +325,11 @@ body{
         font-size: 16px;
     }
 
-    .services{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
 
-    .services_row{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
 
     .services_item:hover .services_img{
         
-        transform: translate3d(-10px,-10px,0);
+        transform: translate3d(-5px,-5px,0);
     }
 
     .services_item:hover .services_img img{
@@ -349,8 +338,6 @@ body{
     }
 
     .services_img{
-        margin-left: 12px;
-        margin-top: 10px;
         background: linear-gradient(to bottom, rgb(41, 89, 246), #fff);
         border-radius: 50px;
 
@@ -760,16 +747,35 @@ body{
 .grid_container{
     
   display: grid;
-  gap: 10px;
+  gap: 12px;
+  column-gap: 12px;
   /* grid-template-rows: 500px auto 200px; */
-  grid-template-columns: 500px auto 200px;
-  grid-template-areas: '';
+  
 
 }
 
-[class^="box-"]{
-    background-color: skyblue;
+[class^="grid_row-"]{
     /* Размещаем контейнеры по центру */
     display: grid;
-    place-items: center;
+}
+
+.grid_row-1{
+    gap: 12px;
+    grid-template-columns: auto auto auto;
+}
+
+.grid_row-2{
+    gap: 12px;
+    grid-template-columns: auto auto auto;
+}
+
+.grid_row-3{
+    gap: 12px;
+    grid-template-columns: auto auto auto;
+}
+
+.grid_row-4{
+    
+    gap: 12px;
+    grid-template-columns: auto auto auto auto;
 }
