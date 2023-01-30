@@ -1,5 +1,5 @@
 // import fs from "fs";
-import { writeFile } from 'fs';
+// import { writeFile } from 'fs';
 
 
     function take_value(){
@@ -63,20 +63,64 @@ import { writeFile } from 'fs';
     }
 );
 
+// let existingData;
+
+// const xhr = new XMLHttpRequest();
+// xhr.open("GET", "data/data.json", true);
+// xhr.responseType = "json";
+// xhr.onload = function() {
+//   if (xhr.status === 200) {
+//     existingData = xhr.response;
+//     updateData(existingData);
+//     // continue to step 2
+//   } else {
+//     console.error("Error reading existing data:", xhr.statusText);
+//   }
+// };
+// xhr.send();
+// function updateData(data) {
+//     const formData = {
+//       username: document.getElementById("modal_username").value,
+//       phone: document.getElementById("modal_phone").value
+//     };
+//     data.push(formData);
+//     const xhr = new XMLHttpRequest();
+//     xhr.open("PUT", "data/data.json", true);
+//     xhr.setRequestHeader("Content-Type", "application/json");
+//     xhr.send(JSON.stringify(data));
+// }
+  
+
+const form = document.getElementById("form");
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  const formData = {
+    username: document.getElementById("modal_username").value,
+    phone: document.getElementById("modal_phone").value
+  };
+  const json = JSON.stringify(formData);
+  const blob = new Blob([json], {type: "application/json"});
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "form_data.json";
+  link.click();
+});
+
 
     // ДРУГОЙ СПОСОБ ВЫТАЩИТЬ ДАННЫЕ И ОТОБРАЗИТЬ
-    function modal_send() {
-        var input = document.getElementById("modal_username").value;
+    // function modal_send() {
+    //     var input = document.getElementById("modal_username").value;
         
-        var phone = document.getElementById('modal_phone').value;
+    //     var phone = document.getElementById('modal_phone').value;
 
-        var data= input+phone
+    //     var data= input+phone
 
-        // fetch('./data/data.json').then(data => console.log(data)).catch(err => console.log(err))
-        window.showOpenFilePicker().then(data => console.log(data)).catch(err => console.log(err))
+    //     // fetch('./data/data.json').then(data => console.log(data)).catch(err => console.log(err))
+    //     // window.showOpenFilePicker().then(data => console.log(data)).catch(err => console.log(err))
+
         
-        alert(data);
-    }
+    //     alert(data);
+    // }
 
     function form_send() {
         var orderDetail = document.getElementById("form_orderDetail").value;
@@ -86,7 +130,7 @@ import { writeFile } from 'fs';
         var phone = document.getElementById('form_phone').value;
 
         var data = orderDetail+email+phone;
-        // const fs = require('fs');
+        const fs = require('fs');
 
 
         writeFile('./../data/data.json', {"hello": "world"}, err => {
