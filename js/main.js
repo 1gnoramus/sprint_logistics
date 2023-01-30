@@ -1,3 +1,5 @@
+// import fs from "fs";
+import { writeFile } from 'fs';
 
 
     function take_value(){
@@ -69,6 +71,9 @@
         var phone = document.getElementById('modal_phone').value;
 
         var data= input+phone
+
+        // fetch('./data/data.json').then(data => console.log(data)).catch(err => console.log(err))
+        window.showOpenFilePicker().then(data => console.log(data)).catch(err => console.log(err))
         
         alert(data);
     }
@@ -81,6 +86,36 @@
         var phone = document.getElementById('form_phone').value;
 
         var data = orderDetail+email+phone;
+        // const fs = require('fs');
+
+
+        writeFile('./../data/data.json', {"hello": "world"}, err => {
+            if (err) {
+                console.log('Error writing file', err)
+            } else {
+                console.log('Successfully wrote file')
+            }
+        })
+        console.log('12345')
         
         alert(data);
     }
+
+    // TELEGRAM BOT
+//   const sda = 'asd'
+//   import TelegramApi from 'node-telegram-bot-api';
+//   const token ='6164426542:AAGyvlXrWyc9sg3duzx_MSTsqzjgmBZD2Cs';
+//   const bot = new TelegramApi(token,{polling: true})
+  
+  
+//   bot.on("message", async msg=> {
+//       const text = msg.text;
+//       const chatId = msg.chat.id;
+//       if(text==='/start'){
+//           await bot.sendMessage(chatId, 'Hello there!')
+//       }
+//       if(text==='/info'){
+//           await bot.sendMessage(chatId, "Name: ")
+//       }
+//   })
+  
