@@ -187,7 +187,11 @@ let dataBase=[]
             let http = new XMLHttpRequest();
 http.open('PUT', 'data/data.json', true);
 http.setRequestHeader("Content-Type", "application/json");
-http.send(JSON.stringify(dataBase));
+  const json = JSON.stringify(dataBase);
+
+http.send(json);
+console.log('Yeah')
+
 
             // TEST
             console.warn('added',{dataBase});
