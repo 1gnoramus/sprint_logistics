@@ -90,21 +90,21 @@
 //     xhr.send(JSON.stringify(data));
 // }
   
-
-const form = document.getElementById("form");
-form.addEventListener("submit", function(event) {
-  event.preventDefault();
-  const formData = {
-    username: document.getElementById("modal_username").value,
-    phone: document.getElementById("modal_phone").value
-  };
-  const json = JSON.stringify(formData);
-  const blob = new Blob([json], {type: "application/json"});
-  const link = document.createElement("a");
-  link.href = URL.createObjectURL(blob);
-  link.download = "form_data.json";
-  link.click();
-});
+// СКАЧАТЬ JSON ФАЙЛ
+// const form = document.getElementById("form");
+// form.addEventListener("submit", function(event) {
+//   event.preventDefault();
+//   const formData = {
+//     username: document.getElementById("modal_username").value,
+//     phone: document.getElementById("modal_phone").value
+//   };
+//   const json = JSON.stringify(formData);
+//   const blob = new Blob([json], {type: "application/json"});
+//   const link = document.createElement("a");
+//   link.href = URL.createObjectURL(blob);
+//   link.download = "form_data.json";
+//   link.click();
+// });
 
 
     // ДРУГОЙ СПОСОБ ВЫТАЩИТЬ ДАННЫЕ И ОТОБРАЗИТЬ

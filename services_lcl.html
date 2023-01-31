@@ -366,5 +366,25 @@
     </footer>
     <script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        let dataBase=[]
+        const addData=(ev)=>{
+            ev.preventDefault();
+            let data = {
+                username: document.getElementById('modal_username').value,
+                phone: document.getElementById('modal_phone').value
+            }
+            dataBase.push(data);
+            document.forms[0].reset();
+            console.warn('added',{dataBase});
+            console.log(data);
+            console.log('12345')
+        }
+        const form = document.getElementById("form");
+        form.addEventListener("submit", addData);
+        // document.addEventListener('DOMContentLoaded', ()=>{
+        //     document.getElementById('send_request_button').addEventListener('click', addData);
+        
+    </script>
 </body>
 </html>
