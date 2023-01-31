@@ -1,5 +1,3 @@
-// import fs from "fs";
-// import { writeFile } from 'fs';
 
 
     function take_value(){
@@ -165,3 +163,36 @@
 //       }
 //   })
   
+
+
+// http.send();
+// http.onload = function(){
+//     if (this.readyState ==4 && this.status==200){
+//         let data = JSON.parse(this.responseText);
+//     }
+// }
+
+//     xhr.open("PUT", "data/data.json", true);
+//     xhr.setRequestHeader("Content-Type", "application/json");
+//     xhr.send(JSON.stringify(data));
+let dataBase=[]
+        const addData=(ev)=>{
+            ev.preventDefault();
+            let data = {
+                username: document.getElementById('modal_username').value,
+                phone: document.getElementById('modal_phone').value
+            }
+            dataBase.push(data);
+            document.forms[0].reset();
+            let http = new XMLHttpRequest();
+http.open('PUT', 'data/data.json', true);
+http.setRequestHeader("Content-Type", "application/json");
+http.send(JSON.stringify(dataBase));
+
+            // TEST
+            console.warn('added',{dataBase});
+            console.log(data);
+            console.log('SASAT')
+        }
+        const form = document.getElementById("form");
+        form.addEventListener("submit", addData);
