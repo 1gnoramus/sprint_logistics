@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,25 +15,25 @@
 
     <div class="bg-modal">
         <div class="modal-content">
-            <form id='form' class="modal-form">
+            <form id='form' class="modal-form" action="/submit-data" method="post">
                 <div id="close" class="close">
                     +
                 </div>
                 <div class="form_title" >
                     Оставьте свои контактные данные, наши менеджеры свяжутся с вами в ближайшее время                </div>
 
-                    <div class="mb-3">
-                        <input type="text" id="modal_username" class="form-control" required placeholder="Ваше имя" style="height: 40px;">
-                    </div>
-            
-                    <div class="mb-3">
-                        <input type="text" id="modal_phone" class="form-control" required placeholder="Номер телефона" inputmode="numeric" style="height: 40px;">
-                    </div>
-                     
-                </form> 
+                <div class="mb-3">
+                    <input type="text" name="username" value="Ernar" id="modal_username" class="form-control" required placeholder="Ваше имя" style="height: 40px;">
+                </div>
+        
+                <div class="mb-3">
+                    <input type="text" name="phone" value="123" id="modal_phone" class="form-control" required placeholder="Номер телефона" inputmode="numeric" style="height: 40px;">
+                </div>
                 <div class="button_container">
-                    <button id='send_request_button' onclick="modal_send();" class="btn"  style="height: 40px;">Отправить</button>
+                    <!-- <input type="submit" name="submit" value="send"> -->
+                    <button id='send_request_button' type="submit"  name="submit" class="btn"  style="height: 40px;">Отправить</button>
                 </div> 
+            </form> 
         
         </div>
     </div>
@@ -76,12 +76,12 @@
             <div class="head_menu">
                 <nav class="nav">
                     <button class="nav_button">
-                        <a  class='nav_link' href="./index.html">
+                        <a  class='nav_link' href="./">
                             Главная
                         </a>
                     </button>
                     <button class="nav_button">
-                        <a class='nav_link' href="./index.html">
+                        <a class='nav_link' href="./">
                             О компании
                         </a>
                     </button >
@@ -90,30 +90,30 @@
                                 Услуги
                         </button>
                         <div class="dropdown-content">
-                            <a class='nav_link' href="./services_lcl.html">
+                            <a class='nav_link' href="./services_lcl">
                                 АВТО / ЖД - Консолидации из Китая (LCL)
                             </a>
-                            <a class='nav_link' href="./services_avia.html">
+                            <a class='nav_link' href="./services_avia">
                                 Авиа доставка  из Китая в Казахстан
                             </a>
-                            <a class='nav_link' href="./services_ftl.html">
+                            <a class='nav_link' href="./services_ftl">
                                 Полные фуры из Китая  (FTL)
                             </a>
-                            <a class='nav_link' href="./services_eur.html">
+                            <a class='nav_link' href="./services_eur">
                                 Полные фуры и консолидация из Европы 
                             </a>
-                            <a class='nav_link' href="./services_railways.html">
+                            <a class='nav_link' href="./services_railways">
                                 ЖД перевозки по Казахстану и Средней Азии
                             </a>
                           </div>
                     </div>
                     <button class="nav_button">
-                        <a class='nav_link' href="./geography.html">
+                        <a class='nav_link' href="./geography">
                             География перевозок
                         </a>
                     </button>
                     <button class="nav_button">
-                        <a class='nav_link' href="./index.html">
+                        <a class='nav_link' href="./">
                             Контакты
                         </a>
                     </button >
@@ -145,7 +145,7 @@
             <div class="about">
                 <div class="about_item">
                     <div class="about_img">
-                        <img src="assets/images/about_1.jpg" width="450" height="300" alt="" srcset="">
+                        <img src="images/about_1.jpg" width="450" height="300" alt="" srcset="">
                     </div>
                     <div class="about_text">
                         
@@ -174,13 +174,13 @@
                         
                     </div>
                     <div class="about_img">
-                        <img src="assets/images/about_2.jpg" width="450" height="300" alt="" srcset="">
+                        <img src="images/about_2.jpg" width="450" height="300" alt="" srcset="">
                     </div>
                     
                 </div>
                 <div class="about_item">
                     <div class="about_img">
-                        <img src="assets/images/about_3.jpg" width="450" height="300" alt="" srcset="">
+                        <img src="images/about_3.jpg" width="450" height="300" alt="" srcset="">
                     </div>
                     <div class="about_text">
                         
@@ -210,22 +210,22 @@
                 <div class="grid_row-1">
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="./services_eur.html">
-                                <img src="assets/images/services_section/service0_0.png" alt="">
+                            <a href="./services_eur">
+                                <img src="images/services_section/service0_0.png" alt="">
                             </a>
                         </div>
                     </div>  
                     <div class="services_item">
-                        <a href="./services_railways.html">
+                        <a href="./services_railways">
                             <div class="services_img">
-                                <img src="assets/images/services_section/service0_1.png" alt="">
+                                <img src="images/services_section/service0_1.png" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="services_item">
-                        <a href="./services_ftl.html">
+                        <a href="./services_ftl">
                             <div class="services_img">
-                                <img src="assets/images/services_section/service0_2.png" alt="">
+                                <img src="images/services_section/service0_2.png" alt="">
                             </div>
                         </a>
                     </div>
@@ -233,22 +233,22 @@
                 <div class="grid_row-2">
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="./services_avia.html">
-                                <img src="assets/images/services_section/service1_0.png" alt="">
+                            <a href="./services_avia">
+                                <img src="images/services_section/service1_0.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="./services_lcl.html">
-                                <img src="assets/images/services_section/service1_1.png" alt="">
+                            <a href="./services_lcl">
+                                <img src="images/services_section/service1_1.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="./services_lcl.html">
-                                <img src="assets/images/services_section/service1_2.png" alt="">
+                            <a href="./services_lcl">
+                                <img src="images/services_section/service1_2.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -256,22 +256,22 @@
                 <div class="grid_row-3">
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="./services_avia.html">
-                                <img src="assets/images/services_section/service2_0.png" alt="">
+                            <a href="./services_avia">
+                                <img src="images/services_section/service2_0.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="./services_lcl.html">
-                                <img src="assets/images/services_section/service2_1.png" alt="">
+                            <a href="./services_lcl">
+                                <img src="images/services_section/service2_1.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="./services_lcl.html">
-                                <img src="assets/images/services_section/service2_2.png" alt="">
+                            <a href="./services_lcl">
+                                <img src="images/services_section/service2_2.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -279,30 +279,30 @@
                 <div class="grid_row-4">
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="./services_railways.html">
-                                <img src="assets/images/services_section/service3_0.png">
+                            <a href="./services_railways">
+                                <img src="images/services_section/service3_0.png">
                             </a>
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="./services_ftl.html">
-                                <img src="assets/images/services_section/service3_1.png">
+                            <a href="./services_ftl">
+                                <img src="images/services_section/service3_1.png">
                             </a>
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="./services_eur.html">
-                                <img src="assets/images/services_section/service3_2.png">
+                            <a href="./services_eur">
+                                <img src="images/services_section/service3_2.png">
                             </a>
                             
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="./services_railways.html">
-                                <img src="assets/images/services_section/service3_3.png">
+                            <a href="./services_railways">
+                                <img src="images/services_section/service3_3.png">
                             </a>
                             
                         </div>
@@ -321,7 +321,7 @@
             <div class="advantages_row">
                 <div class="advantages_item">
                     <div class="advantages_img">
-                        <img src="assets/images/advantages_section/0_1.png" width="150" height="150" alt="">
+                        <img src="images/advantages_section/0_1.png" width="150" height="150" alt="">
                     </div>
                     <div class="advantages_text">
                         <p>Конкурентоспособные цены</p>
@@ -329,7 +329,7 @@
                 </div>
                 <div class="advantages_item">
                     <div class="advantages_img">
-                        <img src="assets/images/advantages_section/0_2.png" width="150" height="150" alt="">
+                        <img src="images/advantages_section/0_2.png" width="150" height="150" alt="">
                     </div>
                     <div class="advantages_text">
                         <p>Персональный менеджер</p>
@@ -337,7 +337,7 @@
                 </div>
                 <div class="advantages_item">
                     <div class="advantages_img">
-                        <img src="assets/images/advantages_section/0_3.png" width="150" height="150" alt="">
+                        <img src="images/advantages_section/0_3.png" width="150" height="150" alt="">
                     </div>
                     <div class="advantages_text">
                         <p>Эксперты в области логистики</p>
@@ -348,7 +348,7 @@
             <div class="advantages_row">
                 <div class="advantages_item">
                     <div class="advantages_img">
-                        <img src="assets/images/advantages_section/1_0.png" width="150" height="150" alt="">
+                        <img src="images/advantages_section/1_0.png" width="150" height="150" alt="">
                     </div>
                     <div class="advantages_text">
                         <p>Широкая география перевозок</p>
@@ -356,7 +356,7 @@
                 </div>
                 <div class="advantages_item">
                     <div class="advantages_img">
-                        <img src="assets/images/advantages_section/1_1.png" width="150" height="150" alt="">
+                        <img src="images/advantages_section/1_1.png" width="150" height="150" alt="">
                     </div>
                     <div class="advantages_text">
                         <p>Транспортировка всех типов грузов</p>
@@ -364,7 +364,7 @@
                 </div>
                 <div class="advantages_item">
                     <div class="advantages_img">
-                        <img src="assets/images/advantages_section/1_2.png" width="150" height="150" alt="">
+                        <img src="images/advantages_section/1_2.png" width="150" height="150" alt="">
                     </div>
                     <div class="advantages_text">
                         <p>Качественный сервис</p>
@@ -384,8 +384,8 @@
             <div class="slider_container">
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="assets/images/diplom_section/0.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="assets/images/diplom_section/1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/diplom_section/0.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/diplom_section/1.jpg" alt=""></div>
                     </div>
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
@@ -521,6 +521,19 @@
             </div>
         </div>
     </footer>
+    <script>
+        const onFormSubmit = () => {
+            let usernameInput = document.getElementById('modal_username')
+            let phoneInput = document.getElementById('modal_phone')
+            fetch('/submit-data', { method: 'POST',
+                headers: {'Content-Type': 'application/json',},
+                body: JSON.stringify({
+                    "username": usernameInput.value,
+                    'phone': phoneInput.value
+                }), 
+            }, ).then((data) => console.log('Success')).catch((error) => console.log(error))
+        }
+    </script>
     <script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>

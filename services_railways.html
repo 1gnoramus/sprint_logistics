@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,25 +17,25 @@
 
     <div class="bg-modal">
         <div class="modal-content">
-            <form id='form' class="modal-form">
+            <form id='form' class="modal-form" action="/submit-data" method="post">
                 <div id="close" class="close">
                     +
                 </div>
                 <div class="form_title" >
                     Оставьте свои контактные данные, наши менеджеры свяжутся с вами в ближайшее время                </div>
 
-                    <div class="mb-3">
-                        <input type="text" id="modal_username" class="form-control" required placeholder="Ваше имя" style="height: 40px;">
-                    </div>
-            
-                    <div class="mb-3">
-                        <input type="text" id="modal_phone" class="form-control" required placeholder="Номер телефона" inputmode="numeric" style="height: 40px;">
-                    </div>
-                     
-                </form> 
+                <div class="mb-3">
+                    <input type="text" name="username" value="Ernar" id="modal_username" class="form-control" required placeholder="Ваше имя" style="height: 40px;">
+                </div>
+        
+                <div class="mb-3">
+                    <input type="text" name="phone" value="123" id="modal_phone" class="form-control" required placeholder="Номер телефона" inputmode="numeric" style="height: 40px;">
+                </div>
                 <div class="button_container">
-                    <button id='send_request_button' onclick="modal_send();" class="btn"  style="height: 40px;">Отправить</button>
+                    <!-- <input type="submit" name="submit" value="send"> -->
+                    <button id='send_request_button' type="submit"  name="submit" class="btn"  style="height: 40px;">Отправить</button>
                 </div> 
+            </form> 
         
         </div>
     </div>
@@ -78,12 +78,12 @@
             <div class="head_menu">
                 <nav class="nav">
                     <button class="nav_button">
-                        <a  class='nav_link' href="./index.html">
+                        <a  class='nav_link' href="./">
                             Главная
                         </a>
                     </button>
                     <button class="nav_button">
-                        <a class='nav_link' href="./index.html">
+                        <a class='nav_link' href="./">
                             О компании
                         </a>
                     </button >
@@ -92,30 +92,30 @@
                                 Услуги
                         </button>
                         <div class="dropdown-content">
-                            <a class='nav_link' href="./services_lcl.html">
+                            <a class='nav_link' href="./services_lcl">
                                 АВТО / ЖД - Консолидации из Китая (LCL)
                             </a>
-                            <a class='nav_link' href="./services_avia.html">
+                            <a class='nav_link' href="./services_avia">
                                 Авиа доставка  из Китая в Казахстан
                             </a>
-                            <a class='nav_link' href="./services_ftl.html">
+                            <a class='nav_link' href="./services_ftl">
                                 Полные фуры из Китая  (FTL)
                             </a>
-                            <a class='nav_link' href="./services_eur.html">
+                            <a class='nav_link' href="./services_eur">
                                 Полные фуры и консолидация из Европы 
                             </a>
-                            <a class='nav_link' href="./services_railways.html">
+                            <a class='nav_link' href="./services_railways">
                                 ЖД перевозки по Казахстану и Средней Азии
                             </a>
                           </div>
                     </div>
                     <button class="nav_button">
-                        <a class='nav_link' href="./geography.html">
+                        <a class='nav_link' href="./geography">
                             География перевозок
                         </a>
                     </button>
                     <button class="nav_button">
-                        <a class='nav_link' href="./index.html">
+                        <a class='nav_link' href="./">
                             Контакты
                         </a>
                     </button >
@@ -126,7 +126,7 @@
     </header>
 
     
-    <div class="intro" style="background: url(assets/images/railwai_intro.png) center no-repeat;
+    <div class="intro" style="background: url(images/railwai_intro.png) center no-repeat;
     background-size: cover;" >
         <div class="container">
             <div class="intro_inner">
@@ -148,7 +148,7 @@
             <div class="props">
                 <div class="props_item">
                     <div class="props_img">
-                        <img src="assets/images/icons/fast-delivery.png" width="150" height="150" alt="" srcset="">
+                        <img src="images/icons/fast-delivery.png" width="150" height="150" alt="" srcset="">
                     </div>
 
                     <div class="props_text">
@@ -166,7 +166,7 @@
 
                 <div class="props_item">
                     <div class="props_img">
-                        <img src="assets/images/icons/map.png" width="150" height="150" alt="" srcset="">
+                        <img src="images/icons/map.png" width="150" height="150" alt="" srcset="">
                     </div>
 
                     <div class="props_text">
@@ -184,7 +184,7 @@
 
                 <div class="props_item">
                     <div class="props_img">
-                        <img src="assets/images/icons/trolley.png" width="150" height="150" alt="" srcset="">
+                        <img src="images/icons/trolley.png" width="150" height="150" alt="" srcset="">
                     </div>
 
                     <div class="props_text">
@@ -202,7 +202,7 @@
 
                 <div class="props_item">
                     <div class="props_img">
-                        <img src="assets/images/icons/product.png" width="150" height="150" alt="" srcset="">
+                        <img src="images/icons/product.png" width="150" height="150" alt="" srcset="">
                     </div>
 
                     <div class="props_text">
@@ -220,7 +220,7 @@
 
                 <div class="props_item">
                     <div class="props_img">
-                        <img src="assets/images/icons/international.png" width="150" height="150" alt="" srcset="">
+                        <img src="images/icons/international.png" width="150" height="150" alt="" srcset="">
                     </div>
 
                     <div class="props_text">
@@ -366,6 +366,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        const onFormSubmit = () => {
+            let usernameInput = document.getElementById('modal_username')
+            let phoneInput = document.getElementById('modal_phone')
+            fetch('/submit-data', { method: 'POST',
+                headers: {'Content-Type': 'application/json',},
+                body: JSON.stringify({
+                    "username": usernameInput.value,
+                    'phone': phoneInput.value
+                }), 
+            }, ).then((data) => console.log('Success')).catch((error) => console.log(error))
+
+        }
+    </script>
     <script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
