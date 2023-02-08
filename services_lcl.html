@@ -1,3 +1,4 @@
+<!-- <?php require("script.php") ?> -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -8,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script defer src="js/main.js"></script>
+    <!-- <script defer src="json_reader.js"></script> -->
+
 
     <title>Sprint Logistics</title>
 </head>
@@ -15,7 +18,7 @@
 
     <div class="bg-modal">
         <div class="modal-content">
-            <form id='form' class="modal-form">
+            <form id='form' class="modal-form" action="/submit-data" method="post">
                 <div id="close" class="close">
                     +
                 </div>
@@ -23,14 +26,15 @@
                     Оставьте свои контактные данные, наши менеджеры свяжутся с вами в ближайшее время                </div>
 
                 <div class="mb-3">
-                    <input type="text" id="modal_username" class="form-control" required placeholder="Ваше имя" style="height: 40px;">
+                    <input type="text" name="username" value="Ernar" id="modal_username" class="form-control" required placeholder="Ваше имя" style="height: 40px;">
                 </div>
         
                 <div class="mb-3">
-                    <input type="text" id="modal_phone" class="form-control" required placeholder="Номер телефона" inputmode="numeric" style="height: 40px;">
+                    <input type="text" name="phone" value="123" id="modal_phone" class="form-control" required placeholder="Номер телефона" inputmode="numeric" style="height: 40px;">
                 </div>
                 <div class="button_container">
-                    <button id='send_request_button' type="submit" class="btn"  style="height: 40px;">Отправить</button>
+                    <!-- <input type="submit" name="submit" value="send"> -->
+                    <button id='send_request_button' type="submit"  name="submit" class="btn"  style="height: 40px;">Отправить</button>
                 </div> 
             </form> 
             
@@ -367,6 +371,18 @@
     <script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+        const onFormSubmit = () => {
+            let usernameInput = document.getElementById('modal_username')
+            let phoneInput = document.getElementById('modal_phone')
+            fetch('/submit-data', { method: 'POST',
+                headers: {'Content-Type': 'application/json',},
+                body: JSON.stringify({
+                    "username": usernameInput.value,
+                    'phone': phoneInput.value
+                }), 
+            }, ).then((data) => console.log('Success')).catch((error) => console.log(error))
+
+        }
         // let dataBase=[]
         // const addData=(ev)=>{
         //     ev.preventDefault();

@@ -177,6 +177,7 @@
 //     xhr.send(JSON.stringify(data));
 let dataBase=[]
         const addData=(ev)=>{
+            // Записываем данные в local storage
             ev.preventDefault();
             let data = {
                 username: document.getElementById('modal_username').value,
@@ -184,19 +185,24 @@ let dataBase=[]
             }
             dataBase.push(data);
             document.forms[0].reset();
-            let http = new XMLHttpRequest();
-http.open('PUT', 'data/data.json', true);
-http.setRequestHeader("Content-Type", "application/json");
-  const json = JSON.stringify(dataBase);
-
-http.send(json);
-console.log('Yeah')
-
-
+            localStorage.setItem('Users', JSON.stringify(dataBase));
+            // Превращаем данные в JS объекты
+            console.log(JSON.parse(window.localStorage.getItem('Users')));
+            const data_j = JSON.parse(window.localStorage.getItem('Users'));
+            // fetch API. Тот же хуй в другой руке
+            // fetch('https://reqres.in/api/users',{
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify(data_j)
+            // })
+           
             // TEST
-            console.warn('added',{dataBase});
-            console.log(data);
-            console.log('SASAT')
+            // console.warn('added',{dataBase});
+            // console.log(data);
+            // console.log('SASAT')
         }
         const form = document.getElementById("form");
         form.addEventListener("submit", addData);
+  
