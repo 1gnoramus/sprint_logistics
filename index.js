@@ -66,8 +66,8 @@ app.post('/submit-data', (req, res) => {
   // Get the data from the form
   const data = req.body;
 
-  let jsonFileData = fs.readFileSync('data.json').toJSON();
-  console.log(jsonFileData)
+  let buffFileData = fs.readFileSync('data.json').toJSON().data;
+  jsonFileData = Buffer.from(buffFileData).toString()
   // Read the existing JSON file
   let jsonData = JSON.parse(jsonFileData);
 
