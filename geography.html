@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -178,7 +177,7 @@
     <div class="section">
         <div class="container" style="flex-direction: row; justify-content: center;">
             <div class="form_container">
-                <form class="form">
+                <form class="form" action="/submit-data" method="post">
                     <div id='form_title' class="form_title" >
                         Впишите ваши данные и получите расчёт стоимости и срока доставки груза
                     </div>
@@ -196,7 +195,7 @@
                     
                 </form>  
                 <div class="button_container">
-                    <button onclick="form_send();" class="btn" >ПОЛУЧИТЬ РАСЧЁТ</button>
+                    <button class="btn" type="submit" >ПОЛУЧИТЬ РАСЧЁТ</button>
                 </div>
             
             </div>
@@ -222,8 +221,6 @@
             </div>
         </div>
     </div>
-
-
 
     <footer class="footer">
         <div class="container">
@@ -327,7 +324,6 @@
 
         }
     </script>
-    <script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

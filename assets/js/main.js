@@ -1,5 +1,3 @@
-
-
     function take_value(){
         // ФУНКЦИЯ ДЛЯ ПОЛУЧЕНИЯ ИНПУТА С ЗАПРОСА ЗВОНКА
         var username = document.getElementById('username').value;
@@ -61,64 +59,6 @@
     }
 );
 
-// let existingData;
-
-// const xhr = new XMLHttpRequest();
-// xhr.open("GET", "data/data.json", true);
-// xhr.responseType = "json";
-// xhr.onload = function() {
-//   if (xhr.status === 200) {
-//     existingData = xhr.response;
-//     updateData(existingData);
-//     // continue to step 2
-//   } else {
-//     console.error("Error reading existing data:", xhr.statusText);
-//   }
-// };
-// xhr.send();
-// function updateData(data) {
-//     const formData = {
-//       username: document.getElementById("modal_username").value,
-//       phone: document.getElementById("modal_phone").value
-//     };
-//     data.push(formData);
-//     const xhr = new XMLHttpRequest();
-//     xhr.open("PUT", "data/data.json", true);
-//     xhr.setRequestHeader("Content-Type", "application/json");
-//     xhr.send(JSON.stringify(data));
-// }
-  
-// СКАЧАТЬ JSON ФАЙЛ
-// const form = document.getElementById("form");
-// form.addEventListener("submit", function(event) {
-//   event.preventDefault();
-//   const formData = {
-//     username: document.getElementById("modal_username").value,
-//     phone: document.getElementById("modal_phone").value
-//   };
-//   const json = JSON.stringify(formData);
-//   const blob = new Blob([json], {type: "application/json"});
-//   const link = document.createElement("a");
-//   link.href = URL.createObjectURL(blob);
-//   link.download = "form_data.json";
-//   link.click();
-// });
-
-
-    // ДРУГОЙ СПОСОБ ВЫТАЩИТЬ ДАННЫЕ И ОТОБРАЗИТЬ
-    // function modal_send() {
-    //     var input = document.getElementById("modal_username").value;
-        
-    //     var phone = document.getElementById('modal_phone').value;
-
-    //     var data= input+phone
-
-    //     // fetch('./data/data.json').then(data => console.log(data)).catch(err => console.log(err))
-    //     // window.showOpenFilePicker().then(data => console.log(data)).catch(err => console.log(err))
-
-        
-    //     alert(data);
-    // }
 
     function form_send() {
         var orderDetail = document.getElementById("form_orderDetail").value;
@@ -205,4 +145,38 @@ let dataBase=[]
         }
         const form = document.getElementById("form");
         form.addEventListener("submit", addData);
+
+       
+          
+// chrome.runtime.onConnect.addListener(port => {
+//     port.onMessage.addListener(msg => {
+//       // Handle message however you want
+//     });
+//   });
   
+//   chrome.runtime.onMessage.addListener((request, sender, sendResponse) => sendResponse('pong'));
+// var _port;
+
+
+// function testConnect() {
+//   _port.postMessage({
+//     msg: 'hello from popup'
+//   });
+// }
+
+// chrome.runtime.onConnect.addListener(function (port) {
+//   console.log('connected to: ', port.name);
+//   _port = port;
+
+//   _port.onMessage.addListener(processMessages);
+//   p_portrt.postMessage({
+//     msg: 'hello from popup'
+//   });
+// });
+
+(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('#testConnect').addEventListener(
+      'click', testConnect);
+  });
+})();
