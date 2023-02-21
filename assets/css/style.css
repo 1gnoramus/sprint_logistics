@@ -436,13 +436,7 @@ body{
     width: 400px; 
     height: max-content; 
     row-gap: 24px; 
-    background-color: var(--color_background_default); 
-    border-style: solid; 
-    border-width: 2px; 
-    border-color: rgb(2, 5, 211); 
-    border-radius: 10px; 
     box-shadow: rgba(95, 98, 173, 0.3) 0px 20px 30px -10px; 
-    padding: 35px  15px 35px 15px ;
 
 }
 .form{
@@ -779,3 +773,4 @@ body{
     gap: 12px;
     grid-template-columns: auto auto auto auto;
 }
+

@@ -6,19 +6,6 @@ const fs = require('fs');
 var jsonParser = bodyParser.json()
 
 
-// function ping() {
-//   chrome.runtime.sendResponse('ping', response => {
-//     if(chrome.runtime.lastError) {
-//       setTimeout(ping, 1000);
-//     } else {
-//       // Do whatever you want, background script is ready now
-//     }
-//   });
-// }
-
-// ping();
-
-// parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
@@ -56,12 +43,12 @@ app.get('/geography', (req, res) => {
 
 
 
-app.post('/submit-data', (req, res) => {
-  // Get the data from the form
+app.post('/submit-data', (req, res) => {  // Get the data from the form
   const data = req.body;
 
   let buffFileData = fs.readFileSync('data.json').toJSON().data;
   jsonFileData = Buffer.from(buffFileData).toString()
+  console.log('Data');
   // Read the existing JSON file
   let jsonData = JSON.parse(jsonFileData);
 

@@ -6,23 +6,23 @@
         document.write(phone);
     }
 
-    // ОТПРАВИТЬ ЗАПРОС И ЗАКРЫТЬ ФОРМУ
-    document.getElementById('send_request_button').addEventListener('click', 
-    function(){
-    document.querySelector('.bg-modal').style.display='none'});
+    // // ОТПРАВИТЬ ЗАПРОС И ЗАКРЫТЬ ФОРМУ ПРИКОЛ
+    // document.getElementById('send_request_button').addEventListener('click', 
+    // function(){
+    // document.querySelector('.bg-modal').style.display='none'});
 
-    // ОТКРЫТЬ ФОРМУ ЗАПРОСА ЗВОНКА
-    document.getElementById('button').addEventListener('click', 
-    function(){
-        document.querySelector('.bg-modal').style.display='flex';
-    });
+    // // ОТКРЫТЬ ФОРМУ ЗАПРОСА ЗВОНКА
+    // document.getElementById('button').addEventListener('click', 
+    // function(){
+    //     document.querySelector('.bg-modal').style.display='flex';
+    // });
 
-    // ОТКРЫТЬ ФОРМУ ЗАПРОСА ЗВОНКА
-    document.getElementById('button2').addEventListener('click', 
-    function(){
-        scrollToTop();
-        document.querySelector('.bg-modal').style.display='flex';
-    });
+    // // ОТКРЫТЬ ФОРМУ ЗАПРОСА ЗВОНКА ПРИКОЛ
+    // document.getElementById('button2').addEventListener('click', 
+    // function(){
+    //     scrollToTop();
+    //     document.querySelector('.bg-modal').style.display='flex';
+    // });
 
     // ПРОКРУТИТЬ СТРАНИЦУ НАВЕРХ
     function scrollToTop() {
@@ -129,25 +129,11 @@ let dataBase=[]
             // Превращаем данные в JS объекты
             console.log(JSON.parse(window.localStorage.getItem('Users')));
             const data_j = JSON.parse(window.localStorage.getItem('Users'));
-            // fetch API. Тот же хуй в другой руке
-            // fetch('https://reqres.in/api/users',{
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify(data_j)
-            // })
-           
-            // TEST
-            // console.warn('added',{dataBase});
-            // console.log(data);
-            // console.log('SASAT')
         }
         const form = document.getElementById("form");
         form.addEventListener("submit", addData);
 
-       
-          
+      
 // chrome.runtime.onConnect.addListener(port => {
 //     port.onMessage.addListener(msg => {
 //       // Handle message however you want
@@ -174,9 +160,3 @@ let dataBase=[]
 //   });
 // });
 
-(function () {
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('#testConnect').addEventListener(
-      'click', testConnect);
-  });
-})();

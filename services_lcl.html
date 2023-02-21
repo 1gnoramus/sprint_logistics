@@ -9,36 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script defer src="js/main.js"></script>
+    <!-- <script defer src="json_reader.js"></script> -->
 
 
     <title>Sprint Logistics</title>
 </head>
 <body>
 
-    <div class="bg-modal">
-        <div class="modal-content">
-            <form id='form' class="modal-form" action="/submit-data" method="post">
-                <div id="close" class="close">
-                    +
-                </div>
-                <div class="form_title" >
-                    Оставьте свои контактные данные, наши менеджеры свяжутся с вами в ближайшее время                </div>
-
-                <div class="mb-3">
-                    <input type="text" name="username" value="Ernar" id="modal_username" class="form-control" required placeholder="Ваше имя" style="height: 40px;">
-                </div>
-        
-                <div class="mb-3">
-                    <input type="text" name="phone" value="123" id="modal_phone" class="form-control" required placeholder="Номер телефона" inputmode="numeric" style="height: 40px;">
-                </div>
-                <div class="button_container">
-                    <!-- <input type="submit" name="submit" value="send"> -->
-                    <button id='send_request_button' type="submit"  name="submit" class="btn"  style="height: 40px;">Отправить</button>
-                </div> 
-            </form> 
-        
-        </div>
-    </div>
     <header class="header">
         <div class="container">
 
@@ -67,8 +44,16 @@
                 </div>
                 
 
-                <button id = 'button' class ='call_button'>Заказать звонок</button>
-                
+                <div>
+                    <script data-b24-form="click/1/l16bal" data-skip-moving="true">
+                        (function(w,d,u){
+                        var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                        var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                        })(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_1.js');
+                        </script>
+                    <button id = 'button' class ='call_button'>Заказать звонок</button>
+                </div>
+                                
                 <button class="request_button">
                     <a href="#form_title" style="text-decoration : none;">Онлайн заявка</a>
 
@@ -243,27 +228,8 @@
     <div class="section">
         <div class="container" style="flex-direction: row; justify-content: center;">
             <div class="form_container">
-                <form class="form">
-                    <div id='form_title' class="form_title" >
-                        Впишите ваши данные и получите расчёт стоимости и срока доставки груза
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" id="form_orderDetail" class="form-control" placeholder="Откуда/куда, габариты (ДхШхВ) и вес ";  style="height: 150px;">
-                    </div>
-            
-                    <div class="mb-3">
-                        <input type="text" id="form_email" class="form-control" placeholder="E-mail" style="height: 40px;">
-                    </div>
-            
-                    <div class="mb-3">
-                        <input type="text" id="form_phone" class="form-control" placeholder="Телефон" inputmode="numeric" style="height: 40px;">
-                    </div>
-                    
-                </form>  
-                <div class="button_container">
-                    <button onclick="form_send();" class="btn" >ПОЛУЧИТЬ РАСЧЁТ</button>
-                </div>
-            
+                <script data-b24-form="inline/3/k76xne" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_3.js');
+                </script>
             </div>
             <div class="form_info">
                 <div class="form_info_title">
@@ -354,7 +320,15 @@
                     <div class="footer_col_buttons">
                         <div class="footer_col_but">
 
-                            <button id = 'button2' class ='call_button'>Заказать звонок</button>
+                            <div>
+                                <script data-b24-form="click/1/l16bal" data-skip-moving="true">
+                                    (function(w,d,u){
+                                    var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                                    var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                                    })(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_1.js');
+                                    </script>
+                                <button id = 'button' class ='call_button'>Заказать звонок</button>
+                            </div>
                         </div>
                         <div class="footer_col_but">
 
@@ -366,6 +340,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const onFormSubmit = () => {
