@@ -205,30 +205,36 @@
     </section>
 
     <div class="section">
-        
-        <div class="container">
+        <div id="services_item_popup">
+            <h2>Title</h2>
+            <p>Content
+            </p>
+            <a href="javascript://" onclick="closePopup()"> Close</a>
+        </div>
+        <div class="container" id="blur">
             <div class="section_header">
                 Наши услуги
             </div>
 
-            <div class="grid_container">
+            <div class="grid_container" >
                 <div class="grid_row-1">
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="/services_eur.html">
+                            <a href="javascript://" onclick="showPopup(0)">
                                 <img src="assets/images/services_section/service0_0.png" alt="">
                             </a>
                         </div>
                     </div>  
+                    
                     <div class="services_item">
-                        <a href="/services_railways.html">
+                        <a href="javascript://" onclick="showPopup(1)">
                             <div class="services_img">
                                 <img src="assets/images/services_section/service0_1.png" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="services_item">
-                        <a href="/services_ftl.html">
+                        <a href="javascript://" onclick="showPopup(2)">
                             <div class="services_img">
                                 <img src="assets/images/services_section/service0_2.png" alt="">
                             </div>
@@ -238,21 +244,21 @@
                 <div class="grid_row-2">
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="/services_avia.html">
+                            <a href="javascript://" onclick="showPopup(3)">
                                 <img src="assets/images/services_section/service1_0.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="/services_lcl.html">
-                                <img src="assets/images/services_section/service1_1.png" alt="">
+                            <a href="javascript://" onclick="showPopup(4)">
+                            <img src="assets/images/services_section/service1_1.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="/services_lcl.html">
+                            <a href="javascript://" onclick="showPopup(5)">
                                 <img src="assets/images/services_section/service1_2.png" alt="">
                             </a>
                         </div>
@@ -261,21 +267,21 @@
                 <div class="grid_row-3">
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="/services_avia.html">
+                            <a href="javascript://" onclick="showPopup(6)">
                                 <img src="assets/images/services_section/service2_0.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="/services_lcl.html">
+                            <a href="javascript://" onclick="showPopup(7)">
                                 <img src="assets/images/services_section/service2_1.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="/services_lcl.html">
+                            <a href="javascript://" onclick="showPopup(8)">
                                 <img src="assets/images/services_section/service2_2.png" alt="">
                             </a>
                         </div>
@@ -284,28 +290,28 @@
                 <div class="grid_row-4">
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="/services_railways.html">
+                            <a href="javascript://" onclick="showPopup(9)">
                                 <img src="assets/images/services_section/service3_0.png">
                             </a>
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="/services_ftl.html">
+                            <a href="javascript://" onclick="showPopup(10)">
                                 <img src="assets/images/services_section/service3_1.png">
                             </a>
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="/services_eur.html">
+                            <a href="javascript://" onclick="showPopup(11)">
                                 <img src="assets/images/services_section/service3_2.png">
                             </a>   
                         </div>
                     </div>
                     <div class="services_item">
                         <div class="services_img">
-                            <a href="/services_railways.html">
+                            <a href="javascript://" onclick="showPopup(12)">
                                 <img src="assets/images/services_section/service3_3.png">
                             </a>
                         </div>
@@ -313,6 +319,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
     <div class="section">
@@ -496,6 +503,50 @@
 		{
 			document.getElementById("form_container").scrollIntoView({block: "center", behavior: "smooth"});
 		}
+
+        function showPopup(itemIndex){
+            var blur = document.getElementById('blur');
+            var popup = document.getElementById('services_item_popup');
+            
+            var services_item_popup = document.getElementById('services_item_popup');
+            services_item_popup.classList.toggle('active');
+            blur.classList.toggle('active');
+
+
+            if (itemIndex == 0) {
+                    popup.innerHTML = "<h2>Полные фуры из Европы, России, Турции и Китая</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                } else if (itemIndex == 1) {
+                    popup.innerHTML = "<h2>ЖД перевозки из Европы</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                } else if (itemIndex == 2) {
+                    popup.innerHTML = "<h2>Контейнерные перевозки из Китая</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                } else if (itemIndex == 3) {
+                    popup.innerHTML = "<h2>Доставка негабаритных грузов о Казахстану</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                } else if (itemIndex == 4) {
+                    popup.innerHTML = "<h2>Доставка опасных грузов</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                } else if (itemIndex == 5) {
+                    popup.innerHTML = "<h2>Груза требующие температурного режима</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                } else if (itemIndex == 6) {
+                    popup.innerHTML = "<h2>Мультимодальные перевозки</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                } else if (itemIndex == 7) {
+                    popup.innerHTML = "<h2>Погрузочно-разгрузочные работы</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                } else if (itemIndex == 8) {
+                    popup.innerHTML = "<h2>Проектная перевозка</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                } else if (itemIndex == 9) {
+                    popup.innerHTML = "<h2>Охранное сопровождение груза</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                } else if (itemIndex == 10) {
+                    popup.innerHTML = "<h2>Страхование груза</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                } else if (itemIndex == 11) {
+                    popup.innerHTML = "<h2>Брокерские услуги</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                } else if (itemIndex == 12) {
+                    popup.innerHTML = "<h2>Разрешительная документация</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                }
+            }
+        function closePopup(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var services_item_popup = document.getElementById('services_item_popup');
+            services_item_popup.classList.toggle('active');
+        }
 	</script>
 
 </body>
