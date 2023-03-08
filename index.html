@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(92703250, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/92703250" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="assets/images/page_logo.png">
+	<link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -15,11 +37,11 @@
     <meta name="description" content="Sprint Logistics предоставляет широкий спектр услуг по организации международных перевозок">
   </head>
 <body>
-       
+
     <header class="header">
 
-        <div class="head_info">
-            <div class="head_logo"></div>
+        <div class="head_info">              
+			<a class="head_logo" href="./index.html"></a>
 
             <div class="contacts">
                 <div class="contacts_block">
@@ -41,9 +63,7 @@
                     <div class="contacts_text">г.Алматы, Мынбаева 46</div>
                 </div>
             </div>
-            
-
-            
+			
                 <script data-b24-form="click/1/l16bal" data-skip-moving="true">
                     (function(w,d,u){
                     var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
@@ -53,8 +73,7 @@
                 <button id = 'button' class ='call_button'>Заказать звонок</button>
             
 
-            <button class="request_button">
-                <a href="#form_title" style="text-decoration : none;">Онлайн заявка</a>
+            <button class="request_button" onclick="scrollToForm()">Онлайн заявка
 
             </button>
         </div>
@@ -91,7 +110,6 @@
                         <a class='nav_link' href="./services_railways.html">
                             ЖД перевозки по Казахстану и Средней Азии
                         </a>
-                        
                       </div>
                 </div>
                 <button class="nav_button">
@@ -282,8 +300,7 @@
                         <div class="services_img">
                             <a href="/services_eur.html">
                                 <img src="assets/images/services_section/service3_2.png">
-                            </a>
-                            
+                            </a>   
                         </div>
                     </div>
                     <div class="services_item">
@@ -291,7 +308,6 @@
                             <a href="/services_railways.html">
                                 <img src="assets/images/services_section/service3_3.png">
                             </a>
-                            
                         </div>
                     </div> 
                 </div>
@@ -364,7 +380,7 @@
 
     <div class="section">
         <div class="container" style="flex-direction: row; justify-content: center;">
-            <div class="form_container">
+            <div class="form_container" id='form_container'>
                 <script data-b24-form="inline/3/k76xne" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_3.js');
                 </script>
             </div>
@@ -384,6 +400,7 @@
         <div class="container">
             <div class="footer_inner">
                 <div class="footer_col--first">
+					
                     <div class="footer_sub_logo">
                         транспортно-экспедиторская компания
                     </div>
@@ -464,8 +481,7 @@
                                 <button id = 'button' class ='call_button'>Заказать звонок</button>                       
                         </div>
                         <div class="footer_col_but">
-
-                            <button class="request_button">Онлайн заявка </button>
+                            <button class="request_button" onClick='scrollToForm()'>Онлайн заявка </button>
                         </div>
                         
                     </div>
@@ -476,5 +492,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script> function scrollToForm()
+		{
+			document.getElementById("form_container").scrollIntoView({block: "center", behavior: "smooth"});
+		}
+	</script>
+
 </body>
 </html>

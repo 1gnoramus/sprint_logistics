@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	
+		<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(92703250, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/92703250" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
 	<link rel="icon" href="assets/images/page_logo.png">
+	<link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
 
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +40,7 @@
     <header class="header">
 
         <div class="head_info">
-            <div class="head_logo"></div>
+			<a class="head_logo" href="./index.html"></a>
 
             <div class="contacts">
                 <div class="contacts_block">
@@ -53,10 +74,7 @@
                 <button id = 'button' class ='call_button'>Заказать звонок</button>
             
 
-            <button class="request_button">
-                <a href="#form_title" style="text-decoration : none;">Онлайн заявка</a>
-
-            </button>
+            <button class="request_button" onClick='scrollToForm()'>Онлайн заявка</button>
         </div>
         
         <div class="head_menu">
@@ -205,7 +223,7 @@
 
     <div class="section">
         <div class="container" style="flex-direction: row; justify-content: center;">
-            <div class="form_container">
+            <div class="form_container" id='form_container'>
                 <script data-b24-form="inline/3/k76xne" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_3.js');
                 </script>
             </div>
@@ -309,7 +327,7 @@
                         </div>
                         <div class="footer_col_but">
 
-                            <button class="request_button">Онлайн заявка </button>
+                            <button class="request_button" onClick='scrollToForm()'>Онлайн заявка </button>
                         </div>
                         
                     </div>
@@ -317,6 +335,10 @@
             </div>
         </div>
     </footer>
-
+	<script> function scrollToForm()
+		{
+			document.getElementById("form_container").scrollIntoView({block: "center", behavior: "smooth"});
+		}
+	</script>
 </body>
 </html>
