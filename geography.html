@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	
-		<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+            <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(92703250, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true,
-        ecommerce:"dataLayer"
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/92703250" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    ym(92703250, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true,
+            ecommerce:"dataLayer"
+    });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/92703250" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 	
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Adaptive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Icons -->
 	<link rel="icon" href="assets/images/page_logo.png">
 	<link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
-
+    <!-- CSS File -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-
-
+    <!-- CEO title + description -->
     <title>Sprint Logistics - география предоставляемых услуг по грузоперевозкам</title>
     <meta name="description" content="Мы предоставляем наши услуги на обширную территорию, включая Страны СНГ, Китай Европу и страны Средней Азии ">
 </head>
 <body>
 
 
+    <!-- HEADER -->
     <header class="header">
-
-        <div class="head_info">
+        <!-- HEADER: Icon + Info + buttons -->
+        <div class="head_info">              
 			<a class="head_logo" href="./index.html"></a>
 
             <div class="contacts">
@@ -64,9 +62,7 @@
                     <div class="contacts_text">г.Алматы, Мынбаева 46</div>
                 </div>
             </div>
-            
-
-            
+			
                 <script data-b24-form="click/1/l16bal" data-skip-moving="true">
                     (function(w,d,u){
                     var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
@@ -76,10 +72,11 @@
                 <button id = 'button' class ='call_button'>Заказать звонок</button>
             
 
-            <button class="request_button" onClick='scrollToForm()'>Онлайн заявка
+            <button class="request_button" onclick="scrollToForm()">Онлайн заявка
+
             </button>
         </div>
-        
+        <!-- HEADER: Navigation bar -->
         <div class="head_menu">
             <nav class="nav">
                 <button class="nav_button">
@@ -112,7 +109,6 @@
                         <a class='nav_link' href="./services_railways.html">
                             ЖД перевозки по Казахстану и Средней Азии
                         </a>
-                        
                       </div>
                 </div>
                 <button class="nav_button">
@@ -129,8 +125,7 @@
 
         </div>
 </header>
-
-    
+    <!-- INTRO -->
     <div class="intro" style="background: url(assets/images/geogr_intro.jpg) center no-repeat;
     background-size: cover;">
         <div class="container">
@@ -143,7 +138,7 @@
             </div>
         </div>
     </div>
-
+    <!-- ABOUT SECTION -->
     <section class="section">
         <div class="container">
             <div class="about">
@@ -181,6 +176,7 @@
             </div>
         </div>
     </section>
+    <!-- FORM SECTION -->
     <div class="section">
         <div class="container" style="flex-direction: row; justify-content: center;">
             <div class="form_container" id='form_container'>
@@ -198,7 +194,7 @@
 
         </div>
     </div>
-
+    <!-- MAIN WAYS SECTION -->
     <div class="section">
         <div class="container">
             <div class="section_header">
@@ -209,7 +205,7 @@
             </div>
         </div>
     </div>
-
+    <!--FOOTER SECTION  -->
     <footer class="footer">
         <div class="container">
             <div class="footer_inner">
@@ -304,7 +300,10 @@
             </div>
         </div>
     </footer>
-		<script> function scrollToForm()
+    
+		<script> 
+        // Scroll to the form after pressing the request button
+        function scrollToForm()
 		{
 			document.getElementById("form_container").scrollIntoView({block: "center", behavior: "smooth"});
 		}
