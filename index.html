@@ -20,7 +20,7 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/92703250" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     <!-- CSS File -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css?{% now "U" %}">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,7 +29,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Page Icons -->
 	<link rel="icon" href="assets/images/page_logo.png">
-	<link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+	<link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
     <!-- Bootstrap Swiper -->
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <!-- CEO title + description -->
@@ -127,11 +127,11 @@
     <div class="intro">
         <div class="container">
             <div class="intro_inner">
-                <h1 class="intro_title">SPRINT LOGISTICS - это несомненный успех в доставке Ваших грузов.</h1>
+                <h1 class="intro_title">SPRINT LOGISTICS: Ваш бизнес - Наша логистика</h1>
                 
-                <h2 class="intro_subtitle">«Sprint Logistics» - современная компания логистических услуг специализирующаяся на  предоставлении услуг экспедирования грузов из Китая, Турции, России и стран Европы. 
+                <h2 class="intro_subtitle">«Sprint Logistics» - современная логистическая компания специализирующаяся на предоставлении услуг экспедирования грузов из Китая, Турции, России и стран Европы разными видами транспорта. 
                     <br>
-                    <br>Коллектив компании «Sprint Logistics» предлагает клиентам все возможные консультации по оптимизации и усовершенствованию схем грузовых перевозок, создает наиболее выгодные и оптимальные методы доставки грузов, при этом гарантируя их осуществление. </h2>
+                    <br>Команда специалистов «Sprint Logistics» предлагает оптимальные и быстрые способы доставки различных грузов по наиболее выгодным тарифам.</h2>
             </div>
         </div>
     </div>
@@ -516,31 +516,31 @@
 
             // Options for grid with info for the Grid Popup
             if (itemIndex == 0) {
-                services_item_popup.innerHTML = "<h2>Полные фуры из Европы, России, Турции и Китая</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                services_item_popup.innerHTML = "<h2>Полные фуры из Европы, России, Турции и Китая</h2><p>Sprint Logistics поможет Вам забрать Ваш груз из любой точки Европы, России, Турции, Китая и доставить на полной фуре в Казахстан по самой низкой цене и в кратчайшие сроки!</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
                 } else if (itemIndex == 1) {
-                    services_item_popup.innerHTML = "<h2>ЖД перевозки из Европы</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                    services_item_popup.innerHTML = "<h2>ЖД перевозки из Европы</h2><p>Sprint Logistics предоставляет универсальный парк вагонов для импорта, экспорта, а также перевозок внутри Казахстана</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
                 } else if (itemIndex == 2) {
-                   services_item_popup.innerHTML = "<h2>Контейнерные перевозки из Китая</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                   services_item_popup.innerHTML = "<h2>Контейнерные перевозки из Китая</h2><p>Sprint Logistics поможет Вам забрать Ваш груз из любой точки Китая и доставить на Авто или ЖД в Казахстан по самой низкой цене и в кратчайшие сроки</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
                 } else if (itemIndex == 3) {
                    services_item_popup.innerHTML = "<h2>Доставка негабаритных грузов о Казахстану</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
                 } else if (itemIndex == 4) {
-                   services_item_popup.innerHTML = "<h2>Доставка опасных грузов</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                   services_item_popup.innerHTML = "<h2>Доставка опасных грузов</h2><p>Специалисты компании Sprint Logistics имеют опыт в перевозке опасных грузов и помогут Вам организовать безопасную доставку до места назначения</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
                 } else if (itemIndex == 5) {
-                   services_item_popup.innerHTML = "<h2>Груза требующие температурного режима</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                   services_item_popup.innerHTML = "<h2>Груза требующие температурного режима</h2><p>Sprint Logistics поможет организовать доставку грузов, которые необходимо перевозить с соблюдением особого температурного режима</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
                 } else if (itemIndex == 6) {
-                   services_item_popup.innerHTML = "<h2>Мультимодальные перевозки</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                   services_item_popup.innerHTML = "<h2>Мультимодальные перевозки</h2><p>Команда Sprint Logistics поможет Вам с перевозкой грузов разными видами транспорта АВТО, Ж/Д, АВИА, Морем по всему миру в Казахстан</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
                 } else if (itemIndex == 7) {
-                   services_item_popup.innerHTML = "<h2>Погрузочно-разгрузочные работы</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                   services_item_popup.innerHTML = "<h2>Погрузочно-разгрузочные работы</h2><p>По запросу клиента, Sprint Logistics может предоставить погрузочную технику и грузчиков для работ ПРР груза по месту отправления либо назначения</p><a href=\"javascript://\" onclick=\"closePopup()\"> Закрыть</a>";
                 } else if (itemIndex == 8) {
-                   services_item_popup.innerHTML = "<h2>Проектная перевозка</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                   services_item_popup.innerHTML = "<h2>Проектная перевозка</h2><p>Sprint Logistics поможет организовать доставку грузов с привлечением большого количества транспортных средств под большой объём и контракт</p><a href=\"javascript://\" onclick=\"closePopup()\"> Закрыть</a>";
                 } else if (itemIndex == 9) {
-                   services_item_popup.innerHTML = "<h2>Охранное сопровождение груза</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                   services_item_popup.innerHTML = "<h2>Охранное сопровождение груза</h2><p>Sprint Logistics может предоставить военизировонную охрану для перевозки Ваших специфичных товаров</p><a href=\"javascript://\" onclick=\"closePopup()\"> Закрыть</a>";
                 } else if (itemIndex == 10) {
-                   services_item_popup.innerHTML = "<h2>Страхование груза</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                   services_item_popup.innerHTML = "<h2>Страхование груза</h2><p>Sprint Logistics предоставляет услуги по страхованию груза по всему маршруту перевозки</p><a href=\"javascript://\" onclick=\"closePopup()\"> Закрыть</a>";
                 } else if (itemIndex == 11) {
-                   services_item_popup.innerHTML = "<h2>Брокерские услуги</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                   services_item_popup.innerHTML = "<h2>Брокерские услуги</h2><p>Sprint Logistics Предоставляет брокерских услуг вместе с грузоперевозкой в режиме \"одного окна\", по единому договору</p><a href=\"javascript://\" onclick=\"closePopup()\"> Закрыть</a>";
                 } else if (itemIndex == 12) {
-                   services_item_popup.innerHTML = "<h2>Разрешительная документация</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Close</a>";
+                   services_item_popup.innerHTML = "<h2>Разрешительная документация</h2><p>Lorem ipsum dolor sit amet.</p><a href=\"javascript://\" onclick=\"closePopup()\"> Закрыть</a>";
                 }
             }
             // Grid Popup is unactive
