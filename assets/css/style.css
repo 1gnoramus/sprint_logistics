@@ -47,25 +47,7 @@ body{
 .blur {
   display: block;
 }
-    #services_item_popup{
-        position: fixed;
-        top:40%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        width: 600px;
-        padding: 50px;
-        box-shadow: 0 5px 30px rgba(0,0,0,0.30);
-        background: #fff;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    #services_item_popup.active{
-        visibility: visible;
-        opacity: 1;
-        transition: 0.5s;
-        z-index: 9999;
-    }
+   
     /* Intro */
     .intro{
         display: flex;
@@ -773,6 +755,7 @@ body{
 
 }
 
+/* INDEX PAGE OUR GOODS SECTION GRID */
 [class^="grid_row-"]{
     /* Размещаем контейнеры по центру */
     display: grid;
@@ -797,7 +780,78 @@ body{
     gap: 10px;
     grid-template-columns: auto auto auto auto;
 }
+/* GRID POPUP CONTENT */
+#services_item_popup{
+    position: fixed;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+#services_item_popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 9999;
+}
+/* GRID POPUP BUTTONS */
+.grid_button_row{    
+    width: 500px;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.grid_close_button{
+    width: 200px;
+
+    background-color: #0205CF;
+    color: #fff;   
+    font-size: 15px; 
+
+    border: none;
+    border-radius: 5px;
+
+    padding-top:15px ;
+    padding-bottom: 15px;
+
+    transition: background-color .5s,color .5s;
+}
+
+    .grid_close_button:hover{
+        background-color: rgb(129, 155, 238);
+        color: #ddddf4;
+    }
+
+.grid_nav_button{
+    width: 200px;
+
+    background-color: #0205CF;
+    color: #fff;   
+    font-size: 15px; 
+
+    border: none;
+    border-radius: 5px;
+
+    padding-top:15px ;
+    padding-bottom: 15px;
+
+    transition: background-color .5s,color .5s;
+}
+
+.grid_close_button:hover{
+        background-color: rgb(129, 155, 238);
+        color: #ddddf4;
+    }
 .nav_container{
     display: flex;
 }
