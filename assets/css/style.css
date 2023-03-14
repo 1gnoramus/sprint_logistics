@@ -794,8 +794,7 @@ body{
 }
 
 .grid_row-4{
-    
-    gap: 12px;
+    gap: 10px;
     grid-template-columns: auto auto auto auto;
 }
 
