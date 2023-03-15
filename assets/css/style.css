@@ -408,13 +408,15 @@ body{
 
 }
 
-.advantages_img{
+.adv_icon{
+    width:100px; 
+    height:100px; 
 }
 
 .advantages_text{
     text-align: center;
         margin-top: 10px;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 500;
         color: white;
 }
