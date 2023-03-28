@@ -19,9 +19,13 @@
             ecommerce:"dataLayer"
     });
     </script>
+
     <noscript><div><img src="https://mc.yandex.ru/watch/92703250" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
         
+    <!-- JQquery library for slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Adaptive design -->
@@ -30,7 +34,11 @@
     <link rel="icon" href="assets/images/page_logo.png">
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
     <!-- CSS File -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css?{% now "U" %}">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css?{% now %}">
+    <!--Slick slider files-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- CEO title + description -->
     <title>Sprint Logistics - Консолидация грузов из Китая</title>
     <meta name="description" content="Сбор и доставка небольших партий груов из Китая авто и ЖД транспортом">
@@ -129,7 +137,7 @@
     </div>
 </header>
 <!-- INTRO -->
-    <div class="intro" style="background: url(assets/images/lcl_intro.jpg) center no-repeat;
+    <div class="intro" style="background: url(assets/images/services_lcl/lcl_intro.jpg) center no-repeat;
     background-size: cover;" >
         <div class="container">
             <div class="intro_inner">
@@ -141,107 +149,59 @@
             </div>
         </div>
     </div>
-    <!-- ABOUT LCL SECTION -->
-    <section class="section">
-        <div class="container">
-            <div class="about">
-                <div class="about_item">
-                    <div class="about_img">
-                        <img src="assets/images/services_lcl_section/lcl_1.jpg" width="450" height="300" alt="" srcset="">
-                    </div>
-                    <div class="about_text">
-                        
-                        <div class="about_title">
-                        </div>
-                        <div class="about_subtitle">
-                            <p>
-                                Клиент оплачивает за доставку не всего контейнера либо фуры, а только то место, которое занимает купленная продукция в составе консолидации. За счет этого снижается стоимость перевозки для каждой товарной единицы, и заказчик может хорошо сэкономить на покупке и доставке товара из заграницы.    
-                            </p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="about_item">
-                    <div class="about_text">
-                        
-                        <div class="about_title">
-                        </div>
-                        <div class="about_subtitle">
-                            <p>
-                                Снижаются затраты на хранение груза в стране импортёра, так как привозится только объём уже реализованного товара.                            
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about_img">
-                        <img src="assets/images/services_lcl_section/lcl_2.png" width="450" height="300" alt="" srcset="">
-                    </div>
-                </div>
-                <div class="about_item">
-                    <div class="about_img">
-                        <img src="assets/images/services_lcl_section/lcl_3.jpg" width="450" height="300" alt="" srcset="">
-                    </div>
-                    <div class="about_text">
-                        
-                        <div class="about_title">
-                        </div>
-                        <div class="about_subtitle">
-                            <p>
-                                Клиент может заказать множество отдельных категорий товаров от разных поставщиков в Китае и получить их одновременно. Это выгодно, когда, например, заказчику нужны разные виды оборудования от разных китайских производителей. Консолидация даёт возможность забрать груза с разных городов в Китае либо разных адресов в одном китайском городе и доставить их одному получателю
-                            </p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="about_item">
-                    <div class="about_text">
-                        
-                        <div class="about_title">
-                        </div>
-                        <div class="about_subtitle">
-                            <p>
-                                Это лучший вариант отправки, когда нужно получить малогабаритный груз или небольшую партию товара в кратчайший срок.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about_img">
-                        <img src="assets/images/services_lcl_section/3.jpg" width="450" height="300" alt="" srcset="">
-                    </div>
-                </div>
-                <div class="about_item">
-                    <div class="about_img">
-                        <img src="assets/images/services_lcl_section/lcl_4.png" width="450" height="300" alt="" srcset="">
-                    </div>
-                    <div class="about_text">
-                        
-                        <div class="about_title">
-                        </div>
-                        <div class="about_subtitle">
-                            <p>
-                                Отправки сборного груза из Китая снижают таможенные риски и досмотры, так как нашей командой специалистов проводится тщательная проверка всей документации на груз при консолидации контейнера либо фуры.
-                            </p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="about_item">
-                    <div class="about_text">
-                        
-                        <div class="about_title">
-                        </div>
-                        <div class="about_subtitle">
-                            <p>
-                                Снижения стоимости доставки за счет отправки грузов на наши склады консолидации в разных городах Китая за счёт вашего грузоотправителя. Многие Китайские производители могут самостоятельно доставлять груз на наши перевалочные пункты, что существенно сокращает расходы на логистику для импортера в Казахстане. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about_img">
-                        <img src="assets/images/services_lcl_section/lcl_5.png" width="450" height="300" alt="" srcset="">
-                    </div>
-                </div>
-                
+<!-- ADVANTAGES SECTION -->
+<section style="margin-top: 40px;">
+    <div class="section_header">Преимущества консолидации грузов из Китая</div>
+    <div class="advantages_section">
+        <div class="advantages_container">
+            <div class="advantages_img">
+                <img src="assets/images/services_lcl/log_econ.png" alt="" height="100px">
+
             </div>
+            <h2>Сокращение расходов на логистику</h2>
+            <p>Многие Китайские производители могут самостоятельно доставлять груз на наши перевалочные пункты, что существенно сокращает расходы на логистику для импортера в Казахстане</p>
         </div>
-    </section>
+        <div class="advantages_container">
+            <div class="advantages_img">
+                <img src="assets/images/services_lcl/stor_econ.png" alt="" height="100px">
+
+            </div>
+            <h2>Уменьшение затрат на хранение</h2>
+            <p>Снижаются затраты на хранение груза в стране импортёра, так как привозится только объём уже реализованного товара</p>
+        </div>
+        <div class="advantages_container">
+            <div class="advantages_img">
+                <img src="assets/images/services_lcl/cust_risks.png" alt="" height="100px">
+            </div>
+            <h2>Снижение таможенных рисков</h2>
+            <p>Отправки сборного груза из Китая снижают таможенные риски и досмотры, так как нашей командой специалистов проводится тщательная проверка всей документации на груз при консолидации контейнера либо фуры</p>
+        </div>
+        <div class="advantages_container">
+            <div class="advantages_img">
+                <img src="assets/images/services_lcl/small_pack.png" alt="" height="100px">
+
+            </div>
+            <h2>Быстрая отправка малогабаритного груза</h2>
+            <p>Это лучший вариант отправки, когда нужно получить малогабаритный груз или небольшую партию товара в кратчайший срок</p>
+        </div>
+        <div class="advantages_container">
+            <div class="advantages_img">
+                <img src="assets/images/services_lcl/deliv_econ.png" alt="" height="100px">
+
+            </div>
+            <h2>Экономия на доставке</h2>
+            <p>Клиент оплачивает за доставку не всего контейнера либо фуры, а только то место, которое занимает купленная продукция в составе консолидации. За счет этого снижается стоимость перевозки для каждой товарной единицы, и заказчик может хорошо сэкономить на покупке и доставке товара из заграницы</p>
+        </div>
+        <div class="advantages_container">
+            <div class="advantages_img">
+                <img src="assets/images/services_lcl/consol.png" alt="" height="100px">
+
+            </div>
+            <h2>Консолидация товаров</h2>
+            <p>Клиент может заказать множество отдельных категорий товаров от разных поставщиков в Китае и получить их одновременно</p>
+        </div>
+    </div>
+</section>
     <!-- FORM SECTION -->
     <div class="section">
         <div class="container" style="flex-direction: row; justify-content: center;">
@@ -284,11 +244,11 @@
                     <div class="footer_social">
                         <div class="footer_social_content">
                             
-                            <a href="#"><i class="fa-brands fa-whatsapp fa-3x" style="color: rgb(7, 212, 7);" ></i>
+                            <a href="https://wa.me/77000882815"><i class="fa-brands fa-whatsapp fa-2x" style="color: rgb(7, 212, 7);" ></i>
                             </a>
-                            <a href="#"><i class="fa-brands fa-instagram fa-3x" style="color: rgb(171, 50, 149);"></i>
+                            <a href="https://instagram.com/sprint_log?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram fa-2x" style="color: rgb(171, 50, 149);"></i>
                             </a>
-                            <a href="#"><i class="fa-brands fa-telegram fa-3x" style="color: rgb(4, 169, 199);"></i>
+                            <a href="https://t.me/sprintlog"><i class="fa-brands fa-telegram fa-2x" style="color: rgb(4, 169, 199);"></i>
                             </a>
                         </div>
                     </div>
@@ -344,6 +304,33 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
+    <script>   
+    // Script for advantages slider
+    $(document).ready(function(){
+        $('.advantages_section').slick({
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+    </script>
 	<script> 
             // Scroll to the form after pressing the request button
         function scrollToForm()

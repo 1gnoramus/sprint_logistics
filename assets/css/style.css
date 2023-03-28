@@ -294,7 +294,7 @@ body{
         margin: 0 auto 50px;
         text-align: center;
 
-        font-size: 60px;
+        font-size: 30px;
         color: #091747;
     }
 
@@ -314,9 +314,6 @@ body{
         justify-content: space-between;
         align-items: center;
         width: 1100px;
-    }
-
-    .about_img{
     }
 
     .about_text{
@@ -982,3 +979,43 @@ body{
 .spec_container_item:hover{
     opacity: 1;
 }
+
+/* ADVANTAGES LCL SECTION */
+
+.advantages_section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 100px; /* Align child elements to center */
+
+}
+
+.advantages_container{
+    display: inline-block;
+    margin-right: 50px; /* Center slider item container */
+    text-align: center;
+    vertical-align: top;
+    height: 300px;
+
+}
+
+.advantages_img{
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.slick-track {
+    display: flex;
+  }
+  .slick-track .slick-slide {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
