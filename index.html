@@ -19,6 +19,7 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/92703250" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <script src="assets/js/main.js"></script>
     <!-- CSS File -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?{% now %}">
 
@@ -72,57 +73,62 @@
                     var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
                     })(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_1.js');
                     </script>
-                <button id = 'button' class ='call_button'>Заказать звонок</button>
-                <button class="request_button" onclick="scrollToForm()">Онлайн заявка</button>
+                <button id = 'button' class ='call_button' data-lang='call_button'>Заказать звонок</button>
+                <button class="request_button" onclick="scrollToForm()" data-lang='request_button'>Онлайн заявка</button>
             </div>
         <!-- HEADER: Navigation bar -->
         <div class="head_menu">
             <nav class="nav">
                 <button class="nav_button">
-                    <a  class='nav_link' href="./index.html">
+                    <a  class='nav_link' data-lang="nav_home" href="./index.html">
                         Главная
                     </a>
                 </button>
                 <button class="nav_button">
-                    <a class='nav_link' href="./index.html">
+                    <a class='nav_link' data-lang="nav_about" href="./index.html">
                         О компании
                     </a>
                 </button >
                 <div class="dropdown">
-                    <button class="nav_button">
+                    <button class="nav_button" data-lang="nav_services">
                             Услуги
                     </button>
                     <div class="dropdown-content">
-                        <a class='nav_link' href="./services_lcl.html">
+                        <a class='nav_link' data-lang="nav_services_lcl" href="./services_lcl.html">
                             АВТО / ЖД - Консолидации из Китая (LCL)
                         </a>
-                        <a class='nav_link' href="./services_avia.html">
+                        <a class='nav_link' data-lang="nav_services_avia" href="./services_avia.html">
                             Авиа доставка  из Китая в Казахстан
                         </a>
-                        <a class='nav_link' href="./services_ftl.html">
+                        <a class='nav_link' data-lang="nav_services_ftl" href="./services_ftl.html">
                             Полные фуры из Китая  (FTL)
                         </a>
-                        <a class='nav_link' href="./services_eur.html">
+                        <a class='nav_link' data-lang="nav_services_eur" href="./services_eur.html">
                             Полные фуры и консолидация из Европы 
                         </a>
-                        <a class='nav_link' href="./services_railways.html">
+                        <a class='nav_link' data-lang="nav_services_railways" href="./services_railways.html">
                             ЖД перевозки по Казахстану и Средней Азии
                         </a>
-                        <a class='nav_link' href="./services_special.html">
+                        <a class='nav_link' data-lang="nav_services_special" href="./services_special.html">
                             Доставка негабаритных грузов по территории Казахстана
                         </a>
                       </div>
                 </div>
-                <button class="nav_button">
+                <button class="nav_button" data-lang="nav_geography">
                     <a class='nav_link' href="./geography.html">
                         География перевозок
                     </a>
                 </button>
-                <button class="nav_button">
+                <button class="nav_button" data-lang="nav_contacts">
                     <a class='nav_link' href="./index.html">
                         Контакты
                     </a>
                 </button >
+                <button onclick="changeLanguage('en')">EN</button>
+                <span id="language-code">EN</span>
+
+                <button onclick="changeLanguage('ru')">RU</button>
+                <span id="language-code">RU</span>
             </nav>
 
         </div>
@@ -132,11 +138,12 @@
     background-size: cover;">
         <div class="container">
             <div class="intro_inner">
-                <h1 class="intro_title">SPRINT LOGISTICS: Ваш бизнес - Наша логистика</h1>
+                <h1 class="intro_title" data-lang="index_intro_title">SPRINT LOGISTICS: Ваш бизнес - Наша логистика</h1>
                 
-                <h2 class="intro_subtitle">«Sprint Logistics» - современная логистическая компания специализирующаяся на предоставлении услуг экспедирования грузов из Китая, Турции, России и стран Европы разными видами транспорта. 
+                <h2 class="intro_subtitle" data-lang="index_intro_subtitle_1">«Sprint Logistics» - современная логистическая компания специализирующаяся на предоставлении услуг экспедирования грузов из Китая, Турции, России и стран Европы разными видами транспорта. 
                     <br>
-                    <br>Команда специалистов «Sprint Logistics» предлагает оптимальные и быстрые способы доставки различных грузов по наиболее выгодным тарифам.</h2>
+                <h2 class="intro_subtitle" data-lang="index_intro_subtitle_2">Команда специалистов «Sprint Logistics» предлагает оптимальные и быстрые способы доставки различных грузов по наиболее выгодным тарифам 
+
             </div>
         </div>
     </div>
@@ -486,65 +493,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <!-- Swiper script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-		<script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
-
-	<script> 
-        // Scroll to the form after pressing the request button
-        function scrollToForm() {
-			    document.getElementById("form_container").scrollIntoView({block: "center", behavior: "smooth"});
-		    }
-
-        // Grid Popup is active
-        function showPopup(itemIndex){
-            //Show Grid Popup
-            var services_item_popup = document.getElementById('services_item_popup');
-            services_item_popup.classList.toggle('active');
-            // Disable page scrolling
-            document.body.classList.add("no-scroll");
-            // Adding blur bacground
-            const overlay = document.getElementById("overlay");
-            overlay.classList.add("blur");
-
-
-            // Options for grid with info for the Grid Popup
-            if (itemIndex == 0) {
-                services_item_popup.innerHTML = "<h2>Полные фуры из Европы, России, Турции и Китая</h2><p>Sprint Logistics поможет Вам забрать Ваш груз из любой точки Европы, России, Турции, Китая и доставить на полной фуре в Казахстан по самой низкой цене и в кратчайшие сроки!</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button><a href=\"./services_ftl.html\" style=\"color: inherit; text-decoration: none;\">Читать подробнее</a></div>"
-            }   
-            else if (itemIndex == 1) {
-                    services_item_popup.innerHTML = "<h2>ЖД перевозки из Европы</h2><p>Sprint Logistics предоставляет универсальный парк вагонов для импорта, экспорта, а также перевозок внутри Казахстана</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button><a href=\"./services_railways.html\" style=\"color: inherit; text-decoration: none;\">Читать подробнее</a></div>";
-                } else if (itemIndex == 2) {
-                   services_item_popup.innerHTML = "<h2>Контейнерные перевозки из Китая</h2><p>Sprint Logistics поможет Вам забрать Ваш груз из любой точки Китая и доставить на Авто или ЖД в Казахстан по самой низкой цене и в кратчайшие сроки</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
-                } else if (itemIndex == 3) {
-                   services_item_popup.innerHTML = "<h2>Доставка негабаритных грузов о Казахстану</h2><p>Lorem ipsum dolor sit amet.</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button><a href=\"./services_special.html\" style=\"color: inherit; text-decoration: none;\">Читать подробнее</a></div>";
-                } else if (itemIndex == 4) {
-                   services_item_popup.innerHTML = "<h2>Доставка опасных грузов</h2><p>Специалисты компании Sprint Logistics имеют опыт в перевозке опасных грузов и помогут Вам организовать безопасную доставку до места назначения</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
-                } else if (itemIndex == 5) {
-                   services_item_popup.innerHTML = "<h2>Груза требующие температурного режима</h2><p>Sprint Logistics поможет организовать доставку грузов, которые необходимо перевозить с соблюдением особого температурного режима</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
-                } else if (itemIndex == 6) {
-                   services_item_popup.innerHTML = "<h2>Мультимодальные перевозки</h2><p>Команда Sprint Logistics поможет Вам с перевозкой грузов разными видами транспорта АВТО, Ж/Д, АВИА, Морем по всему миру в Казахстан</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
-                } else if (itemIndex == 7) {
-                   services_item_popup.innerHTML = "<h2>Погрузочно-разгрузочные работы</h2><p>По запросу клиента, Sprint Logistics может предоставить погрузочную технику и грузчиков для работ ПРР груза по месту отправления либо назначения</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
-                } else if (itemIndex == 8) {
-                   services_item_popup.innerHTML = "<h2>Проектная перевозка</h2><p>Sprint Logistics поможет организовать доставку грузов с привлечением большого количества транспортных средств под большой объём и контракт</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
-                } else if (itemIndex == 9) {
-                   services_item_popup.innerHTML = "<h2>Охранное сопровождение груза</h2><p>Sprint Logistics может предоставить военизировонную охрану для перевозки Ваших специфичных товаров</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
-                } else if (itemIndex == 10) {
-                   services_item_popup.innerHTML = "<h2>Страхование груза</h2><p>Sprint Logistics предоставляет услуги по страхованию груза по всему маршруту перевозки</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
-                } else if (itemIndex == 11) {
-                   services_item_popup.innerHTML = "<h2>Брокерские услуги</h2><p>Sprint Logistics Предоставляет брокерских услуг вместе с грузоперевозкой в режиме \"одного окна\", по единому договору</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
-                } 
-            }
-            // Grid Popup is unactive
-        function closePopup(){
-            // Remove blur background
-            overlay.classList.remove("blur")
-            // Able page scrolling
-            document.body.classList.remove("no-scroll");
-            // Hide Grid Popup
-            var services_item_popup = document.getElementById('services_item_popup');
-            services_item_popup.classList.toggle('active');
-        }
-	</script>
+	<script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

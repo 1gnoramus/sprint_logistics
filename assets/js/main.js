@@ -1,162 +1,136 @@
-    function take_value(){
-        // ФУНКЦИЯ ДЛЯ ПОЛУЧЕНИЯ ИНПУТА С ЗАПРОСА ЗВОНКА
-        var username = document.getElementById('username').value;
-        var phone = document.getElementById('phone').value;
-        document.write(username);
-        document.write(phone);
-    }
 
-    // // ОТПРАВИТЬ ЗАПРОС И ЗАКРЫТЬ ФОРМУ ПРИКОЛ
-    // document.getElementById('send_request_button').addEventListener('click', 
-    // function(){
-    // document.querySelector('.bg-modal').style.display='none'});
+        // Scroll to the form after pressing the request button
+        function scrollToForm() {
+			    document.getElementById("form_container").scrollIntoView({block: "center", behavior: "smooth"})
+		    }
 
-    // // ОТКРЫТЬ ФОРМУ ЗАПРОСА ЗВОНКА
-    // document.getElementById('button').addEventListener('click', 
-    // function(){
-    //     document.querySelector('.bg-modal').style.display='flex';
-    // });
-
-    // // ОТКРЫТЬ ФОРМУ ЗАПРОСА ЗВОНКА ПРИКОЛ
-    // document.getElementById('button2').addEventListener('click', 
-    // function(){
-    //     scrollToTop();
-    //     document.querySelector('.bg-modal').style.display='flex';
-    // });
-
-    // ПРОКРУТИТЬ СТРАНИЦУ НАВЕРХ
-    function scrollToTop() {
-        var position =
-            document.body.scrollTop || document.documentElement.scrollTop;
-        if (position) {
-            window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
-            scrollAnimation = setTimeout("scrollToTop()", 10);
-        } else clearTimeout(scrollAnimation);
-    }
-
-    // ЗАКРЫТЬ ФОРМУ ЗАПРОСА ЗВОНКА
-    document.getElementById('close').addEventListener('click', 
-    function(){
-        document.querySelector('.bg-modal').style.display='none'
-    });
-
-    // ОТПРАВИТЬ ЗАПРОС НА ЗАЯВКУ
-    function onclicked(){
-        swal("Ваш запрос отправлен в обработку! В ближайшее время мы с Вами свяжемся!");
-    }
-
-    // СВАЙПЕР ДОСТИЖЕНИЙ НА ИНДЕКСНОЙ СТРАНИЦЕ
-    const swiper = new Swiper('.swiper', { 
-        loop: true,
-        pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-        }, 
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-        },
-    }
-);
+        // Grid Popup is active
+        function showPopup(itemIndex){
+            //Show Grid Popup
+            var services_item_popup = document.getElementById('services_item_popup');
+            services_item_popup.classList.toggle('active');
+            // Disable page scrolling
+            document.body.classList.add("no-scroll");
+            // Adding blur bacground
+            const overlay = document.getElementById("overlay");
+            overlay.classList.add("blur");
 
 
-    function form_send() {
-        var orderDetail = document.getElementById("form_orderDetail").value;
-        
-        var email = document.getElementById('form_email').value;
-        
-        var phone = document.getElementById('form_phone').value;
-
-        var data = orderDetail+email+phone;
-        const fs = require('fs');
-
-
-        writeFile('./../data/data.json', {"hello": "world"}, err => {
-            if (err) {
-                console.log('Error writing file', err)
-            } else {
-                console.log('Successfully wrote file')
+            // Options for grid with info for the Grid Popup
+            if (itemIndex == 0) {
+                services_item_popup.innerHTML = "<h2>Полные фуры из Европы, России, Турции и Китая</h2><p>Sprint Logistics поможет Вам забрать Ваш груз из любой точки Европы, России, Турции, Китая и доставить на полной фуре в Казахстан по самой низкой цене и в кратчайшие сроки!</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button><a href=\"./services_ftl.html\" style=\"color: inherit; text-decoration: none;\">Читать подробнее</a></div>"
+            }   
+            else if (itemIndex == 1) {
+                    services_item_popup.innerHTML = "<h2>ЖД перевозки из Европы</h2><p>Sprint Logistics предоставляет универсальный парк вагонов для импорта, экспорта, а также перевозок внутри Казахстана</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button><a href=\"./services_railways.html\" style=\"color: inherit; text-decoration: none;\">Читать подробнее</a></div>";
+                } else if (itemIndex == 2) {
+                   services_item_popup.innerHTML = "<h2>Контейнерные перевозки из Китая</h2><p>Sprint Logistics поможет Вам забрать Ваш груз из любой точки Китая и доставить на Авто или ЖД в Казахстан по самой низкой цене и в кратчайшие сроки</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
+                } else if (itemIndex == 3) {
+                   services_item_popup.innerHTML = "<h2>Доставка негабаритных грузов о Казахстану</h2><p>Lorem ipsum dolor sit amet.</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button><a href=\"./services_special.html\" style=\"color: inherit; text-decoration: none;\">Читать подробнее</a></div>";
+                } else if (itemIndex == 4) {
+                   services_item_popup.innerHTML = "<h2>Доставка опасных грузов</h2><p>Специалисты компании Sprint Logistics имеют опыт в перевозке опасных грузов и помогут Вам организовать безопасную доставку до места назначения</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
+                } else if (itemIndex == 5) {
+                   services_item_popup.innerHTML = "<h2>Груза требующие температурного режима</h2><p>Sprint Logistics поможет организовать доставку грузов, которые необходимо перевозить с соблюдением особого температурного режима</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
+                } else if (itemIndex == 6) {
+                   services_item_popup.innerHTML = "<h2>Мультимодальные перевозки</h2><p>Команда Sprint Logistics поможет Вам с перевозкой грузов разными видами транспорта АВТО, Ж/Д, АВИА, Морем по всему миру в Казахстан</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
+                } else if (itemIndex == 7) {
+                   services_item_popup.innerHTML = "<h2>Погрузочно-разгрузочные работы</h2><p>По запросу клиента, Sprint Logistics может предоставить погрузочную технику и грузчиков для работ ПРР груза по месту отправления либо назначения</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
+                } else if (itemIndex == 8) {
+                   services_item_popup.innerHTML = "<h2>Проектная перевозка</h2><p>Sprint Logistics поможет организовать доставку грузов с привлечением большого количества транспортных средств под большой объём и контракт</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
+                } else if (itemIndex == 9) {
+                   services_item_popup.innerHTML = "<h2>Охранное сопровождение груза</h2><p>Sprint Logistics может предоставить военизировонную охрану для перевозки Ваших специфичных товаров</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
+                } else if (itemIndex == 10) {
+                   services_item_popup.innerHTML = "<h2>Страхование груза</h2><p>Sprint Logistics предоставляет услуги по страхованию груза по всему маршруту перевозки</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
+                } else if (itemIndex == 11) {
+                   services_item_popup.innerHTML = "<h2>Брокерские услуги</h2><p>Sprint Logistics Предоставляет брокерских услуг вместе с грузоперевозкой в режиме \"одного окна\", по единому договору</p><div class=\"grid_button_row\"><button class='grid_close_button'onclick=\"closePopup()\"> Закрыть</button></div>";
+                } 
             }
-        })
-        console.log('12345')
-        
-        alert(data);
-    }
-
-    
-
-    // TELEGRAM BOT
-//   const sda = 'asd'
-//   import TelegramApi from 'node-telegram-bot-api';
-//   const token ='6164426542:AAGyvlXrWyc9sg3duzx_MSTsqzjgmBZD2Cs';
-//   const bot = new TelegramApi(token,{polling: true})
-  
-  
-//   bot.on("message", async msg=> {
-//       const text = msg.text;
-//       const chatId = msg.chat.id;
-//       if(text==='/start'){
-//           await bot.sendMessage(chatId, 'Hello there!')
-//       }
-//       if(text==='/info'){
-//           await bot.sendMessage(chatId, "Name: ")
-//       }
-//   })
-  
-
-
-// http.send();
-// http.onload = function(){
-//     if (this.readyState ==4 && this.status==200){
-//         let data = JSON.parse(this.responseText);
-//     }
-// }
-
-//     xhr.open("PUT", "data/data.json", true);
-//     xhr.setRequestHeader("Content-Type", "application/json");
-//     xhr.send(JSON.stringify(data));
-let dataBase=[]
-        const addData=(ev)=>{
-            // Записываем данные в local storage
-            ev.preventDefault();
-            let data = {
-                username: document.getElementById('modal_username').value,
-                phone: document.getElementById('modal_phone').value
-            }
-            dataBase.push(data);
-            document.forms[0].reset();
-            localStorage.setItem('Users', JSON.stringify(dataBase));
-            // Превращаем данные в JS объекты
-            console.log(JSON.parse(window.localStorage.getItem('Users')));
-            const data_j = JSON.parse(window.localStorage.getItem('Users'));
+            // Grid Popup is unactive
+        function closePopup(){
+            // Remove blur background
+            overlay.classList.remove("blur")
+            // Able page scrolling
+            document.body.classList.remove("no-scroll");
+            // Hide Grid Popup
+            var services_item_popup = document.getElementById('services_item_popup');
+            services_item_popup.classList.toggle('active');
         }
-        const form = document.getElementById("form");
-        form.addEventListener("submit", addData);
+        // CHANGE LANGUAGE
+        function changeLanguage(lang) {
+            var elements = document.querySelectorAll('[data-lang]');
+            for (var i = 0; i < elements.length; i++) {
+                var key = elements[i].getAttribute('data-lang');
+                if (lang === 'en') {
+                elements[i].textContent = langData[key].en;
+                } else {
+                elements[i].textContent = langData[key].ru;
+                }
+            }
+            document.getElementById('language-code').textContent = lang.toUpperCase();
+            }
 
-      
-// chrome.runtime.onConnect.addListener(port => {
-//     port.onMessage.addListener(msg => {
-//       // Handle message however you want
-//     });
-//   });
-  
-//   chrome.runtime.onMessage.addListener((request, sender, sendResponse) => sendResponse('pong'));
-// var _port;
-
-
-// function testConnect() {
-//   _port.postMessage({
-//     msg: 'hello from popup'
-//   });
-// }
-
-// chrome.runtime.onConnect.addListener(function (port) {
-//   console.log('connected to: ', port.name);
-//   _port = port;
-
-//   _port.onMessage.addListener(processMessages);
-//   p_portrt.postMessage({
-//     msg: 'hello from popup'
-//   });
-// });
-
+            var langData = {
+            'call_button': {
+                'en': 'Call us',
+                'ru': 'Заказать звонок'
+            },
+            'request_button': {
+                'en': 'Online request',
+                'ru': 'Онлайн заявка'
+            },
+            'nav_home': {
+                'en': 'Home',
+                'ru': 'Главная'
+            },
+            'nav_about': {
+                'en': 'About us',
+                'ru': 'О компании'
+            },
+            'nav_services': {
+                'en': 'Services',
+                'ru': 'Услуги'
+            },
+            'nav_services_lcl': {
+                'en': 'LCL consolidation from China',
+                'ru': 'АВТО / ЖД - Консолидации из Китая (LCL)'
+            },
+            'nav_services_avia': {
+                'en': 'Air delivery from China to Kazakhstan',
+                'ru': 'Авиа доставка  из Китая в Казахстан'
+            },
+            'nav_services_ftl': {
+                'en': 'FTL from China',
+                'ru': 'Полные фуры из Китая  (FTL)'
+            },
+            'nav_services_eur': {
+                'en': 'FTL and consolidation from Europe',
+                'ru': 'Полные фуры и консолидация из Европы'
+            },
+            'nav_services_railways': {
+                'en': 'Railway transportation in Kazakhstan and Central Asia',
+                'ru': 'ЖД перевозки по Казахстану и Средней Азии'
+            },
+            'nav_services_special': {
+                'en': 'Delivery of oversized cargo within Kazakhstan',
+                'ru': 'Доставка негабаритных грузов по территории Казахстана'
+            },
+            'nav_geography': {
+                'en': 'Transportation geography',
+                'ru': 'География перевозок'
+            },
+            'nav_contacts': {
+                'en': 'Contacts',
+                'ru': 'Контакты'
+            },
+            'index_intro_title':{
+                'ru': 'SPRINT LOGISTICS: Ваш бизнес - Наша логистика',               
+                'en': 'SPRINT LOGISTICS: Your business - Our logistics'
+            },
+            'index_intro_subtitle_1':{
+                'en': "\“Sprint Logistics\” is a modern logistics company specializing in providing freight forwarding services from China, Turkey, Russia and European countries by various means of transportation.",
+                'ru': "\«Sprint Logistics\» - современная логистическая компания специализирующаяся на предоставлении услуг экспедирования грузов из Китая, Турции, России и стран Европы разными видами транспорта."
+            },
+            'index_intro_subtitle_2':{
+                'en': "The team of specialists at \“Sprint Logistics\” offers optimal and fast ways of delivering various cargoes at the most favorable rates.",
+                'ru': "Команда специалистов \«Sprint Logistics\» предлагает оптимальные и быстрые способы доставки различных грузов по наиболее выгодным тарифам."
+            }
+        };
