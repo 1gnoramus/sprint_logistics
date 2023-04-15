@@ -55,6 +55,31 @@
             services_item_popup.classList.toggle('active');
         }
         // CHANGE LANGUAGE
+        function switchLanguage(lang) {
+            // Get the necessary elements
+const currentLang = document.querySelector('.current_lang');
+const selectedLang = document.querySelector('.selected_lang');
+
+// Add an event listener to each language link
+const langLinks = document.querySelectorAll('.lang_menu ul li a');
+langLinks.forEach(function(link) {
+   link.addEventListener('click', function(e) {
+      e.preventDefault(); // prevent the link from reloading the page
+
+      // Change the current language text
+      currentLang.textContent = link.textContent;
+
+      // Change the current language background image
+      selectedLang.classList.remove('rus', 'eng'); // remove all previous classes
+      if (link.classList.contains('rus')) {
+         selectedLang.classList.add('rus');
+      } else if (link.classList.contains('eng')) {
+         selectedLang.classList.add('eng');
+      }
+   });
+});
+          }
+
         function changeLanguage(lang) {
             var elements = document.querySelectorAll('[data-lang]');
             for (var i = 0; i < elements.length; i++) {
@@ -69,6 +94,7 @@
             }
 
             var langData = {
+            // INDEX PAGE + GENERAL
             'call_button': {
                 'en': 'Call us',
                 'ru': 'Заказать звонок'
@@ -132,5 +158,227 @@
             'index_intro_subtitle_2':{
                 'en': "The team of specialists at \“Sprint Logistics\” offers optimal and fast ways of delivering various cargoes at the most favorable rates.",
                 'ru': "Команда специалистов \«Sprint Logistics\» предлагает оптимальные и быстрые способы доставки различных грузов по наиболее выгодным тарифам."
-            }
+            },
+            'index_about_title':{
+                'en': "About us",
+                'ru': "О компании"
+            },
+            'index_about_piece1_title':{
+                'en': "WHO ARE WE?",
+                'ru': "КТО МЫ?"
+            },
+            'index_about_piece1_subtitle':{
+                'ru': "Мы прогрессивная и опытная команда профессионалов в сфере логистики, специализирующаяся на доставке коммерческих грузов и из Китая, России, стран Западной и Восточной Европы в Казахстан и Центральную Азию",
+                'en': "We are a progressive and experienced team of logistics professionals specializing in the delivery of commercial goods from China, Russia, Western and Eastern Europe to Kazakhstan and Central Asia."
+            },
+            'index_about_piece2_title':{
+                'en': "HOW DO WE WORK?",
+                'ru': "КАК МЫ РАБОТАЕМ?"
+            },
+            'index_about_piece2_subtitle':{
+                'en': "Thanks to our vast experience in the domestic B2B cargo transportation market, we are ready to provide your company with first-class service and an individual approach in solving your everyday, as well as global logistics tasks.",
+                'ru': "Благодаря нашему огромному опыту работы на отечественном B2B рынке грузоперевозок, мы готовы предоставить вашей компании первоклассный сервис и индивидуальный подход в решении ваших будничных, а также глобальных логистических задач."
+            },
+            'index_about_piece3_title':{
+                'en': "WHAT DO WE OFFER YOU?",
+                'ru': "ЧТО МЫ ПРЕДЛАГАЕМ?"
+            },
+            'index_about_piece3_subtitle':{
+                'en': "SPRINT LOGISTICS will help you pick up your cargo from anywhere in China, Russia, Turkey, Europe and deliver it to Kazakhstan at the lowest price and in the shortest possible time!",
+                'ru': "SPRINT LOGISTICS поможет Вам забрать Ваш груз из любой точки Китая, России, Турции, Европа и доставить в Казахстан по самой низкой цене и в кратчайшие сроки!"
+            },
+            'index_services_title':{
+                'en': "Our services",
+                'ru': "Наши услуги"
+            },
+            'index_advantages_title':{
+                'en': "Advantages of transportation with Sprint Logistics",
+                'ru': "Преимущества перевозок со Sprint Logistics"
+            },
+            'index_advantages_piece1':{
+                'en': "Competitive prices",
+                'ru': "Конкурентоспособные цены"
+            },
+            'index_advantages_piece2':{
+                'en': "Personal Manager",
+                'ru': "Персональный менеджер"
+            },
+            'index_advantages_piece3':{
+                'en': "Logistics experts",
+                'ru': "Эксперты в области логистики"
+            },
+            'index_advantages_piece4':{
+                'en': "Wide geography of transportation",
+                'ru': "Широкая география перевозок"
+            },
+            'index_advantages_piece5':{
+                'en': "Transportation of all types of cargo",
+                'ru': "Транспортировка всех типов грузов"
+            },
+            'index_advantages_piece6':{
+                'en': "Quality service",
+                'ru': "Качественный сервис"
+            },
+            'form_info_title':{
+                'en': "For a quick calculation of the delivery of your cargo, leave your request here",
+                'ru': "Для быстрого просчета доставки Вашего груза оставьте свой запрос здесь"
+            },
+            'form_info_subtitle':{
+                'en': "Leave your contacts below and we will contact you!",
+                'ru': "Оставьте Ваши контакты ниже и мы с Вами свяжемся!"
+            },
+            'footer_sub_logo':{
+                'en': "freight forwarding company",
+                'ru': "транспортно-экспедиторская компания"
+            },
+            'footer_text_1':{
+                'ru': "Казахстан, г. Алматы, ул. Мынбаева, 46",
+                'en': "Kazakhstan, Almaty, Mynbayeva str., 46"
+            },
+            'footer_text_2':{
+                'en': "Opening hours: Mon. – Fri.: from 9:00 to 18:00",
+                'ru': "График работы: Пн. – Пт.: с 9:00 до 18:00"
+            },
+            'footer_text_3':{
+                'en': "Phone: +7 701 581 0999",
+                'ru': "Телефон: +7 701 581 0999"
+            },
+            'footer_text_4':{
+                'en': "E-mail: marketing@splog.com.kz",
+                'ru': "Почта: marketing@splog.com.kz"
+            },
+            'footer_text_5':{
+                'en': "Contact us:",
+                'ru': "Свяжитесь с нами:"
+            },
+            'footer_col2_title':{
+                'en': "About the company",
+                'ru': "О компании"
+            },
+            'footer_col2_piece1':{
+                'en': "About us",
+                'ru': "О нас"
+            },
+            'footer_col2_piece2':{
+                'en': "Our services",
+                'ru': "Наши услуги"
+            },
+            'footer_col2_piece3':{
+                'en': "Advantages of working with us",
+                'ru': "Преимущества работы с нами"
+            },
+            'footer_col2_piece4':{
+                'en': "Our team",
+                'ru': "Наша команда"
+            },
+            'footer_col2_piece5':{
+                'en': "Partner reviews",
+                'ru': "Отзывы партнеров"
+            },
+            'footer_col3_title':{
+                'en': "Services",
+                'ru': "Услуги"
+            },
+            'footer_col3_piece_1':{
+                'en': "Consolidation from China",
+                'ru': "Консолидация из Китая"
+            },
+            'footer_col3_piece_2':{
+                'en': "",
+                'ru': "Авиа доставка в Казахстан"
+            },
+            'footer_col3_piece_3':{
+                'en': "Full trucks from China",
+                'ru': "Полные фуры из Китая"
+            },
+            'footer_col3_piece_4':{
+                'en': "Full trucks and consolidation from Europe",
+                'ru': "Полные фуры и консолидация из Европы"
+            },
+            'footer_col3_piece_5':{
+                'en': "Railway transportation in Central Asia",
+                'ru': "ЖД перевозки по Средней Азии"
+            },
+            'footer_col3_piece_6':{
+                'en': "Delivery of oversized cargo",
+                'ru': "Доставка негабаритных грузов"
+            },
+            // GEOGRAPHY PAGE
+            'geogr_intro_subtitle1':{
+                'en': "SPRINT LOGISTICS carries out cargo transportation in all major popular destinations among Kazakhstani importing companies.",
+                'ru': "\"SPRINT LOGISTICS\" осуществляет перевозки грузов по всем основным популярным направлениям, среди казахстанских компаний импортёров."
+            },
+            'geogr_intro_subtitle2':{
+                'en': "List of countries - European Union countries, Turkey, Russian Federation, Azerbaijan, Iran, Afghanistan, Uzbekistan, Kyrgyzstan, Japan, China",
+                'ru': "Список стран  - страны Европейского Союза, Турция Российская Федерация, Азербайджан, Иран, Афганистан, Узбекистан, Кыргызстан, Япония, Китай"
+            },
+            'geogr_intro_title':{
+                'en': "GEOGRAPHY OF TRANSPORTATION",
+                'ru': "ГЕОГРАФИЯ ПЕРЕВОЗОК"
+            },
+            'geogr_about_title1':{
+                'en': "EUROPEAN UNION COUNTRIES",
+                'ru': "СТРАНЫ ЕВРОПЕЙСКОГО СОЮЗА"
+            },
+            'geogr_about_subtitle1':{
+                'en': "Having many years of experience in international transportation, the company's specialists will help you deliver cargo from the countries of the European Union quickly, safely and at optimal rates",
+                'ru': "Имея многолетний опыт работы в международных перевозках, специалисты компании помогут Вам доставить груз из стран Европейского союза быстро, безопасно и по оптимальным тарифам"
+            },
+            'geogr_about_title2':{
+                'en': "CHINA",
+                'ru': "КИТАЙ"
+            },
+            'geogr_about_subtitle2':{
+                'en': "The Sprint Logistics team will help you deliver various cargoes from China to Kazakhstan by all means of transport, including auto, railway and air",
+                'ru': "Команда Sprint Logistics поможет Вам доставить различные грузы из Китая в Казахстан всеми видами транспорта, включая авто, ЖД и авиа"
+            },
+            'geogr_about_title3':{
+                'en': "TURKEY",
+                'ru': "ТУРЦИЯ"
+            },
+            'geogr_about_subtitle3':{
+                'en': "Exporting goods from Turkey is becoming a more profitable option for local distributors every year, so Spriny Logistics will be happy to help you organize transportation from this country",
+                'ru': "Экспорт товаров из Турции с каждым годом становится более выгодным вариантом для местных дистрибьюторов, поэтому компания Spriny Logistics будет рада помочь Вам в организации перевозок из этой страны"
+            },
+            'geogr_about_title4':{
+                'en': "KAZAKHSTAN AND CENTRAL ASIA",
+                'ru': "КАЗАХСТАН И СРЕДНЯЯ АЗИЯ"
+            },
+            'geogr_about_subtitle4':{
+                'en': "Sprint Logistics company offers you a universal fleet of wagons for loading on the territory of Kazakhstan and the countries of Central Asia",
+                'ru': "Компания Sprint Logistics предлагает Вам универсальный парк вагонов под погрузку по территории Казахстана и странам Средней Азии"
+            },
+            '':{
+                'en': "",
+                'ru': ""
+            },
+            '':{
+                'en': "",
+                'ru': ""
+            },
+            '':{
+                'en': "",
+                'ru': ""
+            },
+            '':{
+                'en': "",
+                'ru': ""
+            },
+            '':{
+                'en': "",
+                'ru': ""
+            },
+            '':{
+                'en': "",
+                'ru': ""
+            },
+            '':{
+                'en': "",
+                'ru': ""
+            },
+            '':{
+                'en': "",
+                'ru': ""
+            },
+
         };

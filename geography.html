@@ -19,7 +19,8 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/92703250" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-	
+    <script src="assets/js/main.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Adaptive design -->
@@ -70,63 +71,74 @@
                     var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
                     })(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_1.js');
                     </script>
-                <button id = 'button' class ='call_button'>Заказать звонок</button>
+                <button id = 'button' class ='call_button' data-lang='call_button'>Заказать звонок</button>
+                <button class="request_button" onclick="scrollToForm()" data-lang='request_button'>Онлайн заявка</button>
             
-
-            <button class="request_button" onclick="scrollToForm()">Онлайн заявка
-
-            </button>
-        </div>
+                <div class="lang_menu">
+                    <div class="selected_lang">
+                        <div class="current_lang">Русский</div>
+                    </div>
+                    <ul>
+                        <li><a class="rus" onclick="switchLanguage('ru'); changeLanguage('ru')">Русский</a></li>
+                        <li><a class="eng" onclick="switchLanguage('en'); changeLanguage('en')">English</a></li>
+                    </ul>
+                </div>
+            </div>
         <!-- HEADER: Navigation bar -->
         <div class="head_menu">
             <nav class="nav">
                 <button class="nav_button">
-                    <a  class='nav_link' href="./index.html">
+                    <a  class='nav_link' data-lang="nav_home" href="./index.html">
                         Главная
                     </a>
                 </button>
                 <button class="nav_button">
-                    <a class='nav_link' href="./index.html">
+                    <a class='nav_link' data-lang="nav_about" href="./index.html">
                         О компании
                     </a>
                 </button >
                 <div class="dropdown">
-                    <button class="nav_button">
+                    <button class="nav_button" data-lang="nav_services">
                             Услуги
                     </button>
                     <div class="dropdown-content">
-                        <a class='nav_link' href="./services_lcl.html">
+                        <a class='nav_link' data-lang="nav_services_lcl" href="./services_lcl.html">
                             АВТО / ЖД - Консолидации из Китая (LCL)
                         </a>
-                        <a class='nav_link' href="./services_avia.html">
+                        <a class='nav_link' data-lang="nav_services_avia" href="./services_avia.html">
                             Авиа доставка  из Китая в Казахстан
                         </a>
-                        <a class='nav_link' href="./services_ftl.html">
+                        <a class='nav_link' data-lang="nav_services_ftl" href="./services_ftl.html">
                             Полные фуры из Китая  (FTL)
                         </a>
-                        <a class='nav_link' href="./services_eur.html">
+                        <a class='nav_link' data-lang="nav_services_eur" href="./services_eur.html">
                             Полные фуры и консолидация из Европы 
                         </a>
-                        <a class='nav_link' href="./services_railways.html">
+                        <a class='nav_link' data-lang="nav_services_railways" href="./services_railways.html">
                             ЖД перевозки по Казахстану и Средней Азии
                         </a>
-                        <a class='nav_link' href="./services_special.html">
+                        <a class='nav_link' data-lang="nav_services_special" href="./services_special.html">
                             Доставка негабаритных грузов по территории Казахстана
                         </a>
                       </div>
                 </div>
-                <button class="nav_button">
+                <button class="nav_button" data-lang="nav_geography">
                     <a class='nav_link' href="./geography.html">
                         География перевозок
                     </a>
                 </button>
-                <button class="nav_button">
+                <button class="nav_button" data-lang="nav_contacts">
                     <a class='nav_link' href="./index.html">
                         Контакты
                     </a>
                 </button >
-            </nav>
+                <!-- <button onclick="changeLanguage('en')">EN</button>
+                <span id="language-code">EN</span>
 
+                <button onclick="changeLanguage('ru')">RU</button>
+                <span id="language-code">RU</span> -->
+            </nav>
+            
         </div>
 </header>
     <!-- INTRO -->
@@ -134,24 +146,24 @@
     background-size: cover;">
         <div class="container">
             <div class="intro_inner">
-                <h1 class="intro_title">ГЕОГРАФИЯ ПЕРЕВОЗОК
-                </h1>
+                <h1 class="intro_title" data-lang="geogr_intro_title">ГЕОГРАФИЯ ПЕРЕВОЗОК</h1>
+                <h2 class="intro_subtitle" data-lang="geogr_intro_subtitle1">
+                        "SPRINT LOGISTICS" осуществляет перевозки грузов по всем основным популярным направлениям, среди казахстанских компаний импортёров.
                 
-                <h2 class="intro_subtitle">
-                    <br>"SPRINT LOGISTICS" осуществляет перевозки грузов по всем основным популярным направлениям, среди казахстанских компаний импортёров.
-					<br>
-					<br> Список стран  - страны Европейского Союза, Турция Российская Федерация, Азербайджан, Иран, Афганистан, Узбекистан, Кыргызстан, Япония, Китай
-				</h2>
+                <br>
+				<h2 class="intro_subtitle" data-lang="geogr_intro_subtitle2">
+                        Список стран  - страны Европейского Союза, Турция Российская Федерация, Азербайджан, Иран, Афганистан, Узбекистан, Кыргызстан, Япония, Китай                    
             </div>
         </div>
     </div>
+    <!-- ABOUT SECTION -->
     <section class="section">
         <div class="container" style=" display: flex; flex-direction: column; background: url(assets/images/geography/geogr_about_bg.png) center no-repeat; background-size: 60%;"> 
                     <div class="geogr_about_container">
                         <div class="info_block-right" style="background-image: url('assets/images/geography/geogr_about_eur2_bg.png');">
                             <div class="info_content">
-                                <h1>СТРАНЫ ЕВРОПЕЙСКОГО СОЮЗА</h1>
-                                <p>Имея многолетний опыт работы в международных перевозках, специалисты компании помогут Вам доставить груз из стран Европейского союза быстро, безопасно и по оптимальным тарифам</p>
+                                <h1 data-lang="geogr_about_title1">СТРАНЫ ЕВРОПЕЙСКОГО СОЮЗА</h1>
+                                <p data-lang="geogr_about_subtitle1">Имея многолетний опыт работы в международных перевозках, специалисты компании помогут Вам доставить груз из стран Европейского союза быстро, безопасно и по оптимальным тарифам</p>
                                 <div class="icon_row">
                                     <img class="geogr_about_icon" src="assets/images/geography/truck.png" alt="">
                                     <img class="geogr_about_icon" src="assets/images/geography/plane.png" style="height: 40px;" alt="">
@@ -171,8 +183,8 @@
                         
                         <div class="info_block-left" style="background-image: url('assets/images/geography/geogr_about_china2_bg.png'); ">
                             <div class="info_content">
-                                <h1>КИТАЙ</h1>
-                                <p>Команда Sprint Logistics поможет Вам доставить различные грузы из Китая в Казахстан всеми видами транспорта, включая авто, ЖД и авиа</p>
+                                <h1 data-lang="geogr_about_title2">КИТАЙ</h1>
+                                <p data-lang="geogr_about_subtitle2">Команда Sprint Logistics поможет Вам доставить различные грузы из Китая в Казахстан всеми видами транспорта, включая авто, ЖД и авиа</p>
                                 <div class="icon_row">
                                     <img class="geogr_about_icon" src="assets/images/geography/truck.png" alt="">
                                     <img class="geogr_about_icon" src="assets/images/geography/plane.png" style="height: 40px;" alt="">
@@ -185,8 +197,8 @@
                     <div class="geogr_about_container" >
                         <div class="info_block-right" style="background-image: url('assets/images/geography/geogr_about_turk2_bg.png'); ">
                             <div class="info_content">
-                                <h1>ТУРЦИЯ</h1>
-                                <p>Экспорт товаров из Турции с каждым годом становится более выгодным вариантом для местных дистрибьюторов, поэтому компания Spriny Logistics будет рада помочь Вам в организации перевозок из этой страны</p>
+                                <h1 data-lang="geogr_about_title3">ТУРЦИЯ</h1>
+                                <p data-lang="geogr_about_subtitle3">Экспорт товаров из Турции с каждым годом становится более выгодным вариантом для местных дистрибьюторов, поэтому компания Spriny Logistics будет рада помочь Вам в организации перевозок из этой страны</p>
                                 <div class="icon_row">
                                     <img class="geogr_about_icon" src="assets/images/geography/truck.png" alt="">
                                     <img class="geogr_about_icon" src="assets/images/geography/plane.png" style="height: 40px;" alt="">
@@ -205,8 +217,8 @@
                         
                         <div class="info_block-left" style="background-image: url('assets/images/geography/geogr_about_asia2_bg.png'); ">
                             <div class="info_content">
-                                <h1>КАЗАХСТАН И СРЕДНЯЯ АЗИЯ</h1>
-                                <p>Компания Sprint Logistics предлагает Вам универсальный парк вагонов под погрузку по территории Казахстана и странам Средней Азии</p>
+                                <h1 data-lang="geogr_about_title4">КАЗАХСТАН И СРЕДНЯЯ АЗИЯ</h1>
+                                <p data-lang="geogr_about_subtitle4">Компания Sprint Logistics предлагает Вам универсальный парк вагонов под погрузку по территории Казахстана и странам Средней Азии</p>
                                 <div class="icon_row">
                                     <img class="geogr_about_icon" src="assets/images/geography/wagon.png" style="height: 40px;" alt="">
                                 </div>
@@ -261,48 +273,46 @@
                 </script>
             </div>
             <div class="form_info">
-                <div class="form_info_title">
+                <div class="form_info_title" data-lang="form_info_title">
                     Для быстрого просчета доставки Вашего груза оставьте свой запрос здесь
                 </div>
-                <div class="form_info_subtitle">
+                <div class="form_info_subtitle" data-lang="form_info_subtitle">
                     Оставьте Ваши контакты ниже и мы с Вами свяжемся!
                 </div>
             </div>
 
         </div>
     </div>
-    <!-- MAIN WAYS SECTION -->
-    <!-- <div class="section">
-        <div class="container">
-            <div class="section_header">
-                Основные маршруты грузоперевозок
-            </div>
-            <div class="geogr_image">
-                <img src="assets/images/geography/geogr_img.png" width ='70%'alt="">
-            </div>
-        </div>
-    </div> -->
-    <!--FOOTER SECTION  -->
+    <!-- FOOTER SECTION -->
     <footer class="footer">
         <div class="container">
             <div class="footer_inner">
                 <div class="footer_col--first">
-                    <div class="footer_sub_logo">
+					
+                    <div class="footer_sub_logo" data-lang="footer_sub_logo">
                         транспортно-экспедиторская компания
                     </div>
                     <div class="footer_logo">
                         SPRINT LOGISTICS
                     </div>
                     <div class="footer_text">
-                        Казахстан, г. Алматы, ул. Мынбаева, 46
-
-                        <br>График работы: Пн. – Пт.: с 9:00 до 18:00
-
-                        <br>Телефон: +7 701 581 0999
-                        <br>Почта: marketing@splog.com.kz
+                        <h5 data-lang="footer_text_1">
+                            Казахстан, г. Алматы, ул. Мынбаева, 46
+                        </h5>
+                        <h5 data-lang="footer_text_2">
+                            График работы: Пн. – Пт.: с 9:00 до 18:00
+                        </h5>
+                        <h5 data-lang="footer_text_3">
+                            Телефон: +7 701 581 0999
+                        </h5>
+                        <h5 data-lang="footer_text_4">
+                            Почта: marketing@splog.com.kz
+                        </h5>
                         <br>
-                        <br>Свяжитесь с нами:
-                    </div>
+                        <h5 data-lang="footer_text_5">
+                            Свяжитесь с нами:
+                        </h5>    
+                        </div>
                     <div class="footer_social">
                         <div class="footer_social_content">
                             
@@ -317,29 +327,29 @@
                 </div>
                 <div class="footer_col--second">
                     <div class="footer_col_item">
-                        <div class="footer_title">
+                        <div class="footer_title" data-lang="footer_col2_title">
                             О компании
                         </div>
                         <div class="footer_subtitle">
-                            <a href="./index.html" style=" text-decoration: none;">О нас</a>
-                            <a href="./index.html" style=" text-decoration: none;">Наши услуги</a>
-                            <a href="./index.html" style=" text-decoration: none;">Преимущества работы с нами</a>
-                            <a href="./index.html" style=" text-decoration: none;">Наша команда</a>
-                            <a href="./index.html" style=" text-decoration: none;">Отзывы партнеров</a> 
+                            <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece1">О нас</a>
+                            <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece2">Наши услуги</a>
+                            <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece3">Преимущества работы с нами</a>
+                            <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece4">Наша команда</a>
+                            <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece5">Отзывы партнеров</a> 
                         </div>
                     </div>
                     
                     <div class="footer_col_item">
-                        <div class="footer_title">
+                        <div class="footer_title" data-lang="footer_col3_title">
                             Услуги
                         </div>
                         <div class="footer_subtitle">
-                            <a href="./services_lcl.html" style=" text-decoration: none;">Консолидации из Китая</a>
-                            <a href="./services_avia.html"style=" text-decoration: none;">Авиа доставка в Казахстан</a>
-                            <a href="./services_ftl.html" style=" text-decoration: none;">Полные фуры из Китая </a>
-                            <a href="./services_eur.html" style=" text-decoration: none;">Полные фуры и консолидация из Европы</a>
-                            <a href="./services_railways.html" style=" text-decoration: none;">ЖД перевозки по Средней Азии</a>
-                            <a href="./services_special.html" style=" text-decoration: none;">Доставка негабаритных грузов</a>
+                            <a href="./services_lcl.html" style=" text-decoration: none;" data-lang="footer_col3_piece_1">Консолидации из Китая</a>
+                            <a href="./services_avia.html"style=" text-decoration: none;" data-lang="footer_col3_piece_2">Авиа доставка в Казахстан</a>
+                            <a href="./services_ftl.html" style=" text-decoration: none;" data-lang="footer_col3_piece_3">Полные фуры из Китая </a>
+                            <a href="./services_eur.html" style=" text-decoration: none;" data-lang="footer_col3_piece_4">Полные фуры и консолидация из Европы</a>
+                            <a href="./services_railways.html" style=" text-decoration: none;" data-lang="footer_col3_piece_5">ЖД перевозки по Средней Азии</a>
+                            <a href="./services_special.html" style=" text-decoration: none;" data-lang="footer_col3_piece_6">Доставка негабаритных грузов</a>
                         </div>
                     </div>
                 </div>
@@ -352,12 +362,10 @@
                                     var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
                                     })(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_1.js');
                                     </script>
-                                <button id = 'button' class ='call_button'>Заказать звонок</button>
-
+                                <button id = 'button' class ='call_button' data-lang="call_button">Заказать звонок</button>                       
                         </div>
                         <div class="footer_col_but">
-
-                            <button class="request_button" onClick='scrollToForm()'>Онлайн заявка </button>
+                            <button class="request_button" onClick='scrollToForm()' data-lang="request_button">Онлайн заявка </button>
                         </div>
                         
                     </div>

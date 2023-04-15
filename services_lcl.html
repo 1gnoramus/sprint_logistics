@@ -22,7 +22,7 @@
 
     <noscript><div><img src="https://mc.yandex.ru/watch/92703250" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
-        
+    <script src="assets/js/main.js"></script>
     <!-- JQquery library for slider -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -77,63 +77,74 @@
                 var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
                 })(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_1.js');
                 </script>
-            <button id = 'button' class ='call_button'>Заказать звонок</button>
+            <button id = 'button' class ='call_button' data-lang='call_button'>Заказать звонок</button>
+            <button class="request_button" onclick="scrollToForm()" data-lang='request_button'>Онлайн заявка</button>
         
-
-        <button class="request_button" onclick="scrollToForm()">Онлайн заявка
-
-        </button>
-    </div>
+            <div class="lang_menu">
+                <div class="selected_lang">
+                    <div class="current_lang">Русский</div>
+                </div>
+                <ul>
+                    <li><a class="rus" onclick="switchLanguage('ru'); changeLanguage('ru')">Русский</a></li>
+                    <li><a class="eng" onclick="switchLanguage('en'); changeLanguage('en')">English</a></li>
+                </ul>
+            </div>
+        </div>
     <!-- HEADER: Navigation bar -->
     <div class="head_menu">
         <nav class="nav">
             <button class="nav_button">
-                <a  class='nav_link' href="./index.html">
+                <a  class='nav_link' data-lang="nav_home" href="./index.html">
                     Главная
                 </a>
             </button>
             <button class="nav_button">
-                <a class='nav_link' href="./index.html">
+                <a class='nav_link' data-lang="nav_about" href="./index.html">
                     О компании
                 </a>
             </button >
             <div class="dropdown">
-                <button class="nav_button">
+                <button class="nav_button" data-lang="nav_services">
                         Услуги
                 </button>
                 <div class="dropdown-content">
-                    <a class='nav_link' href="./services_lcl.html">
+                    <a class='nav_link' data-lang="nav_services_lcl" href="./services_lcl.html">
                         АВТО / ЖД - Консолидации из Китая (LCL)
                     </a>
-                    <a class='nav_link' href="./services_avia.html">
+                    <a class='nav_link' data-lang="nav_services_avia" href="./services_avia.html">
                         Авиа доставка  из Китая в Казахстан
                     </a>
-                    <a class='nav_link' href="./services_ftl.html">
+                    <a class='nav_link' data-lang="nav_services_ftl" href="./services_ftl.html">
                         Полные фуры из Китая  (FTL)
                     </a>
-                    <a class='nav_link' href="./services_eur.html">
+                    <a class='nav_link' data-lang="nav_services_eur" href="./services_eur.html">
                         Полные фуры и консолидация из Европы 
                     </a>
-                    <a class='nav_link' href="./services_railways.html">
+                    <a class='nav_link' data-lang="nav_services_railways" href="./services_railways.html">
                         ЖД перевозки по Казахстану и Средней Азии
                     </a>
-                    <a class='nav_link' href="./services_special.html">
+                    <a class='nav_link' data-lang="nav_services_special" href="./services_special.html">
                         Доставка негабаритных грузов по территории Казахстана
                     </a>
                   </div>
             </div>
-            <button class="nav_button">
+            <button class="nav_button" data-lang="nav_geography">
                 <a class='nav_link' href="./geography.html">
                     География перевозок
                 </a>
             </button>
-            <button class="nav_button">
+            <button class="nav_button" data-lang="nav_contacts">
                 <a class='nav_link' href="./index.html">
                     Контакты
                 </a>
             </button >
-        </nav>
+            <!-- <button onclick="changeLanguage('en')">EN</button>
+            <span id="language-code">EN</span>
 
+            <button onclick="changeLanguage('ru')">RU</button>
+            <span id="language-code">RU</span> -->
+        </nav>
+        
     </div>
 </header>
 <!-- INTRO -->
@@ -221,89 +232,95 @@
         </div>
     </div>
 <!-- FOOTER SECTION -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer_inner">
-                <div class="footer_col--first">
-                    <div class="footer_sub_logo">
-                        транспортно-экспедиторская компания
-                    </div>
-                    <div class="footer_logo">
-                        SPRINT LOGISTICS
-                    </div>
-                    <div class="footer_text">
+<footer class="footer">
+    <div class="container">
+        <div class="footer_inner">
+            <div class="footer_col--first">
+                
+                <div class="footer_sub_logo" data-lang="footer_sub_logo">
+                    транспортно-экспедиторская компания
+                </div>
+                <div class="footer_logo">
+                    SPRINT LOGISTICS
+                </div>
+                <div class="footer_text">
+                    <h5 data-lang="footer_text_1">
                         Казахстан, г. Алматы, ул. Мынбаева, 46
-
-                        <br>График работы: Пн. – Пт.: с 9:00 до 18:00
-
-                        <br>Телефон: +7 701 581 0999
-                        <br>Почта: marketing@splog.com.kz
-                        <br>
-                        <br>Свяжитесь с нами:
+                    </h5>
+                    <h5 data-lang="footer_text_2">
+                        График работы: Пн. – Пт.: с 9:00 до 18:00
+                    </h5>
+                    <h5 data-lang="footer_text_3">
+                        Телефон: +7 701 581 0999
+                    </h5>
+                    <h5 data-lang="footer_text_4">
+                        Почта: marketing@splog.com.kz
+                    </h5>
+                    <br>
+                    <h5 data-lang="footer_text_5">
+                        Свяжитесь с нами:
+                    </h5>    
                     </div>
-                    <div class="footer_social">
-                        <div class="footer_social_content">
-                            
-                            <a href="https://wa.me/77000882815"><i class="fa-brands fa-whatsapp fa-2x" style="color: rgb(7, 212, 7);" ></i>
-                            </a>
-                            <a href="https://instagram.com/sprint_log?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram fa-2x" style="color: rgb(171, 50, 149);"></i>
-                            </a>
-                            <a href="https://t.me/sprintlog"><i class="fa-brands fa-telegram fa-2x" style="color: rgb(4, 169, 199);"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer_col--second">
-                    <div class="footer_col_item">
-                        <div class="footer_title">
-                            О компании
-                        </div>
-                        <div class="footer_subtitle">
-                            <a href="./index.html" style=" text-decoration: none;">О нас</a>
-                            <a href="./index.html" style=" text-decoration: none;">Наши услуги</a>
-                            <a href="./index.html" style=" text-decoration: none;">Преимущества работы с нами</a>
-                            <a href="./index.html" style=" text-decoration: none;">Наша команда</a>
-                            <a href="./index.html" style=" text-decoration: none;">Отзывы партнеров</a> 
-                        </div>
-                    </div>
-                    
-                    <div class="footer_col_item">
-                        <div class="footer_title">
-                            Услуги
-                        </div>
-                        <div class="footer_subtitle">
-                            <a href="./services_lcl.html" style=" text-decoration: none;">Консолидации из Китая</a>
-                            <a href="./services_avia.html"style=" text-decoration: none;">Авиа доставка в Казахстан</a>
-                            <a href="./services_ftl.html" style=" text-decoration: none;">Полные фуры из Китая </a>
-                            <a href="./services_eur.html" style=" text-decoration: none;">Полные фуры и консолидация из Европы</a>
-                            <a href="./services_railways.html" style=" text-decoration: none;">ЖД перевозки по Средней Азии</a>
-                            <a href="./services_special.html" style=" text-decoration: none;">Доставка негабаритных грузов</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer_col--third">
-                    <div class="footer_col_buttons">
-                        <div class="footer_col_but">
-                                <script data-b24-form="click/1/l16bal" data-skip-moving="true">
-                                    (function(w,d,u){
-                                    var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-                                    var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-                                    })(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_1.js');
-                                    </script>
-                                <button id = 'button' class ='call_button'>Заказать звонок</button>
-
-                        </div>
-                        <div class="footer_col_but">
-
-                            <button class="request_button" onClick='scrollToForm()'>Онлайн заявка </button>
-                        </div>
+                <div class="footer_social">
+                    <div class="footer_social_content">
                         
+                        <a href="https://wa.me/77000882815"><i class="fa-brands fa-whatsapp fa-2x" style="color: rgb(7, 212, 7);" ></i>
+                        </a>
+                        <a href="https://instagram.com/sprint_log?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram fa-2x" style="color: rgb(171, 50, 149);"></i>
+                        </a>
+                        <a href="https://t.me/sprintlog"><i class="fa-brands fa-telegram fa-2x" style="color: rgb(4, 169, 199);"></i>
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="footer_col--second">
+                <div class="footer_col_item">
+                    <div class="footer_title" data-lang="footer_col2_title">
+                        О компании
+                    </div>
+                    <div class="footer_subtitle">
+                        <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece1">О нас</a>
+                        <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece2">Наши услуги</a>
+                        <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece3">Преимущества работы с нами</a>
+                        <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece4">Наша команда</a>
+                        <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece5">Отзывы партнеров</a> 
+                    </div>
+                </div>
+                
+                <div class="footer_col_item">
+                    <div class="footer_title" data-lang="footer_col3_title">
+                        Услуги
+                    </div>
+                    <div class="footer_subtitle">
+                        <a href="./services_lcl.html" style=" text-decoration: none;" data-lang="footer_col3_piece_1">Консолидации из Китая</a>
+                        <a href="./services_avia.html"style=" text-decoration: none;" data-lang="footer_col3_piece_2">Авиа доставка в Казахстан</a>
+                        <a href="./services_ftl.html" style=" text-decoration: none;" data-lang="footer_col3_piece_3">Полные фуры из Китая </a>
+                        <a href="./services_eur.html" style=" text-decoration: none;" data-lang="footer_col3_piece_4">Полные фуры и консолидация из Европы</a>
+                        <a href="./services_railways.html" style=" text-decoration: none;" data-lang="footer_col3_piece_5">ЖД перевозки по Средней Азии</a>
+                        <a href="./services_special.html" style=" text-decoration: none;" data-lang="footer_col3_piece_6">Доставка негабаритных грузов</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_col--third">
+                <div class="footer_col_buttons">
+                    <div class="footer_col_but">
+                            <script data-b24-form="click/1/l16bal" data-skip-moving="true">
+                                (function(w,d,u){
+                                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                                })(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_1.js');
+                                </script>
+                            <button id = 'button' class ='call_button' data-lang="call_button">Заказать звонок</button>                       
+                    </div>
+                    <div class="footer_col_but">
+                        <button class="request_button" onClick='scrollToForm()' data-lang="request_button">Онлайн заявка </button>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
+    </div>
+</footer> <script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
     <script>   
     // Script for advantages slider
     $(document).ready(function(){

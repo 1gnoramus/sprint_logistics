@@ -204,18 +204,20 @@ body{
     }
 
     .head_menu{
-        display: flex;
-        justify-content: center;
+        display: block;
         width: 100%;
-
         background-color: #58585887;
         height: 48px;
         margin: 0 auto;
-        align-items: center;
 
     }
 
-    .nav{font-size: 15px; font-size: medium;}
+    .nav{
+        font-size: 15px; 
+        font-size: medium;
+        display: flex;
+        justify-content: center;
+    }
 
     .nav_button{
         background-color: rgba(28,28,28,0);
@@ -282,6 +284,87 @@ body{
       .dropdown:hover .nav_button {
         background-color: #4a3dae87;
         
+    }
+
+    .lang_menu{
+        margin-left: 25px;
+        display: flex;
+        position: relative;
+    }
+
+    .selected_lang {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 2px;
+        width: 100px;
+    }
+        .selected_lang:before{
+            content: "";
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-image: url("https://flagsapi.com/RU/flat/32.png");
+        }
+
+    .lang_menu ul {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        border: 1px solid #f8f8f8;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        
+    }
+
+    .lang_menu:hover ul {
+        display: block;
+    }
+
+    .lang_menu ul li {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lang_menu ul li a {
+        cursor: pointer;
+        text-decoration: none;
+        width: 130px;
+        display: block;
+        padding: 5px 10px;
+    }
+    .lang_menu ul li a:before {
+        content: "";
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+    .lang_menu ul li a:hover {
+        background-color: #f2f2f2;
+    }
+    .rus:before {
+        background-image: url("https://flagsapi.com/RU/flat/32.png");
+     }
+     .eng:before {
+        background-image: url("https://flagsapi.com/US/flat/32.png");
+     }
+    .selected_lang.rus:before {
+        background-image: url("https://flagsapi.com/RU/flat/32.png");
+     }
+     .selected_lang.eng:before {
+        background-image: url("https://flagsapi.com/US/flat/32.png");
+     }
+    .lang_menu ul li a.active {
+        font-weight: bold;
     }
 
     .section{
