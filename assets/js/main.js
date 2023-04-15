@@ -348,21 +348,101 @@ langLinks.forEach(function(link) {
                 'en': "Sprint Logistics company offers you a universal fleet of wagons for loading on the territory of Kazakhstan and the countries of Central Asia",
                 'ru': "Компания Sprint Logistics предлагает Вам универсальный парк вагонов под погрузку по территории Казахстана и странам Средней Азии"
             },
-            '':{
-                'en': "",
-                'ru': ""
+            'avia_intro_title':{
+                'en': "Air delivery from China to Kazakhstan",
+                'ru': "Авиа доставка из Китая в Казахстан"
             },
-            '':{
-                'en': "",
-                'ru': ""
+            'avia_intro_subtitle1':{
+                'en': "SPRINT LOGISTICS will help you pick up your cargo from anywhere in China and deliver it by air to Kazakhstan at the lowest price and in the shortest possible time!",
+                'ru': "SPRINT LOGISTICS поможет Вам забрать Ваш груз из любой точки Китая и доставить авиатранспортом в Казахстан по самой низкой цене и в кратчайшие сроки!"
             },
-            '':{
-                'en': "",
-                'ru': ""
+            'avia_adv_title':{
+                'en': "The advantage of Air delivery from China:",
+                'ru': "Преимущество Авиа доставки из Китая:"
             },
-            '':{
-                'en': "",
-                'ru': ""
+            'avia_adv_piece1':{
+                'en': "The delivery speed is up to 6 days, taking into account the pick-up date.",
+                'ru': "Скорость доставки до 6 дней с учетом даты забора."
+            },
+            'avia_adv_piece2':{
+                'en': "Cargo pickup from the sender's address in any city of China",
+                'ru': "Забор груза с адреса отправителя в любом городе Китая"
+            },
+            'avia_adv_piece3':{
+                'en': "Direct flights, exact departure dates",
+                'ru': "Прямые рейсы, точные даты вылета"
+            },
+            'avia_adv_piece4':{
+                'en': "Export clearance",
+                'ru': "Экспортное оформление "
+            },
+            'eur_intro_title':{
+                'en': "Full trucks and consolidation from Europe",
+                'ru': "Полные фуры и консолидация из Европы"
+            },
+            'eur_intro_subtitle':{
+                'en': "SPRINT LOGISTICS will help you pick up your cargo from Europe and deliver it by road to Kazakhstan at the lowest price and in the shortest possible time! cargo delivery from Europe to Kazakhstan",
+                'ru': "SPRINT LOGISTICS поможет Вам забрать Ваш груз из Европы и доставить автотранспортом в Казахстан по самой низкой цене и в кратчайшие сроки! доставки грузов из Европы в Казахстан"
+            },
+            'eur_adv_title':{
+                'en': "Features of cargo delivery from Europe to Kazakhstan",
+                'ru': "Особенности доставки грузов из Европы в Казахстан"
+            },
+            'eur_adv_piece1_title':{
+                'en': "The popularity of cargo delivery from Europe to Kazakhstan",
+                'ru': "Популярность доставки грузов из Европы в Казахстан"
+            },
+            'eur_adv_piece1_subtitle':{
+                'en': "To date, cargo delivery from Europe to Kazakhstan is one of the most basic types of cargo transportation services in great demand among domestic importing companies",
+                'ru': "На сегодняшний день доставка грузов из Европы в Казахстан является одним из самых основных видов услуг по грузоперевозке пользующейся огромным спросом среди отечественных компаний - импортеров"
+            },
+            'eur_adv_piece2_title':{
+                'en': "High requirements for the safety of transportation from the European Union",
+                'ru': "Высокие требования к безопасности перевозок из Евросоюза"
+            },
+            'eur_adv_piece2_subtitle':{
+                'en': "Due to the high quality and manufacturability of goods from the European Union, there are certain requirements for the safety of transportation in this direction",
+                'ru': "Из-за высокого качества и технологичности товаров из Евросоюза существуют определенные требования к безопасности перевозок по данному направлению"
+            },
+            'eur_adv_piece3_title':{
+                'en': "Auto cargo transportation is a safe and profitable way of delivery",
+                'ru': "Авто грузоперевозка - безопасный и выгодный способ доставки"
+            },
+            'eur_adv_piece3_subtitle':{
+                'en': "The safest and most profitable way of delivery from Europe to Kazakhstan is automobile cargo transportation, namely: consolidation and full trucks",
+                'ru': "Самым безопасным и выгодным способом доставки из Европы в Казахстан является автомобильная грузоперевозка а именно: консолидацией и полными фурами"
+            },
+            'ftl_intro_title':{
+                'en': "Full Trucks from China (FTL)",
+                'ru': "Полные фуры из Китая (FTL)"
+            },
+            'ftl_intro_subtitle':{
+                'en': "SPRINT LOGISTICS will help you pick up your cargo from anywhere in China and deliver it on a full truck to Kazakhstan at the lowest price and in the shortest possible time!",
+                'ru': "SPRINT LOGISTICS поможет Вам забрать Ваш груз из любой точки Китая и доставить на полной фуре в Казахстан по самой низкой цене и в кратчайшие сроки!"
+            },
+            'ftl_adv_intro':{
+                'en': "Trucking from China to Kazakhstan on full trucks is one of the most popular ways to deliver cargo from China and is in great demand among Kazakhstani importing companies due to a number of reasons:",
+                'ru': "Автоперевозки из Китая в Казахстан на полных фурах являются одним из самых популярных способов доставки груза из Китая и пользуются большим спросом у Казахстанских компаний импортеров из за ряда причин:"
+            },
+            'ftl_adv_piece1':{
+                'en': "Fast delivery time (up to 25 days)",
+                'ru': "Быстрый срок доставки (до 25 дней)"
+            },
+            'ftl_adv_piece2':{
+                'en': "Pick-up from anywhere in China and delivery to any city or locality in Kazakhstan without unnecessary overloads in storage warehouses and damage to the cargo.",
+                'ru': "Забор из любой точки Китая  и доставка в любой город либо населенный пункт в Казахстане без лишних перегрузов на складах хранения  и вреда грузу."
+            },
+            'ftl_adv_piece3':{
+                'en': "The possibility of Door–to-Door delivery, taking into account delivery in the city, after customs clearance of the cargo at the warehouse directly to the customer's address.",
+                'ru': "Возможность доставки «Дверь – Дверь», с учетом доставки по городу, после таможенной очистки груза на СВХ напрямую на адрес клиента."
+            },
+            'ftl_adv_piece4':{
+                'en': " Profitable delivery of bulk, but light cargo. Cubic capacity of auto trucks: from 86 – 105 cubic meters compared to a 40-foot railway container : up to 76.5 cubic meters)",
+                'ru': " Выгодная доставка объемных, но легких грузов. Кубатура авто фур: от 86 – 105 куб. метров по сравнению  40 футового ж/д контейнера : до 76.5 куб метров)"
+            },
+            'ftl_adv_piece5':{
+                'en': "Cheaper than Air and faster than railway delivery",
+                'ru': "Дешевле чем Авиа и быстрее чем ЖД доставка"
             },
             '':{
                 'en': "",
