@@ -444,6 +444,195 @@ langLinks.forEach(function(link) {
                 'en': "Cheaper than Air and faster than railway delivery",
                 'ru': "Дешевле чем Авиа и быстрее чем ЖД доставка"
             },
+            'lcl_intro_title':{
+                'en': "AUTO/RAILWAY Consolidation from China (LCL)",
+                'ru': "АВТО / ЖД - Консолидации из Китая (LCL)"
+            },
+            'lcl_intro_subtitle':{
+                'en': "SPRINT LOGISTICS will help you pick up your cargo from anywhere in China and deliver Auto and railway consolidation to Kazakhstan at the lowest price and in the shortest possible time",
+                'ru': "SPRINT LOGISTICS поможет Вам забрать Ваш груз из любой точки Китая и доставить Авто и ЖД консолидацией в Казахстан по самой низкой цене и в кратчайшие сроки"
+            },
+            'lcl_adv_title':{
+                'en': "Advantages of Cargo consolidation from China",
+                'ru': "Преимущества консолидации грузов из Китая "
+            },
+            'lcl_adv_piece1_title':{
+                'en': "Reducing logistics costs",
+                'ru': "Сокращение расходов на логистику"
+            },
+            'lcl_adv_piece1_subtitle':{
+                'en': "Many Chinese manufacturers can independently deliver cargo to our transshipment points, which significantly reduces logistics costs for the importer in Kazakhstan",
+                'ru': "Многие Китайские производители могут самостоятельно доставлять груз на наши перевалочные пункты, что существенно сокращает расходы на логистику для импортера в Казахстане"
+            },
+            'lcl_adv_piece2_title':{
+                'en': "Reducing storage costs",
+                'ru': "Уменьшение затрат на хранения "
+            },
+            'lcl_adv_piece2_subtitle':{
+                'en': "Reducing the cost of storing cargo in the importer's country, since only the volume of goods already sold is brought",
+                'ru': "Снижение затраты на хранение груза в стране импортёра, так как привозится только объём уже реализованного товара"
+            },
+            'lcl_adv_piece3_title':{
+                'en': "Reduction of customs risks",
+                'ru': "Снижение таможенных рисков"
+            },
+            'lcl_adv_piece3_subtitle':{
+                'en': "Shipments of bulk cargo from China reduce customs risks and inspections, as our team of specialists conducts a thorough check of all cargo documentation during the consolidation of a container or truck",
+                'ru': "Отправки сборного груза из Китая снижают таможенные риски и досмотры, так как нашей командой специалистов проводится тщательная проверка всей документации на груз при консолидации контейнера либо фуры "
+            },
+            'lcl_adv_piece4_title':{
+                'en': "Fast dispatch of small-sized cargo",
+                'ru': "Быстрая отправка малогабаритного груза "
+            },
+            'lcl_adv_piece4_subtitle':{
+                'en': "This is the best option for sending when you need to receive a small-sized cargo or a small batch of goods in the shortest possible time",
+                'ru': "Это лучший вариант отправки, когда нужно получить малогабаритный груз или небольшую партию товара в кратчайший срок"
+            },
+            'lcl_adv_piece5_title':{
+                'en': "Savings on delivery",
+                'ru': "Экономия на доставке"
+            },
+            'lcl_adv_piece5_subtitle':{
+                'en': "The customer does not pay for the delivery of the entire container or truck, but only the place occupied by the purchased products as part of the consolidation. Due to this, the cost of transportation for each commodity unit is reduced, and the customer can save well on the purchase and delivery of goods from abroad",
+                'ru': "Клиент оплачивает за доставку не всего контейнера либо фуры, а только то место, которое занимает купленная продукция в составе консолидации. За счет этого снижается стоимость перевозки для каждой товарной единицы, и заказчик может хорошо сэкономить на покупке и доставке товара из заграницы"
+            },
+            'lcl_adv_piece6_title':{
+                'en': "Consolidation of goods",
+                'ru': "Консолидация товаров"
+            },
+            'lcl_adv_piece6_subtitle':{
+                'en': "The customer can order many separate categories of goods from different suppliers in China and receive them at the same time",
+                'ru': "Клиент может заказать множество отдельных категорий товаров от разных поставщиков в Китае и получить их одновременно"
+            },
+            'railways_intro_title':{
+                'en': "Railway transportation in Kazakhstan and Central Asia",
+                'ru': "ЖД перевозки по Казахстану и Средней Азии"
+            },
+            'railways_intro_subtitle':{
+                'en': "SPRINT LOGISTICS provides a universal fleet of wagons for import, export, as well as transportation within Kazakhstan",
+                'ru': "SPRINT LOGISTICS предоставляет универсальный парк вагонов для импорта, экспорта, а также перевозок внутри Казахстана"
+            },
+            'railways_about_title':{
+                'en': "SPRINT LOGISTICS company offers railway transportation services in Kazakhstan and",
+                'ru': "Компания SPRINT LOGISTICS предлагает услуги ЖД перевозок по Казахстану и"
+            },
+            'railways_about_piece1':{
+                'en': "Universal fleet of wagons (covered wagons, grain carriers, gondola cars, etc.)",
+                'ru': "Универсальный парк вагонов (крытые вагоны, зерновозы, полувагоны и т.д.)"
+            },
+            'railways_about_piece2':{
+                'en': "Calculation and payment of Railway tariffs for all territories",
+                'ru': "Расчёт и оплата Ж/Д тарифов по всем территориям"
+            },
+            'railways_about_piece3':{
+                'en': "Dislocation by wagons (tracking)",
+                'ru': "Дислокация по вагонам (слежение)"
+            },
+            'railways_about_piece4':{
+                'en': "Transportation across Kazakhstan, to Europe and to Central Asia",
+                'ru': "Перевозки по Казахстану, в Европу и в Среднюю Азию"
+            },
+            'railways_about_piece5':{
+                'en': "Extensive experience in export and import railway transportation",
+                'ru': "Большой опыт работы в экспортных и импортных ЖД перевозках"
+            },
+            'special_intro_title':{
+                'en': "Delivery of oversized cargo on the territory of Kazakhstan",
+                'ru': "Доставка негабаритных грузов по территории Казахстана"
+            },
+            'special_intro_subtitle':{
+                'en': "One of the main activities of Sprint Logistics is the delivery of special equipment and oversized cargo on the route China - Kazakhstan border and across Kazakhstan",
+                'ru': "Одним из основных направлений деятельности компании Sprint Logistics является доставка специальной техники и негабаритных грузов по маршруту граница Китая - Казахстан и по Казахстану"
+            },
+            'special_about_rw_title':{
+                'en': "List of services for delivery by rail",
+                'ru': "Список услуг при доставке железнодорожным транспортом "
+            },
+            'special_about_rw_li1':{
+                'en': "Delivery of special equipment to the terminal (railway dead end) in the city;",
+                'ru': "Доставка спец.техники до терминала (ЖД тупика) по городу;"
+            },
+            'special_about_rw_li2':{
+                'en': "Registration and approval of the transportation plan;",
+                'ru': "Оформление и согласование плана перевозки;"
+            },
+            'special_about_rw_li3':{
+                'en': "Terminal services (railway dead end rental);",
+                'ru': "Услуги терминала (аренда ЖД тупика);"
+            },
+            
+            'special_about_rw_li4':{
+                'en': "Payment of fees at the departure station;",
+                'ru': "Оплата сборов на станции отправления;"
+            },
+            'special_about_rw_li5':{
+                'en': "Provision of rolling stock (univ.platforms);",
+                'ru': "Предоставление подвижного состава (унив.платформы);"
+            },
+            'special_about_rw_li6':{
+                'en': "Loading, fastening and linking of cargo, including consumables;",
+                'ru': "Погрузка, крепление и увязка груза, включая расходные материалы;"
+            },
+            'special_about_rw_li7':{
+                'ru': "Оплата железнодорожного тарифа по всему маршруту (Казахстан, Узбекистан, Кыргызстан, Туркменистан);",
+                'en': "Payment of the railway fare along the entire route (Kazakhstan, Uzbekistan, Kyrgyzstan, Turkmenistan);"
+            },
+            'special_about_rw_li8':{
+                'en': "Collection of Equipment from China from Altynkol Export and Dostyk transshipment stations and further shipment throughout Central Asia;",
+                'ru': "Забор Техники с Китая с перегрузочных станций Алтынколь Экспорт и Достык экспорт и дальнейшая отправка по всей Центральной Азии;"
+            },
+            'special_about_rw_li9':{
+                'en': "Security support of equipment en route;",
+                'ru': "Охранное сопровождение техники в пути следования;"
+            },
+            'special_about_rw_li10':{
+                'en': "Expenses at the destination station (terminal/railway dead end services + delivery of special equipment to the address); Daily tracking of the car;",
+                'ru': "Расходы на станции назначения (услуги терминала/жд тупика + доставка спец.техники до адреса);                Ежедневное слежение за вагоном;"
+            },
+            'special_about_rw_li11':{
+                'en': "Daily tracking of the car;",
+                'ru': "Ежедневное слежение за вагоном;"
+            },
+            'special_about_auto_title':{
+                'ru': "Список услуг при доставке автомобильным транспортом",
+                'en': "List of services for delivery by road"
+            },
+            'special_about_auto_li1':{
+                'en': "Provision of a specialized vehicle with a load capacity from 40 - 200 tons (trawls, platforms, etc.)",
+                'ru': "Предоставление специализированного транспортного средства с грузоподъёмностью от 40 - 200 тонн (тралы, площадки и тд)"
+            },
+            'special_about_auto_li2':{
+                'en': "Provision of special loading equipment (cranes, manipulators)",
+                'ru': "Предоставление специальной погрузочной техники (краны, манипуляторы)"
+            },
+            'special_about_auto_li3':{
+                'en': "Rigging works",
+                'ru': "Такелажные работы"
+            },
+            'special_about_auto_li4':{
+                'en': "Registration of special permits for the transportation of oversized cargo in the Republic of Kazakhstan and neighboring countries",
+                'ru': "Оформление специальных разрешений на перевозку негабаритных грузов по РК и ближнего зарубежья"
+            },
+            'special_about_auto_li5':{
+                'en': "Escort on the way (car cover)",
+                'ru': "Сопровождение в пути (автомобиль прикрытие)"
+            },
+            '':{
+                'en': "",
+                'ru': ""
+            },
+            '':{
+                'en': "",
+                'ru': ""
+            },
+            '':{
+                'en': "",
+                'ru': ""
+            },
+            '':{
+                'en': "",
+                'ru': ""
+            },
             '':{
                 'en': "",
                 'ru': ""
