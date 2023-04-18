@@ -89,9 +89,7 @@ langLinks.forEach(function(link) {
                 } else {
                 elements[i].textContent = langData[key].ru;
                 }
-            }
-            document.getElementById('language-code').textContent = lang.toUpperCase();
-            }
+            }            }
 
             var langData = {
             // INDEX PAGE + GENERAL
