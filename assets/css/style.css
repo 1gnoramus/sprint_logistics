@@ -400,6 +400,7 @@ body{
         
 
     }
+    .about_us_piece{margin-bottom: 50px;}
 
     .about_item{
         display: flex;
@@ -1170,4 +1171,7 @@ body{
   .index_services_piece_text{
     display: flex;
     flex-direction: column;
+  }
+  .index_services_piece_text h3,p{
+    color: rgba(0, 0, 0, 0.673);
   }
