@@ -163,10 +163,10 @@
         </div>
     </div>
     <!-- ABOUT US SECTION -->
-    <div class="section" style="background-color: #F2F1DF; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <div class="section" style="background: url(assets/images/index/Sprint_l.png)center no-repeat ;background-color: #F2F1DF; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <div class="section_header" data-lang="index_about_title">О компании Sprint Logistics</div>
-
-        <img src="assets/images/index/sprint_logo.jfif" alt="" style="width: 600px;">
+<!-- 
+        <img src="assets/images/index/sprint_logo.jfif" alt="" style="width: 600px;"> -->
         <div class="about_us_cont">
             <div class="about_us_piece">
                 <div class="about_text">  
@@ -209,18 +209,8 @@
             </div>
         </div>
         
-    </div>    <!-- GRID POPUP -->
-    <div id="services_item_popup">
-        <h2>Полные фуры из Европы, России, Турции и Китая</h2>
-        <p>Sprint Logistics поможет Вам забрать Ваш груз из любой точки Европы, России, Турции, Китая и доставить на полной фуре в Казахстан по самой низкой цене и в кратчайшие сроки!</p>
-        <div class="grid_button_row">
-            <button class='grid_close_button'onclick="closePopup()"> Закрыть</button>
-            <a href="./services_ftl.html" style="color: inherit; text-decoration: none;">Читать подробнее</a>
-        </div>
-        
-        
     </div>
-    <section style="padding-top: 40px; background-color: #F2F1DF;" >
+    <section style="padding-top: 40px; background-color: #F2F1DF;" id="blur" >
         <div class="section_header" data-lang="lcl_adv_title">Почему клиенты выбирают нас?</div>
         <div class="advantages_section" style="background-color: #F2F1DF;">
             <div class="advantages_container">
@@ -287,8 +277,103 @@
             </div>
         </div>
     </section>
+
+    <div class="section" style="background: url('assets/images/index/worldmap.png')center no-repeat; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div class="section_header" data-lang="index_services_title">
+            Наши услуги
+        </div>
+        <div class="index_services_container">
+
+            <div class="index_services_row">
+                <div class="index_services_piece">
+                    <img src="assets/images/index/serv_ftl.png" alt="">
+                    <div class="index_services_piece_text">
+                        <h3 data-lang="index_services_title1"> Полные фуры из Европы, России, Турции и Китая</h3>
+                        <p data-lang="index_services_subtitle1">Sprint Logistics поможет Вам забрать Ваш груз из любой точки Европы, России, Турции, Китая и доставить на полной фуре в Казахстан по самой низкой цене и в кратчайшие сроки!</p>
+                    </div>
+                </div>
+                <div class="index_services_piece">
+                    <img src="assets/images/index/serv_consol.png" alt="">
+                    <div class="index_services_piece_text">
+                        <h3 data-lang="index_services_title2"> Доставка сборных грузов из Турции, Европы и Китая</h3>
+                        <p data-lang="index_services_subtitle2">Sprint Logistics поможет Вам забрать Ваш груз из любой точки Китая и Турции и доставить Авто и ЖД консолидацией в Казахстан по выгодным условиям!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="index_services_row">
+                <div class="index_services_piece">
+                    <img src="assets/images/index/serv_cont.png" alt="">
+
+                    <div class="index_services_piece_text">
+                        <h3 data-lang="index_services_title3"> Контейнерные перевозки из Турции и Китая</h3>
+                        <p data-lang="index_services_subtitle3">Доверьте контейнерные перевозки Sprint Logistics - мы доставим Ваш груз из Турции и Китая в Казахстан быстро, надежно и по самой выгодной цене!
+
+                        </p>
+                    </div>
+                </div>
+                <div class="index_services_piece">
+                    <img src="assets/images/index/serv_vagon.png" alt="">
+
+                    <div class="index_services_piece_text">
+                        <h3 data-lang="index_services_title4"> Железнодорожные перевозки по Казахстану и на экспорт</h3>
+                        <p data-lang="index_services_subtitle4">Предоставление подвижного состава для доставки Вашего груза по Казахстану, в Европу и по всей Средней Азии!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="index_services_row">
+                <div class="index_services_piece">
+                    <img src="assets/images/index/serv_multi.png" alt="">
+                    
+                    <div class="index_services_piece_text">
+                        <h3 data-lang="index_services_title5"> Мультимодальные перевозки</h3>
+                        <p data-lang="index_services_subtitle5">Команда Sprint Logistics поможет Вам с перевозкой грузов разными видами транспорта АВТО, Ж/Д, АВИА, Морем по всему миру в Казахстан!</p>
+                    </div>
+                </div>
+                <div class="index_services_piece">
+                    <img src="assets/images/index/serv_over.png" alt="">
+                    <div class="index_services_piece_text">
+                        <h3 data-lang="index_services_title6"> Доставка негабаритных грузов по Казахстану</h3>
+                        <p data-lang="index_services_subtitle6">Sprint Logistics поможет Вам в организации перевозки специальных грузов по территории Казахстана!</p>
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="index_services_row">
+                <div class="index_services_piece">
+                    <img src="assets/images/index/serv_avia.png" alt="">
+
+                    <div class="index_services_piece_text">
+                        <h3 data-lang="index_services_title7"> Авиадоставка по всему миру</h3>
+                        <p data-lang="index_services_subtitle7">SPRINT LOGISTICS поможет Вам забрать Ваш груз из любой точки мира и доставить авиатранспортом в Казахстан по самой низкой цене и в кратчайшие сроки!</p>
+                    </div>
+                </div>
+                <div class="index_services_piece">
+                    <img src="assets/images/index/serv_add.png" alt="">
+
+                    <div class="index_services_piece_text">
+                        <h3 data-lang="index_services_title8"> Вспомогательные услуги</h3>
+                        <p data-lang="index_services_subtitle8">Sprint Logistics предоставляет услуги по страхованию груза, брокерским услугам, а также услуги по охранному сопровождению груза для перевозки Ваших специфичных товаров!</p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- GRID POPUP -->
+        <!-- <div id="services_item_popup">
+            <h2>Полные фуры из Европы, России, Турции и Китая</h2>
+            <p>Sprint Logistics поможет Вам забрать Ваш груз из любой точки Европы, России, Турции, Китая и доставить на полной фуре в Казахстан по самой низкой цене и в кратчайшие сроки!</p>
+            <div class="grid_button_row">
+                <button class='grid_close_button'onclick="closePopup()"> Закрыть</button>
+                <a href="./services_ftl.html" style="color: inherit; text-decoration: none;">Читать подробнее</a>
+            </div>
+        </div> -->
     <!-- OUR GOOD SECTION WITH THE GRID ITEMS -->
-    <div class="section" style="background-color:  #F2F1DF;">    
+    <!-- <div class="section" style="background-color:  #F2F1DF;">    
         <div class="container" id="blur">
             <div class="section_header" data-lang="index_services_title">
                 Наши услуги
@@ -389,8 +474,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div> 
+     -->
     <!-- FORM SECTION -->
     <div class="section" style="background-color:  #F2F1DF;">
         <div class="container" style="flex-direction: row; justify-content: center;">

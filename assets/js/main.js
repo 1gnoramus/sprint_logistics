@@ -189,6 +189,72 @@ langLinks.forEach(function(link) {
                 'en': "Our services",
                 'ru': "Наши услуги"
             },
+            'index_services_title1':{
+                'en':'Full trucks from Europe, Russia, Turkey and China',
+                'ru':'Полные фуры из Европы, России, Турции и Китая'
+            },
+            'index_services_subtitle1':{
+                'en':'Sprint Logistics will help you pick up your cargo from anywhere in Europe, Russia, Turkey, China and deliver it on a full truck to Kazakhstan at the lowest price and in the shortest possible time!',
+                'ru':'Sprint Logistics поможет Вам забрать Ваш груз из любой точки Европы, России, Турции, Китая и доставить на полной фуре в Казахстан по самой низкой цене и в кратчайшие сроки!'
+            },
+            'index_services_title2':{
+                'en':'Delivery of combined cargo from Turkey, Europe and China',
+                'ru':'Доставка сборных грузов из Турции, Европы и Китая'
+            },
+            'index_services_subtitle2':{
+                'en':'Sprint Logistics will help you pick up your cargo from anywhere in China and Turkey and deliver Cars and railway consolidation to Kazakhstan on favorable terms!',
+                'ru':'Sprint Logistics поможет Вам забрать Ваш груз из любой точки Китая и Турции и доставить Авто и ЖД консолидацией в Казахстан по выгодным условиям!'
+            },
+            'index_services_title3':{
+                'en':'Container transportation from Turkey and China',
+                'ru':'Контейнерные перевозки из Турции и Китая'
+            },
+            'index_services_subtitle3':{
+                'en':'Entrust container transportation to Sprint Logistics - we will deliver your cargo from Turkey and China to Kazakhstan quickly, reliably and at the best price!',
+                'ru':'Доверьте контейнерные перевозки Sprint Logistics - мы доставим Ваш груз из Турции и Китая в Казахстан быстро, надежно и по самой выгодной цене!'
+            },
+            'index_services_title4':{
+                'en':'Railway transportation in Kazakhstan and for export',
+                'ru':'Железнодорожные перевозки по Казахстану и на экспорт'
+            },
+            'index_services_subtitle4':{
+                'en':'Provision of rolling stock for the delivery of your cargo across Kazakhstan, to Europe and throughout Central Asia!',
+                'ru':'Предоставление подвижного состава для доставки Вашего груза по Казахстану, в Европу и по всей Средней Азии!'
+            },
+            
+            'index_services_title5':{
+                'en':'Multimodal transportation',
+                'ru':'Мультимодальные перевозки'
+            },
+            'index_services_subtitle5':{
+                'en':'The Sprint Logistics team will help you with the transportation of goods by different modes of transport by CAR, Railway, AIR, Sea around the world to Kazakhstan!',
+                'ru':'Команда Sprint Logistics поможет Вам с перевозкой грузов разными видами транспорта АВТО, Ж/Д, АВИА, Морем по всему миру в Казахстан!'
+            },
+            
+            'index_services_title6':{
+                'en':'Delivery of oversized cargo in Kazakhstan',
+                'ru':'Доставка негабаритных грузов по Казахстану'
+            },
+            'index_services_subtitle6':{
+                'en':'Sprint Logistics will help you in organizing the transportation of special cargo on the territory of Kazakhstan!',
+                'ru':'Sprint Logistics поможет Вам в организации перевозки специальных грузов по территории Казахстана!'
+            },
+            'index_services_title7':{
+                'en':'Worldwide air delivery',
+                'ru':'Авиадоставка по всему миру'
+            },
+            'index_services_subtitle7':{
+                'en':'Sprint Logistics will help you pick up your cargo from anywhere in the world and deliver it by air to Kazakhstan at the lowest price and in the shortest possible time!',
+                'ru':'Sprint Logistics поможет Вам забрать Ваш груз из любой точки мира и доставить авиатранспортом в Казахстан по самой низкой цене и в кратчайшие сроки!'
+            },
+            'index_services_title8':{
+                'en':'Support services',
+                'ru':'Вспомогательные услуги'
+            },
+            'index_services_subtitle8':{
+                'en':'Sprint Logistics provides cargo insurance services, brokerage services, as well as security escort services for the transportation of your specific goods!',
+                'ru':'Sprint Logistics предоставляет услуги по страхованию груза, брокерским услугам, а также услуги по охранному сопровождению груза для перевозки Ваших специфичных товаров!'
+            },
             'index_advantages_title':{
                 'en': "Advantages of transportation with Sprint Logistics",
                 'ru': "Преимущества перевозок со Sprint Logistics"
