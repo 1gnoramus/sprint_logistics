@@ -159,7 +159,7 @@ langLinks.forEach(function(link) {
             },
             'index_about_title':{
                 'en': "About us",
-                'ru': "О компании"
+                'ru': "О компании Sprint Logistics"
             },
             'index_about_piece1_title':{
                 'en': "WHO ARE WE?",

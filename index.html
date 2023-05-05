@@ -23,6 +23,8 @@
     <!-- /Yandex.Metrika counter -->
     <script src="assets/js/main.js"></script>
     <!-- CSS File -->
+        <!-- JQquery library for slider -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?{% now %}">
     <!-- Adaptive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +34,11 @@
 
     <!-- Bootstrap Swiper -->
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!--Slick slider files-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
     <!-- CEO title + description -->
     <title>Sprint Logistics - несомненный успех в доставке Ваших грузов различными видами транспорта</title>
     <meta name="description" content="Sprint Logistics предоставляет широкий спектр услуг по организации международных перевозок">
@@ -156,68 +163,53 @@
         </div>
     </div>
     <!-- ABOUT US SECTION -->
-    <section class="section">
-        <div class="container">
-            <div class="section_header" data-lang="index_about_title">
-                О компании
-            </div>
+    <div class="section" style="background-color: #F2F1DF; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div class="section_header" data-lang="index_about_title">О компании Sprint Logistics</div>
 
-            <div class="about">
-                <div class="about_item">
-                    <div class="about_img">
-                        <img src="assets/images/about_1.jpg" width="450" height="300" alt="" srcset="">
+        <img src="assets/images/index/sprint_logo.jfif" alt="" style="width: 600px;">
+        <div class="about_us_cont">
+            <div class="about_us_piece">
+                <div class="about_text">  
+                    <div class="about_title" data-lang="index_about_piece1_title">
+                        <p>КТО МЫ?</p>
                     </div>
-                    <div class="about_text">
-                        
-                        <div class="about_title" data-lang="index_about_piece1_title">
-                            <p>КТО МЫ?</p>
-                        </div>
-                        <div class="about_subtitle" data-lang="index_about_piece1_subtitle">
-                            <p>
-                                Мы прогрессивная и опытная команда профессионалов в сфере логистики, специализирующаяся на доставке коммерческих грузов и из Китая, России, стран Западной и Восточной Европы в Казахстан и Центральную Азию.
-                            </p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="about_item">
-                    <div class="about_text">
-                        
-                        <div class="about_title" data-lang="index_about_piece2_title">
-                            <p>КАК МЫ РАБОТАЕМ?</p>
-                        </div>
-                        <div class="about_subtitle" data-lang="index_about_piece2_subtitle">
-                            <p>
-                                Благодаря нашему огромному опыту работы на отечественном B2B рынке грузоперевозок, мы готовы предоставить вашей компании первоклассный сервис и индивидуальный подход в решении ваших будничных, а также глобальных логистических задач.                            
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about_img">
-                        <img src="assets/images/about_2.jpg" width="450" height="300" alt="" srcset="">
+                    <div class="about_subtitle" data-lang="index_about_piece1_subtitle">
+                        <p>
+                            Мы прогрессивная и опытная команда профессионалов в сфере логистики, специализирующаяся на доставке коммерческих грузов и из Китая, России, стран Западной и Восточной Европы в Казахстан и Центральную Азию.
+                        </p>
                     </div>
                     
-                </div>
-                <div class="about_item">
-                    <div class="about_img">
-                        <img src="assets/images/about_3.jpg" width="450" height="300" alt="" srcset="">
-                    </div>
-                    <div class="about_text">
+                </div></div>
+            <div class="about_us_piece">
+                <div class="about_text">
                         
-                        <div class="about_title" data-lang="index_about_piece3_title">
-                            <p>ЧТО МЫ ПРЕДЛАГАЕМ?
-                            </p>
-                        </div>
-                        <div class="about_subtitle" data-lang="index_about_piece3_subtitle">
-                            <p>
-                                SPRINT LOGISTICS поможет Вам забрать Ваш груз из любой точки Китая, России, Турции, Европа и доставить в Казахстан по самой низкой цене и в кратчайшие сроки!                            
-                            </p>
-                        </div>
+                    <div class="about_title" data-lang="index_about_piece2_title">
+                        <p>КАК МЫ РАБОТАЕМ?</p>
+                    </div>
+                    <div class="about_subtitle" data-lang="index_about_piece2_subtitle">
+                        <p>
+                            Благодаря нашему огромному опыту работы на отечественном B2B рынке грузоперевозок, мы готовы предоставить вашей компании первоклассный сервис и индивидуальный подход в решении ваших будничных, а также глобальных логистических задач.                            
+                        </p>
                     </div>
                 </div>
             </div>
+            <div class="about_us_piece">
+                <div class="about_text">
+
+                <div class="about_title" data-lang="index_about_piece3_title">
+                    <p>ЧТО МЫ ПРЕДЛАГАЕМ?
+                    </p>
+                </div>
+                <div class="about_subtitle" data-lang="index_about_piece3_subtitle">
+                    <p>
+                        SPRINT LOGISTICS поможет Вам забрать Ваш груз из любой точки Китая, России, Турции, Европа и доставить в Казахстан по самой низкой цене и в кратчайшие сроки!                            
+                    </p>
+                </div>
+            </div>
+            </div>
         </div>
-    </section>
-    <!-- GRID POPUP -->
+        
+    </div>    <!-- GRID POPUP -->
     <div id="services_item_popup">
         <h2>Полные фуры из Европы, России, Турции и Китая</h2>
         <p>Sprint Logistics поможет Вам забрать Ваш груз из любой точки Европы, России, Турции, Китая и доставить на полной фуре в Казахстан по самой низкой цене и в кратчайшие сроки!</p>
@@ -228,9 +220,75 @@
         
         
     </div>
-    <div id="overlay" class="overlay"></div>
+    <section style="padding-top: 40px; background-color: #F2F1DF;" >
+        <div class="section_header" data-lang="lcl_adv_title">Почему клиенты выбирают нас?</div>
+        <div class="advantages_section" style="background-color: #F2F1DF;">
+            <div class="advantages_container">
+                <div class="circle_cont">
+
+                <div class="circle">
+                    <img src="assets/images/index/pr90.png" alt="">
+                </div>
+            </div>
+                <h4 data-lang="index_advantages_piece1">Конкурентоспособные цены</h4>
+                <p data-lang="lcl_adv_piece1_subtitle">Мы предлагаем конкурентоспособные цены, чтобы наши клиенты получали лучшее соотношение цены и качества.</p>
+            </div>
+            <div class="advantages_container">
+                <div class="circle_cont">
+
+                <div class="circle">
+                    <img src="assets/images/index/man100.png" alt="">
+                </div>
+            </div>
+                <h3 data-lang="index_advantages_piece2">Персональный менеджер</h3>
+                <p data-lang="lcl_adv_piece1_subtitle">Каждый клиент у нас имеет персонального менеджера, который заботится о всех потребностях и вопросах клиента.</p>
+            </div>
+            <div class="advantages_container">
+                <div class="circle_cont">
+
+                <div class="circle">
+                    <img src="assets/images/index/exp100.png" alt="">
+                </div>
+            </div>
+                <h3 data-lang="index_advantages_piece3">Эксперты в области логистики</h3>
+                <p data-lang="lcl_adv_piece1_subtitle">Наша команда - эксперты в области логистики, готовые предоставить комплексные решения для любых логистических задач.</p>
+            </div>
+            <div class="advantages_container">
+                <div class="circle_cont">
+
+                <div class="circle_cont">
+                    <div class="circle">
+                        <img src="assets/images/index/geog64.png" alt="">
+                    </div>
+                </div>
+                </div>
+                <h3 data-lang="index_advantages_piece1">Широкая география перевозок</h3>
+                <p data-lang="lcl_adv_piece1_subtitle">Мы осуществляем перевозки по всей географии, чтобы наши клиенты могли получать качественный сервис, где бы они ни находились.</p>
+            </div>
+            <div class="advantages_container">
+                <div class="circle_cont">
+
+                <div class="circle">
+                    <img src="assets/images/index/cont100.png" alt="">
+                </div>
+            </div>
+                <h3 data-lang="index_advantages_piece1">Транспортировка всех типов грузов</h3>
+                <p data-lang="lcl_adv_piece1_subtitle">Независимо от типа груза, мы предоставляем высококачественные услуги транспортировки.</p>
+            </div>
+            <div class="advantages_container">
+                <div class="circle_cont">
+
+                <div class="circle">
+                    <img src="assets/images/index/qual100.png" alt="">
+                </div>
+            </div>
+                <h3 data-lang="index_advantages_piece1">Качественный сервис</h3>
+                <p data-lang="lcl_adv_piece1_subtitle">Качество сервиса у нас на первом месте, и мы всегда готовы пойти на все, чтобы обеспечить наших клиентов лучшим обслуживанием.</p>
+            </div>
+        </div>
+    </section>
     <!-- OUR GOOD SECTION WITH THE GRID ITEMS -->
-    <div class="section">    
+    <div class="section" style="background-color:  #F2F1DF;">    
         <div class="container" id="blur">
             <div class="section_header" data-lang="index_services_title">
                 Наши услуги
@@ -332,72 +390,9 @@
             </div>
         </div>
     </div>
-
-    <!-- ADVANTAGES SECTION -->
-    <div class="section">
-        <div class="container_dark">
-            <div class="section_header_dark" data-lang="index_advantages_title">
-                Преимущества перевозок со Sprint Logistics
-            </div>
-
-            <div class="advantages_row">
-                <div class="advantages_item">
-                    <div class="advantages_img">
-                        <img class="adv_icon" src="assets/images/index/price.png" alt="">
-                    </div>
-                    <div class="advantages_text" data-lang="index_advantages_piece1">
-                        <p>Конкурентоспособные цены</p>
-                    </div>
-                </div>
-                <div class="advantages_item">
-                    <div class="advantages_img">
-                        <img class="adv_icon" src="assets/images/index/manager.png"  alt="">
-                    </div>
-                    <div class="advantages_text" data-lang="index_advantages_piece2">
-                        <p>Персональный менеджер</p>
-                    </div>
-                </div>
-                <div class="advantages_item">
-                    <div class="advantages_img">
-                        <img class="adv_icon" src="assets/images/index/expert.png"  alt="">
-                    </div>
-                    <div class="advantages_text" data-lang="index_advantages_piece3">
-                        <p>Эксперты в области логистики</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="advantages_row">
-                <div class="advantages_item">
-                    <div class="advantages_img">
-                        <img class="adv_icon" src="assets/images/index/geography.png"  alt="">
-                    </div>
-                    <div class="advantages_text" data-lang="index_advantages_piece4">
-                        <p>Широкая география перевозок</p>
-                    </div>
-                </div>
-                <div class="advantages_item">
-                    <div class="advantages_img">
-                        <img class="adv_icon" src="assets/images/index/container.png"  alt="">
-                    </div>
-                    <div class="advantages_text" data-lang="index_advantages_piece5">
-                        <p>Транспортировка всех типов грузов</p>
-                    </div>
-                </div>
-                <div class="advantages_item">
-                    <div class="advantages_img">
-                        <img class="adv_icon" src="assets/images/index/service.png"  alt="">
-                    </div>
-                    <div class="advantages_text" data-lang="index_advantages_piece6">
-                        <p>Качественный сервис</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
     <!-- FORM SECTION -->
-    <div class="section">
+    <div class="section" style="background-color:  #F2F1DF;">
         <div class="container" style="flex-direction: row; justify-content: center;">
             <div class="form_container" id='form_container'>
                 <script data-b24-form="inline/3/k76xne" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_3.js');
@@ -427,23 +422,8 @@
                         SPRINT LOGISTICS
                     </div>
                     <div class="footer_text">
-                        <h5 data-lang="footer_text_1">
-                            Казахстан, г. Алматы, ул. Мынбаева, 46
-                        </h5>
-                        <h5 data-lang="footer_text_2">
-                            График работы: Пн. – Пт.: с 9:00 до 18:00
-                        </h5>
-                        <h5 data-lang="footer_text_3">
-                            Телефон: +7 701 581 0999
-                        </h5>
-                        <h5 data-lang="footer_text_4">
-                            Почта: marketing@splog.com.kz
-                        </h5>
-                        <br>
-                        <h5 data-lang="footer_text_5">
-                            Свяжитесь с нами:
-                        </h5>    
-                        </div>
+                    "Ваш бизнес - наша логистика"    
+                    </div>
                     <div class="footer_social">
                         <div class="footer_social_content">
                             
@@ -482,21 +462,29 @@
                             <a href="./services_railways.html" style=" text-decoration: none;" data-lang="footer_col3_piece_5">ЖД перевозки по Средней Азии</a>
                             <a href="./services_special.html" style=" text-decoration: none;" data-lang="footer_col3_piece_6">Доставка негабаритных грузов</a>
                         </div>
+                        
                     </div>
-                </div>
-                <div class="footer_col--third">
-                    <div class="footer_col_buttons">
-                        <div class="footer_col_but">
-                                <script data-b24-form="click/1/l16bal" data-skip-moving="true">
-                                    (function(w,d,u){
-                                    var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-                                    var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-                                    })(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_1.js');
-                                    </script>
-                                <button id = 'button' class ='call_button' data-lang="call_button">Заказать звонок</button>                       
+                    <div class="footer_col_item">
+                        <div class="footer_title" data-lang="footer_col3_title">
+                            Контакты
                         </div>
-                        <div class="footer_col_but">
-                            <button class="request_button" onClick='scrollToForm()' data-lang="request_button">Онлайн заявка </button>
+                        <div class="footer_subtitle">
+                            <h5 data-lang="footer_text_1">
+                                Казахстан, г. Алматы, ул. Мынбаева, 46
+                            </h5>
+                            <h5 data-lang="footer_text_2">
+                                График работы: Пн. – Пт.: с 9:00 до 18:00
+                            </h5>
+                            <h5 data-lang="footer_text_3">
+                                Телефон: +7 701 581 0999
+                            </h5>
+                            <h5 data-lang="footer_text_4">
+                                Почта: marketing@splog.com.kz
+                            </h5>
+                            <br>
+                            <h5 data-lang="footer_text_5">
+                                Свяжитесь с нами:
+                            </h5>    
                         </div>
                         
                     </div>
@@ -510,6 +498,32 @@
     <!-- Swiper script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
-
+    <script>   
+        // Script for advantages slider
+        $(document).ready(function(){
+            $('.advantages_section').slick({
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+        </script>
 </body>
 </html>
