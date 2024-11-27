@@ -1,501 +1,768 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
 
-    ym(92703250, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true,
-            ecommerce:"dataLayer"
-    });
+      ym(92703250, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        ecommerce: "dataLayer",
+      });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/92703250" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/92703250"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
     <!-- /Yandex.Metrika counter -->
     <script src="assets/js/main.js"></script>
     <!-- CSS File -->
-        <!-- JQquery library for slider -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css?{% now %}">
+    <!-- JQquery library for slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/style.css?{% now %}"
+    />
     <!-- Adaptive design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Page Icons -->
-	<link rel="icon" href="assets/images/page_logo.png">
-    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/images/page_logo.png" />
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
 
     <!-- Bootstrap Swiper -->
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <!--Slick slider files-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <!-- CEO title + description -->
-    <title>Sprint Logistics - несомненный успех в доставке Ваших грузов различными видами транспорта</title>
-    <meta name="description" content="Sprint Logistics предоставляет широкий спектр услуг по организации международных перевозок">
-  
-</head>
-<body>
+    <title>
+      Sprint Logistics - несомненный успех в доставке Ваших грузов различными
+      видами транспорта
+    </title>
+    <meta
+      name="description"
+      content="Sprint Logistics предоставляет широкий спектр услуг по организации международных перевозок"
+    />
+  </head>
+  <body>
     <!-- HEADER -->
     <header class="header">
-        <!-- HEADER: Icon + Info + buttons -->
-        <div class="head_info">              
-			<a class="head_logo" href="./index.html"></a>
+      <!-- HEADER: Icon + Info + buttons -->
+      <div class="head_info">
+        <a href="./index.html" class="head_logo"> </a>
 
-            <div class="contacts">
-                <div class="contacts_block">
-                    <div class="contacts_icon">&#9742;</div>
-                    <div class="contacts_text">+7 701 581 0999</div>
-                </div>
-                <div class="contacts_block">
-                    <div class="contacts_icon">&#9742;</div>
-                    <div class="contacts_text">+7 700 088 2813</div>
-                </div>
+        <div class="contacts">
+          <div class="contacts_block">
+            <div class="contacts_icon">&#9742;</div>
+            <div class="contacts_text">+7 700 088 2805</div>
+          </div>
+          <div class="contacts_block">
+            <div class="contacts_icon">&#9742;</div>
+            <div class="contacts_text">+7 700 088 2813</div>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contacts_block">
+            <div class="contacts_icon">&#9993;</div>
+            <div class="contacts_text">marketing@splog.com.kz</div>
+          </div>
+          <div class="contacts_block">
+            <div class="contacts_icon">&#9872;</div>
+            <div class="contacts_text">г.Алматы, Мынбаева 46</div>
+          </div>
+        </div>
+
+        <script data-b24-form="click/1/l16bal" data-skip-moving="true">
+          (function (w, d, u) {
+            var s = d.createElement("script");
+            s.async = true;
+            s.src = u + "?" + ((Date.now() / 180000) | 0);
+            var h = d.getElementsByTagName("script")[0];
+            h.parentNode.insertBefore(s, h);
+          })(
+            window,
+            document,
+            "https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_1.js"
+          );
+        </script>
+        <button id="button" class="call_button" data-lang="call_button">
+          Заказать звонок
+        </button>
+        <button
+          class="request_button"
+          onclick="scrollToForm()"
+          data-lang="request_button"
+        >
+          Онлайн заявка
+        </button>
+
+        <div class="lang_menu">
+          <div class="selected_lang">
+            <div class="current_lang">Русский</div>
+          </div>
+          <ul>
+            <li>
+              <a
+                class="rus"
+                onclick="switchLanguage('ru'); changeLanguage('ru')"
+                >Русский</a
+              >
+            </li>
+            <li>
+              <a
+                class="eng"
+                onclick="switchLanguage('en'); changeLanguage('en')"
+                >English</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- HEADER: Navigation bar -->
+      <div class="head_menu">
+        <nav class="nav">
+          <button class="nav_button">
+            <a class="nav_link" data-lang="nav_home" href="./index.html">
+              Главная
+            </a>
+          </button>
+          <button class="nav_button">
+            <a class="nav_link" data-lang="nav_about" href="./index.html">
+              О компании
+            </a>
+          </button>
+          <div class="dropdown">
+            <button class="nav_button" data-lang="nav_services">Услуги</button>
+            <div class="dropdown-content">
+              <a
+                class="nav_link"
+                data-lang="nav_services_lcl"
+                href="./services_lcl.html"
+              >
+                АВТО / ЖД - Консолидации из Китая (LCL)
+              </a>
+              <a
+                class="nav_link"
+                data-lang="nav_services_avia"
+                href="./services_avia.html"
+              >
+                Авиа доставка из Китая в Казахстан
+              </a>
+              <a
+                class="nav_link"
+                data-lang="nav_services_ftl"
+                href="./services_ftl.html"
+              >
+                Полные фуры из Китая (FTL)
+              </a>
+              <a
+                class="nav_link"
+                data-lang="nav_services_eur"
+                href="./services_eur.html"
+              >
+                Полные фуры и консолидация из Европы
+              </a>
+              <a
+                class="nav_link"
+                data-lang="nav_services_railways"
+                href="./services_railways.html"
+              >
+                ЖД перевозки по Казахстану и Средней Азии
+              </a>
+              <a
+                class="nav_link"
+                data-lang="nav_services_special"
+                href="./services_special.html"
+              >
+                Доставка негабаритных грузов по территории Казахстана
+              </a>
             </div>
-            <div class="contacts">
-                <div class="contacts_block">
-                    <div class="contacts_icon">&#9993;</div>
-                    <div class="contacts_text">marketing@splog.com.kz</div>
-                </div>
-                <div class="contacts_block">
-                    <div class="contacts_icon">&#9872;</div>
-                    <div class="contacts_text">г.Алматы, Мынбаева 46</div>
-                </div>
-            </div>
-			
-                <script data-b24-form="click/1/l16bal" data-skip-moving="true">
-                    (function(w,d,u){
-                    var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-                    var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-                    })(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_1.js');
-                    </script>
-                <button id = 'button' class ='call_button' data-lang='call_button'>Заказать звонок</button>
-                <button class="request_button" onclick="scrollToForm()" data-lang='request_button'>Онлайн заявка</button>
-            
-                <div class="lang_menu">
-                    <div class="selected_lang">
-                        <div class="current_lang">Русский</div>
-                    </div>
-                    <ul>
-                        <li><a class="rus" onclick="switchLanguage('ru'); changeLanguage('ru')">Русский</a></li>
-                        <li><a class="eng" onclick="switchLanguage('en'); changeLanguage('en')">English</a></li>
-                    </ul>
-                </div>
-            </div>
-        <!-- HEADER: Navigation bar -->
-        <div class="head_menu">
-            <nav class="nav">
-                <button class="nav_button">
-                    <a  class='nav_link' data-lang="nav_home" href="./index.html">
-                        Главная
-                    </a>
-                </button>
-                <button class="nav_button">
-                    <a class='nav_link' data-lang="nav_about" href="./index.html">
-                        О компании
-                    </a>
-                </button >
-                <div class="dropdown">
-                    <button class="nav_button" data-lang="nav_services">
-                            Услуги
-                    </button>
-                    <div class="dropdown-content">
-                        <a class='nav_link' data-lang="nav_services_lcl" href="./services_lcl.html">
-                            АВТО / ЖД - Консолидации из Китая (LCL)
-                        </a>
-                        <a class='nav_link' data-lang="nav_services_avia" href="./services_avia.html">
-                            Авиа доставка  из Китая в Казахстан
-                        </a>
-                        <a class='nav_link' data-lang="nav_services_ftl" href="./services_ftl.html">
-                            Полные фуры из Китая  (FTL)
-                        </a>
-                        <a class='nav_link' data-lang="nav_services_eur" href="./services_eur.html">
-                            Полные фуры и консолидация из Европы 
-                        </a>
-                        <a class='nav_link' data-lang="nav_services_railways" href="./services_railways.html">
-                            ЖД перевозки по Казахстану и Средней Азии
-                        </a>
-                        <a class='nav_link' data-lang="nav_services_special" href="./services_special.html">
-                            Доставка негабаритных грузов по территории Казахстана
-                        </a>
-                      </div>
-                </div>
-                <button class="nav_button" data-lang="nav_geography">
-                    <a class='nav_link' href="./geography.html">
-                        География перевозок
-                    </a>
-                </button>
-                <button class="nav_button" data-lang="nav_contacts">
-                    <a class='nav_link' href="./index.html">
-                        Контакты
-                    </a>
-                </button >
-                <!-- <button onclick="changeLanguage('en')">EN</button>
+          </div>
+          <button class="nav_button" data-lang="nav_geography">
+            <a class="nav_link" href="./geography.html">
+              География перевозок
+            </a>
+          </button>
+          <button class="nav_button" data-lang="nav_contacts">
+            <a class="nav_link" href="./index.html"> Контакты </a>
+          </button>
+          <!-- <button onclick="changeLanguage('en')">EN</button>
                 <span id="language-code">EN</span>
 
                 <button onclick="changeLanguage('ru')">RU</button>
                 <span id="language-code">RU</span> -->
-            </nav>
-            
-        </div>
-</header>
+        </nav>
+      </div>
+    </header>
     <!-- INTRO -->
-    <div class="intro" style="background: url(assets/images/index/index_intro.png) center no-repeat;
-    background-size: cover;">
-        <div class="container">
-            <div class="intro_inner">
-                <h1 class="intro_title" data-lang="index_intro_title">SPRINT LOGISTICS: Ваш бизнес - Наша логистика</h1>
-                
-                <h2 class="intro_subtitle" data-lang="index_intro_subtitle_1">«Sprint Logistics» - современная логистическая компания специализирующаяся на предоставлении услуг экспедирования грузов из Китая, Турции, России и стран Европы разными видами транспорта. 
-                    <br>
-                <h2 class="intro_subtitle" data-lang="index_intro_subtitle_2">Команда специалистов «Sprint Logistics» предлагает оптимальные и быстрые способы доставки различных грузов по наиболее выгодным тарифам 
+    <div
+      class="intro"
+      style="
+        background: url(assets/images/index/index_intro.png) center no-repeat;
+        background-size: cover;
+      "
+    >
+      <div class="container">
+        <div class="intro_inner">
+          <h1 class="intro_title" data-lang="index_intro_title">
+            SPRINT LOGISTICS: Ваш бизнес - Наша логистика
+          </h1>
 
-            </div>
+          <h2 class="intro_subtitle" data-lang="index_intro_subtitle_1">
+            «Sprint Logistics» - современная логистическая компания
+            специализирующаяся на предоставлении услуг экспедирования грузов из
+            Китая, Турции, России и стран Европы разными видами транспорта.
+          </h2>
+          <br />
+          <h2 class="intro_subtitle" data-lang="index_intro_subtitle_2">
+            Команда специалистов «Sprint Logistics» предлагает оптимальные и
+            быстрые способы доставки различных грузов по наиболее выгодным
+            тарифам
+          </h2>
         </div>
+      </div>
     </div>
     <!-- ABOUT US SECTION -->
-    <div class="section" style="background: url(assets/images/index/Sprint_l.png)center no-repeat ;background-color: #F2F1DF; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <div class="section_header" data-lang="index_about_title">О компании Sprint Logistics</div>
-<!-- 
+    <div
+      class="section"
+      style="
+        background: url(assets/images/index/Sprint_l.png) center no-repeat;
+        background-color: #f2f1df;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div class="section_header" data-lang="index_about_title">
+        О компании Sprint Logistics
+      </div>
+      <!-- 
         <img src="assets/images/index/sprint_logo.jfif" alt="" style="width: 600px;"> -->
-        <div class="about_us_cont">
-            <div class="about_us_piece">
-                <div class="about_text">  
-                    <div class="about_title" data-lang="index_about_piece1_title">
-                        <p>КТО МЫ?</p>
-                    </div>
-                    <div class="about_subtitle" data-lang="index_about_piece1_subtitle">
-                        <p>
-                            Мы прогрессивная и опытная команда профессионалов в сфере логистики, специализирующаяся на доставке коммерческих грузов и из Китая, России, стран Западной и Восточной Европы в Казахстан и Центральную Азию.
-                        </p>
-                    </div>
-                    
-                </div>
+      <div class="about_us_cont">
+        <div class="about_us_piece">
+          <div class="about_text">
+            <div class="about_title" data-lang="index_about_piece1_title">
+              <p>КТО МЫ?</p>
             </div>
-            <div class="about_us_piece">
-                <div class="about_text">
-                        
-                    <div class="about_title" data-lang="index_about_piece2_title">
-                        <p>КАК МЫ РАБОТАЕМ?</p>
-                    </div>
-                    <div class="about_subtitle" data-lang="index_about_piece2_subtitle">
-                        <p>
-                            Благодаря нашему огромному опыту работы на отечественном B2B рынке грузоперевозок, мы готовы предоставить вашей компании первоклассный сервис и индивидуальный подход в решении ваших будничных, а также глобальных логистических задач.                            
-                        </p>
-                    </div>
-                </div>
+            <div class="about_subtitle" data-lang="index_about_piece1_subtitle">
+              <p>
+                Мы прогрессивная и опытная команда профессионалов в сфере
+                логистики, специализирующаяся на доставке коммерческих грузов и
+                из Китая, России, стран Западной и Восточной Европы в Казахстан
+                и Центральную Азию.
+              </p>
             </div>
-            <div class="about_us_piece">
-                <div class="about_text">
-
-                <div class="about_title" data-lang="index_about_piece3_title">
-                    <p>ЧТО МЫ ПРЕДЛАГАЕМ?
-                    </p>
-                </div>
-                <div class="about_subtitle" data-lang="index_about_piece3_subtitle">
-                    <p>
-                        SPRINT LOGISTICS поможет Вам забрать Ваш груз из любой точки Китая, России, Турции, Европа и доставить в Казахстан по самой низкой цене и в кратчайшие сроки!                            
-                    </p>
-                </div>
-            </div>
-            </div>
+          </div>
         </div>
-        
+        <div class="about_us_piece">
+          <div class="about_text">
+            <div class="about_title" data-lang="index_about_piece2_title">
+              <p>КАК МЫ РАБОТАЕМ?</p>
+            </div>
+            <div class="about_subtitle" data-lang="index_about_piece2_subtitle">
+              <p>
+                Благодаря нашему огромному опыту работы на отечественном B2B
+                рынке грузоперевозок, мы готовы предоставить вашей компании
+                первоклассный сервис и индивидуальный подход в решении ваших
+                будничных, а также глобальных логистических задач.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about_us_piece">
+          <div class="about_text">
+            <div class="about_title" data-lang="index_about_piece3_title">
+              <p>ЧТО МЫ ПРЕДЛАГАЕМ?</p>
+            </div>
+            <div class="about_subtitle" data-lang="index_about_piece3_subtitle">
+              <p>
+                SPRINT LOGISTICS поможет Вам забрать Ваш груз из любой точки
+                Китая, России, Турции, Европа и доставить в Казахстан по самой
+                низкой цене и в кратчайшие сроки!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <section style="padding-top: 40px; background-color: #F2F1DF;" id="blur" >
-        <div class="section_header" data-lang="lcl_adv_title">Почему клиенты выбирают нас?</div>
-        <div class="advantages_section" style="background-color: #F2F1DF;">
-            <div class="advantages_container">
-                <div class="circle_cont">
 
-                <div class="circle">
-                    <img src="assets/images/index/pr90.png" alt="">
-                </div>
+    <section style="padding-top: 40px; background-color: #f2f1df" id="blur">
+      <div class="section_header" data-lang="lcl_adv_title">
+        Почему клиенты выбирают нас?
+      </div>
+      <div class="advantages_section" style="background-color: #f2f1df">
+        <div class="advantages_container">
+          <div class="circle_cont">
+            <div class="circle">
+              <img src="assets/images/index/pr90.png" alt="" />
             </div>
-                <h4 data-lang="index_advantages_piece1">Конкурентоспособные цены</h4>
-                <p data-lang="lcl_adv_piece1_subtitle">Мы предлагаем конкурентоспособные цены, чтобы наши клиенты получали лучшее соотношение цены и качества.</p>
-            </div>
-            <div class="advantages_container">
-                <div class="circle_cont">
-
-                <div class="circle">
-                    <img src="assets/images/index/man100.png" alt="">
-                </div>
-            </div>
-                <h3 data-lang="index_advantages_piece2">Персональный менеджер</h3>
-                <p data-lang="lcl_adv_piece1_subtitle">Каждый клиент у нас имеет персонального менеджера, который заботится о всех потребностях и вопросах клиента.</p>
-            </div>
-            <div class="advantages_container">
-                <div class="circle_cont">
-
-                <div class="circle">
-                    <img src="assets/images/index/exp100.png" alt="">
-                </div>
-            </div>
-                <h3 data-lang="index_advantages_piece3">Эксперты в области логистики</h3>
-                <p data-lang="lcl_adv_piece1_subtitle">Наша команда - эксперты в области логистики, готовые предоставить комплексные решения для любых логистических задач.</p>
-            </div>
-            <div class="advantages_container">
-                <div class="circle_cont">
-
-                <div class="circle_cont">
-                    <div class="circle">
-                        <img src="assets/images/index/geog64.png" alt="">
-                    </div>
-                </div>
-                </div>
-                <h3 data-lang="index_advantages_piece1">Широкая география перевозок</h3>
-                <p data-lang="lcl_adv_piece1_subtitle">Мы осуществляем перевозки по всей географии, чтобы наши клиенты могли получать качественный сервис, где бы они ни находились.</p>
-            </div>
-            <div class="advantages_container">
-                <div class="circle_cont">
-
-                <div class="circle">
-                    <img src="assets/images/index/cont100.png" alt="">
-                </div>
-            </div>
-                <h3 data-lang="index_advantages_piece1">Транспортировка всех типов грузов</h3>
-                <p data-lang="lcl_adv_piece1_subtitle">Независимо от типа груза, мы предоставляем высококачественные услуги транспортировки.</p>
-            </div>
-            <div class="advantages_container">
-                <div class="circle_cont">
-
-                <div class="circle">
-                    <img src="assets/images/index/qual100.png" alt="">
-                </div>
-            </div>
-                <h3 data-lang="index_advantages_piece1">Качественный сервис</h3>
-                <p data-lang="lcl_adv_piece1_subtitle">Качество сервиса у нас на первом месте, и мы всегда готовы пойти на все, чтобы обеспечить наших клиентов лучшим обслуживанием.</p>
-            </div>
+          </div>
+          <h4 data-lang="index_advantages_piece1">Конкурентоспособные цены</h4>
+          <p data-lang="lcl_adv_piece1_subtitle">
+            Мы предлагаем конкурентоспособные цены, чтобы наши клиенты получали
+            лучшее соотношение цены и качества.
+          </p>
         </div>
+        <div class="advantages_container">
+          <div class="circle_cont">
+            <div class="circle">
+              <img src="assets/images/index/man100.png" alt="" />
+            </div>
+          </div>
+          <h3 data-lang="index_advantages_piece2">Персональный менеджер</h3>
+          <p data-lang="lcl_adv_piece1_subtitle">
+            Каждый клиент у нас имеет персонального менеджера, который заботится
+            о всех потребностях и вопросах клиента.
+          </p>
+        </div>
+        <div class="advantages_container">
+          <div class="circle_cont">
+            <div class="circle">
+              <img src="assets/images/index/exp100.png" alt="" />
+            </div>
+          </div>
+          <h3 data-lang="index_advantages_piece3">
+            Эксперты в области логистики
+          </h3>
+          <p data-lang="lcl_adv_piece1_subtitle">
+            Наша команда - эксперты в области логистики, готовые предоставить
+            комплексные решения для любых логистических задач.
+          </p>
+        </div>
+        <div class="advantages_container">
+          <div class="circle_cont">
+            <div class="circle_cont">
+              <div class="circle">
+                <img src="assets/images/index/geog64.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <h3 data-lang="index_advantages_piece1">
+            Широкая география перевозок
+          </h3>
+          <p data-lang="lcl_adv_piece1_subtitle">
+            Мы осуществляем перевозки по всей географии, чтобы наши клиенты
+            могли получать качественный сервис, где бы они ни находились.
+          </p>
+        </div>
+        <div class="advantages_container">
+          <div class="circle_cont">
+            <div class="circle">
+              <img src="assets/images/index/cont100.png" alt="" />
+            </div>
+          </div>
+          <h3 data-lang="index_advantages_piece1">
+            Транспортировка всех типов грузов
+          </h3>
+          <p data-lang="lcl_adv_piece1_subtitle">
+            Независимо от типа груза, мы предоставляем высококачественные услуги
+            транспортировки.
+          </p>
+        </div>
+        <div class="advantages_container">
+          <div class="circle_cont">
+            <div class="circle">
+              <img src="assets/images/index/qual100.png" alt="" />
+            </div>
+          </div>
+          <h3 data-lang="index_advantages_piece1">Качественный сервис</h3>
+          <p data-lang="lcl_adv_piece1_subtitle">
+            Качество сервиса у нас на первом месте, и мы всегда готовы пойти на
+            все, чтобы обеспечить наших клиентов лучшим обслуживанием.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <div class="section" style="background: url('assets/images/index/worldmap.png')center no-repeat; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <div class="section_header" data-lang="index_services_title">
-            Наши услуги
+    <div
+      class="section"
+      style="
+        background: url('assets/images/index/worldmap.png') center no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div class="section_header" data-lang="index_services_title">
+        Наши услуги
+      </div>
+      <div class="index_services_container">
+        <div class="index_services_row">
+          <div class="index_services_piece">
+            <img src="assets/images/index/serv_ftl.png" alt="" />
+            <div class="index_services_piece_text">
+              <h3 data-lang="index_services_title1">
+                Полные фуры из Европы, России, Турции и Китая
+              </h3>
+              <p data-lang="index_services_subtitle1">
+                Sprint Logistics поможет Вам забрать Ваш груз из любой точки
+                Европы, России, Турции, Китая и доставить на полной фуре в
+                Казахстан по самой низкой цене и в кратчайшие сроки!
+              </p>
+            </div>
+          </div>
+          <div class="index_services_piece">
+            <img src="assets/images/index/serv_consol.png" alt="" />
+            <div class="index_services_piece_text">
+              <h3 data-lang="index_services_title2">
+                Доставка сборных грузов из Турции, Европы и Китая
+              </h3>
+              <p data-lang="index_services_subtitle2">
+                Sprint Logistics поможет Вам забрать Ваш груз из любой точки
+                Китая и Турции и доставить Авто и ЖД консолидацией в Казахстан
+                по выгодным условиям!
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="index_services_container">
 
-            <div class="index_services_row">
-                <div class="index_services_piece">
-                    <img src="assets/images/index/serv_ftl.png" alt="">
-                    <div class="index_services_piece_text">
-                        <h3 data-lang="index_services_title1"> Полные фуры из Европы, России, Турции и Китая</h3>
-                        <p data-lang="index_services_subtitle1">Sprint Logistics поможет Вам забрать Ваш груз из любой точки Европы, России, Турции, Китая и доставить на полной фуре в Казахстан по самой низкой цене и в кратчайшие сроки!</p>
-                    </div>
-                </div>
-                <div class="index_services_piece">
-                    <img src="assets/images/index/serv_consol.png" alt="">
-                    <div class="index_services_piece_text">
-                        <h3 data-lang="index_services_title2"> Доставка сборных грузов из Турции, Европы и Китая</h3>
-                        <p data-lang="index_services_subtitle2">Sprint Logistics поможет Вам забрать Ваш груз из любой точки Китая и Турции и доставить Авто и ЖД консолидацией в Казахстан по выгодным условиям!</p>
-                    </div>
-                </div>
+        <div class="index_services_row">
+          <div class="index_services_piece">
+            <img src="assets/images/index/serv_cont.png" alt="" />
+
+            <div class="index_services_piece_text">
+              <h3 data-lang="index_services_title3">
+                Контейнерные перевозки из Турции и Китая
+              </h3>
+              <p data-lang="index_services_subtitle3">
+                Доверьте контейнерные перевозки Sprint Logistics - мы доставим
+                Ваш груз из Турции и Китая в Казахстан быстро, надежно и по
+                самой выгодной цене!
+              </p>
             </div>
-            
-            <div class="index_services_row">
-                <div class="index_services_piece">
-                    <img src="assets/images/index/serv_cont.png" alt="">
+          </div>
+          <div class="index_services_piece">
+            <img src="assets/images/index/serv_vagon.png" alt="" />
 
-                    <div class="index_services_piece_text">
-                        <h3 data-lang="index_services_title3"> Контейнерные перевозки из Турции и Китая</h3>
-                        <p data-lang="index_services_subtitle3">Доверьте контейнерные перевозки Sprint Logistics - мы доставим Ваш груз из Турции и Китая в Казахстан быстро, надежно и по самой выгодной цене!
-
-                        </p>
-                    </div>
-                </div>
-                <div class="index_services_piece">
-                    <img src="assets/images/index/serv_vagon.png" alt="">
-
-                    <div class="index_services_piece_text">
-                        <h3 data-lang="index_services_title4"> Железнодорожные перевозки по Казахстану и на экспорт</h3>
-                        <p data-lang="index_services_subtitle4">Предоставление подвижного состава для доставки Вашего груза по Казахстану, в Европу и по всей Средней Азии!</p>
-                    </div>
-                </div>
+            <div class="index_services_piece_text">
+              <h3 data-lang="index_services_title4">
+                Железнодорожные перевозки по Казахстану и на экспорт
+              </h3>
+              <p data-lang="index_services_subtitle4">
+                Предоставление подвижного состава для доставки Вашего груза по
+                Казахстану, в Европу и по всей Средней Азии!
+              </p>
             </div>
-            
-            <div class="index_services_row">
-                <div class="index_services_piece">
-                    <img src="assets/images/index/serv_multi.png" alt="">
-                    
-                    <div class="index_services_piece_text">
-                        <h3 data-lang="index_services_title5"> Мультимодальные перевозки</h3>
-                        <p data-lang="index_services_subtitle5">Команда Sprint Logistics поможет Вам с перевозкой грузов разными видами транспорта АВТО, Ж/Д, АВИА, Морем по всему миру в Казахстан!</p>
-                    </div>
-                </div>
-                <div class="index_services_piece">
-                    <img src="assets/images/index/serv_over.png" alt="">
-                    <div class="index_services_piece_text">
-                        <h3 data-lang="index_services_title6"> Доставка негабаритных грузов по Казахстану</h3>
-                        <p data-lang="index_services_subtitle6">Sprint Logistics поможет Вам в организации перевозки специальных грузов по территории Казахстана!</p>
-                    
-                    </div>
-                </div>
-            </div>
-            <div class="index_services_row">
-                <div class="index_services_piece">
-                    <img src="assets/images/index/serv_avia.png" alt="">
-
-                    <div class="index_services_piece_text">
-                        <h3 data-lang="index_services_title7"> Авиадоставка по всему миру</h3>
-                        <p data-lang="index_services_subtitle7">SPRINT LOGISTICS поможет Вам забрать Ваш груз из любой точки мира и доставить авиатранспортом в Казахстан по самой низкой цене и в кратчайшие сроки!</p>
-                    </div>
-                </div>
-                <div class="index_services_piece">
-                    <img src="assets/images/index/serv_add.png" alt="">
-
-                    <div class="index_services_piece_text">
-                        <h3 data-lang="index_services_title8"> Вспомогательные услуги</h3>
-                        <p data-lang="index_services_subtitle8">Sprint Logistics предоставляет услуги по страхованию груза, брокерским услугам, а также услуги по охранному сопровождению груза для перевозки Ваших специфичных товаров!</p>
-                    
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="index_services_row">
+          <div class="index_services_piece">
+            <img src="assets/images/index/serv_multi.png" alt="" />
+
+            <div class="index_services_piece_text">
+              <h3 data-lang="index_services_title5">
+                Мультимодальные перевозки
+              </h3>
+              <p data-lang="index_services_subtitle5">
+                Команда Sprint Logistics поможет Вам с перевозкой грузов разными
+                видами транспорта АВТО, Ж/Д, АВИА, Морем по всему миру в
+                Казахстан!
+              </p>
+            </div>
+          </div>
+          <div class="index_services_piece">
+            <img src="assets/images/index/serv_over.png" alt="" />
+            <div class="index_services_piece_text">
+              <h3 data-lang="index_services_title6">
+                Доставка негабаритных грузов по Казахстану
+              </h3>
+              <p data-lang="index_services_subtitle6">
+                Sprint Logistics поможет Вам в организации перевозки специальных
+                грузов по территории Казахстана!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="index_services_row">
+          <div class="index_services_piece">
+            <img src="assets/images/index/serv_avia.png" alt="" />
+
+            <div class="index_services_piece_text">
+              <h3 data-lang="index_services_title7">
+                Авиадоставка по всему миру
+              </h3>
+              <p data-lang="index_services_subtitle7">
+                SPRINT LOGISTICS поможет Вам забрать Ваш груз из любой точки
+                мира и доставить авиатранспортом в Казахстан по самой низкой
+                цене и в кратчайшие сроки!
+              </p>
+            </div>
+          </div>
+          <div class="index_services_piece">
+            <img src="assets/images/index/serv_add.png" alt="" />
+
+            <div class="index_services_piece_text">
+              <h3 data-lang="index_services_title8">Вспомогательные услуги</h3>
+              <p data-lang="index_services_subtitle8">
+                Sprint Logistics предоставляет услуги по страхованию груза,
+                брокерским услугам, а также услуги по охранному сопровождению
+                груза для перевозки Ваших специфичных товаров!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
     <!-- FORM SECTION -->
-    <div class="section" style="background-color:  #F2F1DF;">
-        <div class="container" style="flex-direction: row; justify-content: center;">
-            <div class="form_container" id='form_container'>
-                <script data-b24-form="inline/3/k76xne" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_3.js');
-                </script>
-            </div>
-            <div class="form_info">
-                <div class="form_info_title" data-lang="form_info_title">
-                    Для быстрого просчета доставки Вашего груза оставьте свой запрос здесь
-                </div>
-                <div class="form_info_subtitle" data-lang="form_info_subtitle">
-                    Оставьте Ваши контакты ниже и мы с Вами свяжемся!
-                </div>
-            </div>
-
+    <div class="section" style="background-color: #f2f1df">
+      <div
+        class="container"
+        style="flex-direction: row; justify-content: center"
+      >
+        <div class="form_container" id="form_container">
+          <script data-b24-form="inline/3/k76xne" data-skip-moving="true">
+            (function (w, d, u) {
+              var s = d.createElement("script");
+              s.async = true;
+              s.src = u + "?" + ((Date.now() / 180000) | 0);
+              var h = d.getElementsByTagName("script")[0];
+              h.parentNode.insertBefore(s, h);
+            })(
+              window,
+              document,
+              "https://cdn-ru.bitrix24.ru/b22541862/crm/form/loader_3.js"
+            );
+          </script>
         </div>
+        <div class="form_info">
+          <div class="form_info_title" data-lang="form_info_title">
+            Для быстрого просчета доставки Вашего груза оставьте свой запрос
+            здесь
+          </div>
+          <div class="form_info_subtitle" data-lang="form_info_subtitle">
+            Оставьте Ваши контакты ниже и мы с Вами свяжемся!
+          </div>
+        </div>
+      </div>
     </div>
     <!-- FOOTER SECTION -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer_inner">
-                <div class="footer_col--first">
-					
-                    <div class="footer_sub_logo" data-lang="footer_sub_logo">
-                        транспортно-экспедиторская компания
-                    </div>
-                    <div class="footer_logo">
-                        SPRINT LOGISTICS
-                    </div>
-                    <div class="footer_text">
-                    "Ваш бизнес - наша логистика"    
-                    </div>
-                    <div class="footer_social">
-                        <div class="footer_social_content">
-                            
-                            <a href="https://wa.me/77000882815"><i class="fa-brands fa-whatsapp fa-2x" style="color: rgb(7, 212, 7);" ></i>
-                            </a>
-                            <a href="https://instagram.com/sprint_log?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram fa-2x" style="color: rgb(171, 50, 149);"></i>
-                            </a>
-                            <a href="https://t.me/sprintlog"><i class="fa-brands fa-telegram fa-2x" style="color: rgb(4, 169, 199);"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer_col--second">
-                    <div class="footer_col_item">
-                        <div class="footer_title" data-lang="footer_col2_title">
-                            О компании
-                        </div>
-                        <div class="footer_subtitle">
-                            <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece1">О нас</a>
-                            <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece2">Наши услуги</a>
-                            <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece3">Преимущества работы с нами</a>
-                            <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece4">Наша команда</a>
-                            <a href="./index.html" style=" text-decoration: none;" data-lang="footer_col2_piece5">Отзывы партнеров</a> 
-                        </div>
-                    </div>
-                    
-                    <div class="footer_col_item">
-                        <div class="footer_title" data-lang="footer_col3_title">
-                            Услуги
-                        </div>
-                        <div class="footer_subtitle">
-                            <a href="./services_lcl.html" style=" text-decoration: none;" data-lang="footer_col3_piece_1">Консолидации из Китая</a>
-                            <a href="./services_avia.html"style=" text-decoration: none;" data-lang="footer_col3_piece_2">Авиа доставка в Казахстан</a>
-                            <a href="./services_ftl.html" style=" text-decoration: none;" data-lang="footer_col3_piece_3">Полные фуры из Китая </a>
-                            <a href="./services_eur.html" style=" text-decoration: none;" data-lang="footer_col3_piece_4">Полные фуры и консолидация из Европы</a>
-                            <a href="./services_railways.html" style=" text-decoration: none;" data-lang="footer_col3_piece_5">ЖД перевозки по Средней Азии</a>
-                            <a href="./services_special.html" style=" text-decoration: none;" data-lang="footer_col3_piece_6">Доставка негабаритных грузов</a>
-                        </div>
-                        
-                    </div>
-                    <div class="footer_col_item">
-                        <div class="footer_title" data-lang="footer_col3_title">
-                            Контакты
-                        </div>
-                        <div class="footer_subtitle">
-                            <h5 data-lang="footer_text_1">
-                                Казахстан, г. Алматы, ул. Мынбаева, 46
-                            </h5>
-                            <h5 data-lang="footer_text_2">
-                                График работы: Пн. – Пт.: с 9:00 до 18:00
-                            </h5>
-                            <h5 data-lang="footer_text_3">
-                                Телефон: +7 701 581 0999
-                            </h5>
-                            <h5 data-lang="footer_text_4">
-                                Почта: marketing@splog.com.kz
-                            </h5>
-                            <br>
-                            <h5 data-lang="footer_text_5">
-                                Свяжитесь с нами:
-                            </h5>    
-                        </div>
-                        
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer_inner">
+          <div class="footer_col--first">
+            <div class="footer_sub_logo" data-lang="footer_sub_logo">
+              транспортно-экспедиторская компания
             </div>
+            <div class="footer_logo">SPRINT LOGISTICS</div>
+            <div class="footer_text">"Ваш бизнес - наша логистика"</div>
+            <div class="footer_social">
+              <div class="footer_social_content">
+                <a href="https://wa.me/77000882813"
+                  ><i
+                    class="fa-brands fa-whatsapp fa-2x"
+                    style="color: rgb(7, 212, 7)"
+                  ></i>
+                </a>
+                <a href="https://instagram.com/sprint_log?igshid=ZDdkNTZiNTM="
+                  ><i
+                    class="fa-brands fa-instagram fa-2x"
+                    style="color: rgb(171, 50, 149)"
+                  ></i>
+                </a>
+                <a href="https://t.me/sprintlog"
+                  ><i
+                    class="fa-brands fa-telegram fa-2x"
+                    style="color: rgb(4, 169, 199)"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_col--second">
+            <div class="footer_col_item">
+              <div class="footer_title" data-lang="footer_col2_title">
+                О компании
+              </div>
+              <div class="footer_subtitle">
+                <a
+                  href="./index.html"
+                  style="text-decoration: none"
+                  data-lang="footer_col2_piece1"
+                  >О нас</a
+                >
+                <a
+                  href="./index.html"
+                  style="text-decoration: none"
+                  data-lang="footer_col2_piece2"
+                  >Наши услуги</a
+                >
+                <a
+                  href="./index.html"
+                  style="text-decoration: none"
+                  data-lang="footer_col2_piece3"
+                  >Преимущества работы с нами</a
+                >
+                <a
+                  href="./index.html"
+                  style="text-decoration: none"
+                  data-lang="footer_col2_piece4"
+                  >Наша команда</a
+                >
+                <a
+                  href="./index.html"
+                  style="text-decoration: none"
+                  data-lang="footer_col2_piece5"
+                  >Отзывы партнеров</a
+                >
+              </div>
+            </div>
+
+            <div class="footer_col_item">
+              <div class="footer_title" data-lang="footer_col3_title">
+                Услуги
+              </div>
+              <div class="footer_subtitle">
+                <a
+                  href="./services_lcl.html"
+                  style="text-decoration: none"
+                  data-lang="footer_col3_piece_1"
+                  >Консолидации из Китая</a
+                >
+                <a
+                  href="./services_avia.html"
+                  style="text-decoration: none"
+                  data-lang="footer_col3_piece_2"
+                  >Авиа доставка в Казахстан</a
+                >
+                <a
+                  href="./services_ftl.html"
+                  style="text-decoration: none"
+                  data-lang="footer_col3_piece_3"
+                  >Полные фуры из Китая
+                </a>
+                <a
+                  href="./services_eur.html"
+                  style="text-decoration: none"
+                  data-lang="footer_col3_piece_4"
+                  >Полные фуры и консолидация из Европы</a
+                >
+                <a
+                  href="./services_railways.html"
+                  style="text-decoration: none"
+                  data-lang="footer_col3_piece_5"
+                  >ЖД перевозки по Средней Азии</a
+                >
+                <a
+                  href="./services_special.html"
+                  style="text-decoration: none"
+                  data-lang="footer_col3_piece_6"
+                  >Доставка негабаритных грузов</a
+                >
+              </div>
+            </div>
+            <div class="footer_col_item">
+              <div class="footer_title" data-lang="footer_col3_title">
+                Контакты
+              </div>
+              <div class="footer_subtitle">
+                <h5 data-lang="footer_text_1">
+                  Казахстан, г. Алматы, ул. Мынбаева, 46
+                </h5>
+                <h5 data-lang="footer_text_2">
+                  График работы: Пн. – Пт.: с 9:00 до 18:00
+                </h5>
+                <h5 data-lang="footer_text_3">Телефон: +7 700 088 2813</h5>
+                <h5 data-lang="footer_text_4">Почта: marketing@splog.com.kz</h5>
+                <br />
+                <h5 data-lang="footer_text_5">Свяжитесь с нами:</h5>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
     <!-- Grid Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
     <!-- Swiper script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-	<script src="https://kit.fontawesome.com/6166ccc48f.js" crossorigin="anonymous"></script>
-    <script>   
-        // Script for advantages slider
-        $(document).ready(function(){
-            $('.advantages_section').slick({
-                slidesToShow: 3,
-                slidesToScroll: 2,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows: false,
-                dots: true,
-                responsive: [
-                    {
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 2
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
+    <script
+      src="https://kit.fontawesome.com/6166ccc48f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Script for advantages slider
+      $(document).ready(function () {
+        $(".advantages_section").slick({
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+          dots: true,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
         });
-        </script>
-</body>
+      });
+    </script>
+  </body>
 </html>
